@@ -142,7 +142,8 @@
     "compare_cap": "Las mismas ventanas de guía y de misiones en el mismo momento: Blizzlike debajo, estilo ElvUI encima. Arrastrá para comparar (interfaz en inglés).",
     "camp_alt": "Un brasero entre las carpas del campamento del Valle de las Pruebas, en World of Warcraft Forever.",
     "pin_scene_alt": "Ventana de la guía de FLC (interfaz en inglés): saquear el objeto Abandoned Training Weapon, 0 de 6, ya en la zona; además, dos misiones para aceptar de Gornek.",
-    "reward_text": "Gratis. Nada bloqueado."
+    "reward_text": "Gratis. Nada bloqueado.",
+    "note_short": "La ventana de la guía de FLC"
   },
   "features": {
     "title": "Estado de las funciones",

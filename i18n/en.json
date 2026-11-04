@@ -142,7 +142,8 @@
     "compare_cap": "The same guide and Quests windows at the same moment: Blizzlike under, ElvUI-like over. Drag to compare.",
     "camp_alt": "A brazier between the tents of the Valley of Trials camp, in World of Warcraft Forever.",
     "pin_scene_alt": "FLC's guide window: Loot the object: Abandoned Training Weapon, 0 of 6, in the area; also here, two quests to accept from Gornek.",
-    "reward_text": "Free. Nothing locked."
+    "reward_text": "Free. Nothing locked.",
+    "note_short": "FLC's guide window"
   },
   "features": {
     "title": "Feature status",

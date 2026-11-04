@@ -302,12 +302,17 @@ td .badge { white-space: normal; }
 .only-narrow { display: none; }
 /* at wide screens the scene shows FLC's guide window large enough to read: an ink label points at it instead of
    a second, magnified copy */
-.questhero__note { display: none; position: absolute; left: 65%; top: 59.6%; margin: 0; max-width: 15rem; padding: 4px 10px;
+.questhero__note { display: none; position: absolute; right: 36%; top: 47.5%; margin: 0; white-space: nowrap; padding: 4px 10px;
   font: italic 1rem/1.35 var(--f-body); color: var(--ink); background: var(--vellum); box-shadow: var(--lift); }
-.questhero__note::before { content: ""; position: absolute; left: 22px; top: -9px; border: 5px solid transparent; border-bottom-color: var(--vellum); border-top: 0; }
+.questhero__note::after { content: ""; position: absolute; right: -9px; top: 12px; border: 5px solid transparent; border-left-color: var(--vellum); border-right: 0; }
+/* wide screens: the scene becomes the codex frontispiece, a plate inset from the edges (the game anchors its Quests
+   window to the screen edge; the inset keeps it off the browser's edge) */
 @media (min-width: 1600px) {
   .questhero__note { display: block; }
   .questhero__plate { display: none; }
+  .questhero__scene { margin: 16px var(--gutter) 0; border: 1px solid var(--gilt-lo); box-shadow: var(--lift); }
+  .questhero__scene::after { background: none; }
+  .questhero .questhero__stage { margin-top: calc(-35.8vw + 64px); }
 }
 /* the page aligns with the brand in the masthead; the scene crop keeps FLC's arrow right of it from 1280 px up */
 .questhero__stage { max-width: 1360px; margin: -35.8vw auto 0; padding-inline: var(--gutter); position: relative; z-index: 2;

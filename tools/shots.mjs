@@ -35,6 +35,7 @@ const VIEWS_ALL = {
   mobile390: { width: 390, height: 844, dpr: 3, mobile: true },
   tablet768: { width: 768, height: 1024, dpr: 2, mobile: true },
   wide1920: { width: 1920, height: 1080, dpr: 1, mobile: false },
+  wide1680: { width: 1680, height: 1050, dpr: 1, mobile: false },
 };
 const VIEWS = opt('views', 'desktop,mobile375').split(',').map((v) => [v, VIEWS_ALL[v]]);
 
