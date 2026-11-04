@@ -1,0 +1,164 @@
+{
+  "_comment": "Player-facing changelog, newest first. Curated from the addon's docs/release/RELEASE_NOTES_*.md. kind: release (published on GitHub), rc (release candidate, never published), dev (development build). 'next': what is in development, shown as such, never as part of the download.",
+  "entries": [
+    {
+      "version": "0.8.1.1",
+      "label": "0.8.1.1",
+      "date": "2026-11-04",
+      "kind": "release",
+      "en": [
+        "Two fixes for the WoW: Forever launch, no new features.",
+        "FLC's \"Quests\" window now takes the game's quest tracker's place, under the minimap and its clock, at any resolution. If you moved it, it stays where you put it.",
+        "A step that needs a higher level now says the level (\"Requires level 10\") instead of \"Requires level 0\".",
+        "Tested with game client 1.60.1.70755."
+      ],
+      "es": [
+        "Dos arreglos para el lanzamiento de WoW: Forever, sin funciones nuevas.",
+        "La ventana \"Misiones\" de FLC ahora ocupa el lugar del rastreador de misiones del juego, debajo del minimapa y del reloj, en cualquier resolución. Si la moviste, queda donde la pusiste.",
+        "Un paso que pide más nivel ahora dice el nivel (\"Requiere nivel 10\") en lugar de \"Requiere nivel 0\".",
+        "Probada con el cliente 1.60.1.70755."
+      ]
+    },
+    {
+      "version": "0.8.1",
+      "label": "0.8.1",
+      "date": "2026-11-03",
+      "kind": "release",
+      "en": [
+        "First public version.",
+        "Guides window (/flc guides): choose what to follow, leveling routes by zone or dungeon and raid guides, with their levels and your progress. \"Automatic\" gives the choice back to FLC.",
+        "Quests by themselves: FLC accepts and turns in the guide's quests, never in combat or with Shift held. On a reward choice it never picks: it marks the one that helps you. /flc auto or Options to turn it off.",
+        "Minimap button: left click shows or hides FLC; right click opens Guides, Loot Atlas, Party Mode, Appearance, Options and Report a bug. Shift + drag moves it.",
+        "Dungeon (23) and raid (12) guides, the boss card, class and dungeon quest advisors, the Smart Loot Advisor and the Loot Atlas with a wishlist.",
+        "Adaptive look with a welcome setup on the first start (/flc setup).",
+        "/flc review and /flc bug prepare a text for our public reports page; /flc version tells you when someone in your group has a newer version."
+      ],
+      "es": [
+        "Primera versión pública.",
+        "Ventana de guías (/flc guides): elegí qué seguir, rutas de subida por zona o guías de mazmorra y de banda, con sus niveles y tu progreso. \"Automático\" le devuelve la elección a FLC.",
+        "Misiones solas: FLC acepta y entrega las misiones de la guía, nunca en combate ni con Shift apretado. Si hay que elegir recompensa, no elige: marca la que te sirve. Se apaga con /flc auto o en Opciones.",
+        "Botón del minimapa: clic izquierdo muestra u oculta FLC; clic derecho abre Guías, Atlas de botín, Modo Grupo, Aspecto, Opciones y Reportar un error. Shift + arrastrar lo mueve.",
+        "Guías de mazmorra (23) y de banda (12), la ficha del jefe, los asesores de misiones de clase y de mazmorra, el Asesor de botín y el Atlas de botín con lista de deseos.",
+        "Aspecto adaptable, con una configuración inicial la primera vez (/flc setup).",
+        "/flc review y /flc bug arman un texto para nuestra página pública de reportes; /flc version te avisa si alguien de tu grupo tiene una versión más nueva."
+      ]
+    },
+    {
+      "version": "0.8.0",
+      "label": "0.8.0-rc3",
+      "date": "2026-10-30",
+      "kind": "rc",
+      "en": [
+        "Dungeon guides for 23 dungeons and guides for 12 raids: the way in, quest objectives inside, every boss in the game's order and the way out.",
+        "Boss card: abilities by who they go at, with your role highlighted. Abilities not confirmed yet show \"(?)\".",
+        "Dungeon Quest Advisor, Smart Loot Advisor and the Loot Atlas with a wishlist.",
+        "Skins and \"Adapt to my interface\": ElvUI, NDui, RealUI, SpartanUI and GW2 UI, plus a welcome setup the first time FLC starts.",
+        "/flc bug and /flc review: a report window ready to copy into the public reports page.",
+        "Data that is not confirmed yet is now labeled \"in review\", so players can tell us what the game shows.",
+        "/flc version tells you which version you have; if someone in your group has a newer one, FLC lets you know."
+      ],
+      "es": [
+        "Guías para 23 mazmorras y 12 bandas: la entrada, los objetivos de misión adentro, cada jefe en el orden del juego y la salida.",
+        "Ficha del jefe: habilidades según a quién apuntan, con tu rol resaltado. Las habilidades todavía no confirmadas muestran \"(?)\".",
+        "Asesor de misiones de mazmorra, Asesor de botín y el Atlas de botín con lista de deseos.",
+        "Aspectos y \"Adaptar a mi interfaz\": ElvUI, NDui, RealUI, SpartanUI y GW2 UI, más una configuración inicial la primera vez que arranca FLC.",
+        "/flc bug y /flc review: una ventana de reporte lista para copiar en la página pública de reportes.",
+        "Los datos que todavía no están confirmados ahora dicen \"en revisión\", para que los jugadores puedan contarnos qué muestra el juego.",
+        "/flc version te dice qué versión tenés; si alguien de tu grupo tiene una más nueva, FLC te avisa."
+      ]
+    },
+    {
+      "version": "0.6.0",
+      "label": "0.6.0",
+      "date": "2026-10-27",
+      "kind": "dev",
+      "en": [
+        "Leveling path 1–60: for each race, which zone comes next and when to go back to one. /flc path and /flc guide auto.",
+        "Class Quest Advisor: the class quests worth doing, with Do it now, Later, Skip and Details.",
+        "More quests in routes, and later visits of a zone for quests far above its level.",
+        "Fix: turn-ins are no longer forgotten when the game confirms them late.",
+        "Fix: Party Mode now recognizes characters with a surname."
+      ],
+      "es": [
+        "Camino del 1 al 60: para cada raza, qué zona sigue y cuándo volver a una. /flc path y /flc guide auto.",
+        "Asesor de misiones de clase: las misiones de clase que valen la pena, con Ahora, Después, Omitir y Detalles.",
+        "Más misiones en las rutas, y segundas visitas a una zona para misiones de nivel mucho más alto.",
+        "Corrección: las entregas ya no se olvidan cuando el juego las confirma tarde.",
+        "Corrección: el Modo Grupo ahora reconoce a los personajes con apellido."
+      ]
+    },
+    {
+      "version": "0.5.0",
+      "label": "0.5.0",
+      "date": "2026-10-25",
+      "kind": "dev",
+      "en": [
+        "How to get there: for far steps, a travel plan with flight masters, boats, zeppelins, portals and the Hearthstone.",
+        "Approach hints: stairs, detours and water on the last stretch, with intermediate points for the arrow.",
+        "Installation steps in Spanish and English inside the download."
+      ],
+      "es": [
+        "Cómo llegar: para pasos lejanos, un plan de viaje con maestros de vuelo, barcos, zepelines, portales y la piedra de hogar.",
+        "Indicaciones de llegada: escaleras, rodeos y agua en el último tramo, con puntos intermedios para la flecha.",
+        "Instrucciones de instalación en español e inglés dentro de la descarga."
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "label": "0.4.0",
+      "date": "2026-10-24",
+      "kind": "dev",
+      "en": [
+        "Steps no longer get stuck when the game numbers a quest's objectives differently: FLC finds each objective by its text.",
+        "Repeatable quests left the routes, since the game never marks them completed.",
+        "Routes for the Skyborne races and Zephras Isle.",
+        "Party Mode is more reliable: members no longer stay \"pending\", and rejoining members are picked up at once.",
+        "The arrow uses much less memory while you stand still."
+      ],
+      "es": [
+        "Los pasos ya no se traban cuando el juego numera de otra forma los objetivos de una misión: FLC encuentra cada objetivo por su texto.",
+        "Las misiones repetibles salieron de las rutas, porque el juego nunca las marca como completadas.",
+        "Rutas para las razas Skyborne y la Isla de Zephras.",
+        "Modo Grupo más confiable: los integrantes ya no quedan \"pendientes\" y quien vuelve al grupo se reconoce enseguida.",
+        "La flecha usa mucha menos memoria mientras estás quieto."
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "label": "0.2.1 – 0.3.0",
+      "date": "2026-10-24",
+      "kind": "dev",
+      "en": [
+        "Fix: Party Mode now matches group members on WoW Forever, which sends names without a realm.",
+        "Fix: party messages that arrive before the group list updates are no longer lost."
+      ],
+      "es": [
+        "Corrección: el Modo Grupo ahora reconoce a los integrantes en WoW Forever, que envía los nombres sin reino.",
+        "Corrección: ya no se pierden los mensajes del grupo que llegan antes de que se actualice la lista."
+      ]
+    },
+    {
+      "version": "0.1.0",
+      "label": "0.1.0",
+      "date": "2026-10-23",
+      "kind": "dev",
+      "en": [
+        "First development build: the guide engine, the arrow, the quest tracker with party announcements, Party Mode (Help Player, Level Together, Catch-Up, Dungeon Focus, leader proposals) and an English and Spanish interface."
+      ],
+      "es": [
+        "Primera versión de desarrollo: el motor de guías, la flecha, el seguimiento de misiones con avisos al grupo, el Modo Grupo (Ayudar a un jugador, Subir juntos, Ponerse al día, Foco en mazmorras, propuestas del líder) y la interfaz en inglés y español."
+      ]
+    }
+  ],
+  "next": {
+    "version": "0.8.2",
+    "en": [
+      "Level with a friend of another race in your faction: FLC shows where your paths meet and lets you follow their route.",
+      "Getting the group's earlier quests ready before you level together in a zone."
+    ],
+    "es": [
+      "Subir con alguien de otra raza de tu facción: FLC te muestra dónde se cruzan sus caminos y te deja seguir su ruta.",
+      "Preparar las misiones previas del grupo antes de subir juntos en una zona."
+    ]
+  }
+}

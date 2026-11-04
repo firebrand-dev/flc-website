@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('custom', 'brush') }}
+
+<section class="wrap twoup-sec" aria-labelledby="two-title">
+  <header class="sechead">
+    <h2 id="two-title">{{ t('custom.two_t') }}</h2>
+    <p>{{ t('custom.two_d') }}</p>
+  </header>
+  <div class="twoup">
+    {{ m.shot('skin2-blizzlike', t('custom.two_cap', name=t('custom.skin_blizzlike')), sizes='(min-width: 1100px) 540px, 100vw') }}
+    {{ m.shot('skin2-elvuilike', t('custom.two_cap', name=t('custom.skin_elvuilike')), sizes='(min-width: 1100px) 540px, 100vw') }}
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="cmp-title">
+  <header class="sechead">
+    <h2 id="cmp-title">{{ t('custom.cmp_t') }}</h2>
+    <p>{{ t('custom.cmp_d') }}</p>
+  </header>
+  {% set skins = ['flc','blizzlike','elvuilike','minimal','fantasy'] %}
+  <div class="skinner" data-skinner>
+    <div class="skinner__tabs" role="tablist" aria-label="{{ t('custom.cmp_label') }}">
+      {% for s in skins %}
+      <button class="skinner__tab" role="tab" type="button" id="tab-{{ s }}" aria-controls="panel-{{ s }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ 0 if loop.first else -1 }}">
+        <span class="skinner__swatch skinner__swatch--{{ s }}" aria-hidden="true"></span>{{ t('custom.skin_' ~ s) }}
+      </button>
+      {% endfor %}
+    </div>
+    <div class="skinner__stage">
+      {% for s in skins %}
+      <div class="skinner__panel" role="tabpanel" id="panel-{{ s }}" aria-labelledby="tab-{{ s }}"{% if not loop.first %} hidden{% endif %}>
+        {{ m.shot('skin-' ~ s, t('custom.cmp_cap', name=t('custom.skin_' ~ s)), sizes='(min-width: 1100px) 900px, 100vw') }}
+        <p class="skinner__desc">{{ t('custom.skin_' ~ s ~ '_d') }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap feature__grid adapt">
+  <div class="reveal">
+    <h2>{{ t('custom.adapt_t') }}</h2>
+    <p>{{ t('custom.adapt_d') }}</p>
+    <h2 class="feature__h2b">{{ t('custom.manual_t') }}</h2>
+    <p>{{ t('custom.manual_d') }}</p>
+    <h2 class="feature__h2b">{{ t('custom.setup_t') }}</h2>
+    <p>{{ t('custom.setup_d') }}</p>
+  </div>
+  <div class="reveal">
+    <table class="uitable">
+      <caption class="sr">{{ t('custom.adapt_list') }}</caption>
+      <tbody>
+        {% for name in ['ElvUI','NDui','RealUI','SpartanUI','GW2 UI'] %}
+        <tr><th scope="row">{{ name }}</th><td>{{ m.badge('client', true) }}</td></tr>
+        {% endfor %}
+        <tr><th scope="row">Tukui</th><td><span class="badge">{{ t('custom.adapt_tukui') }}</span></td></tr>
+        <tr><th scope="row">KkthnxUI</th><td><span class="badge">{{ t('custom.adapt_kkthnx') }}</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

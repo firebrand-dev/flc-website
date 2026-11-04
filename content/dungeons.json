@@ -1,0 +1,38 @@
+{
+  "_comment": "Dungeon and raid guides shipped in FLC 0.8 (addon repo docs/DUNGEON_GUIDE.md, docs/release/INTEGRATION_AUDIT.md section 7). Names: English, and the Spanish client name where well known; new WoW Forever dungeons keep their English name until the Spanish client is checked.",
+  "dungeons": [
+    {"en": "Ragefire Chasm", "es": "Sima Ígnea"},
+    {"en": "The Hall of Thanes", "es": "The Hall of Thanes", "new": true},
+    {"en": "Ruins of Lordaeron", "es": "Ruins of Lordaeron", "new": true},
+    {"en": "The Deadmines", "es": "Las Minas de la Muerte"},
+    {"en": "Wailing Caverns", "es": "Cuevas de los Lamentos"},
+    {"en": "Shadowfang Keep", "es": "Castillo de Colmillo Oscuro"},
+    {"en": "Blackfathom Deeps", "es": "Cavernas de Brazanegra"},
+    {"en": "The Stockade", "es": "Las Mazmorras"},
+    {"en": "Razorfen Kraul", "es": "Horado Rajacieno"},
+    {"en": "Gnomeregan", "es": "Gnomeregan"},
+    {"en": "Excavation Site", "es": "Excavation Site", "new": true},
+    {"en": "Dalaran", "es": "Dalaran", "new": true},
+    {"en": "Scarlet Monastery", "es": "Monasterio Escarlata"},
+    {"en": "Razorfen Downs", "es": "Zahúrda Rajacieno"},
+    {"en": "Uldaman", "es": "Uldaman"},
+    {"en": "Zul'Farrak", "es": "Zul'Farrak"},
+    {"en": "Maraudon", "es": "Maraudon"},
+    {"en": "Sunken Temple", "es": "El Templo de Atal'Hakkar"},
+    {"en": "Blackrock Depths", "es": "Profundidades de Roca Negra"},
+    {"en": "Lower Blackrock Spire", "es": "Cumbre de Roca Negra Inferior"},
+    {"en": "Dire Maul", "es": "La Masacre"},
+    {"en": "Stratholme", "es": "Stratholme"},
+    {"en": "Scholomance", "es": "Scholomance"}
+  ],
+  "raids_total": 12,
+  "raids": [
+    {"en": "Molten Core", "es": "Núcleo de Magma"},
+    {"en": "Onyxia's Lair", "es": "Guarida de Onyxia"},
+    {"en": "Zul'Gurub", "es": "Zul'Gurub"},
+    {"en": "Blackwing Lair", "es": "Guarida Alanegra"},
+    {"en": "Ruins of Ahn'Qiraj", "es": "Ruinas de Ahn'Qiraj"},
+    {"en": "Temple of Ahn'Qiraj", "es": "Templo de Ahn'Qiraj"},
+    {"en": "Naxxramas", "es": "Naxxramas"}
+  ]
+}

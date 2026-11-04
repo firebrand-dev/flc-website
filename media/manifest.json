@@ -1,0 +1,389 @@
+{
+  "_comment": "Real in-game captures used by the site. tools/media.py crops each source (read-only) into media/src/<id>.png; tools/build.py turns those masters into WebP. kind 'ui' = an addon window: one WebP at its native width (quality 95), never resized or stretched, so its text stays sharp. kind 'scene' = the game world: lossy WebP in several widths. Every entry keeps where it came from. To replace a capture: change src/box, run python tools/media.py, then python tools/build.py.",
+  "roots": {
+    "rc2": "E:/Firebrand/FoLeCom-integration/dist/releases/0.8.0-rc2/reports",
+    "rc3": "E:/Firebrand/FoLeCom/build/gametest",
+    "v05": "E:/Firebrand/FoLeCom-approach/dist/releases/0.5.0/reports/approach",
+    "site04": "E:/Firebrand/FoLeCom-integration/website/img"
+  },
+  "shots": [
+    {
+      "id": "hero-zephras",
+      "src": "v05:20261025-232949/05-up-to-halaan-arrived.png",
+      "box": [
+        0,
+        0,
+        2560,
+        530
+      ],
+      "flc": "0.5.0",
+      "date": "2026-10-25",
+      "what": "Zephras Isle: the arrow over Halaan Hawk-Eye on the tower's upper floor",
+      "kind": "scene"
+    },
+    {
+      "id": "hero-photo",
+      "src": "rc3:20261104-011519-scenario-minimap/02-A-in-world.png",
+      "box": [
+        620,
+        0,
+        2560,
+        640
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "what": "Valley of Trials (hero panorama and social preview): the arrow 'In the area', FLC's minimap button, the guide window and FLC's Quests window under the minimap. Client 1.60.1.70755, development server; the welcome setup at the bottom left is covered by the hero's guide-window pin.",
+      "kind": "scene"
+    },
+    {
+      "id": "hero-mobile",
+      "src": "rc3:20261030-191515-scenario-quests/05-A-objective-1-of-10.png",
+      "box": [
+        840,
+        150,
+        1640,
+        750
+      ],
+      "flc": "0.8.0-rc3",
+      "date": "2026-10-30",
+      "kind": "scene",
+      "what": "Valley of Trials: the arrow says 'In the area' next to the Mottled Boars of the current step (small-screen hero)"
+    },
+    {
+      "id": "guide-kill",
+      "src": "rc3:20261030-191515-scenario-quests/05-A-objective-1-of-10.png",
+      "box": [
+        1466,
+        690,
+        2036,
+        873
+      ],
+      "flc": "0.8.0-rc3",
+      "date": "2026-10-30",
+      "kind": "ui",
+      "what": "Guide window: Kill: Mottled Boar, 1/10, In the area (same moment as hero-mobile)"
+    },
+    {
+      "id": "arrow-stairs",
+      "src": "v05:20261025-232949/04-up-to-halaan-stuck.png",
+      "box": [
+        1010,
+        250,
+        1570,
+        440
+      ],
+      "flc": "0.5.0",
+      "date": "2026-10-25",
+      "what": "Approach hint under the arrow: go up the stairs inside the tower",
+      "kind": "ui"
+    },
+    {
+      "id": "guide-step",
+      "src": "rc3:20261030-123609-scenario-raid-guide-mc/04-A-in-world.png",
+      "box": [
+        1466,
+        691,
+        2036,
+        874
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Guide window: current step, distance and the 'in review' label",
+      "kind": "ui"
+    },
+    {
+      "id": "boss-card",
+      "src": "rc3:20261030-173139-scenario-boss-card-review/07-A-review-detailed.png",
+      "box": [
+        1500,
+        330,
+        2080,
+        650
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Boss card, detailed: Lady Anacondra, Wailing Caverns",
+      "kind": "ui"
+    },
+    {
+      "id": "dungeon-scene",
+      "src": "rc3:20261030-173139-scenario-boss-card-review/07-A-review-detailed.png",
+      "box": [
+        0,
+        0,
+        2560,
+        690
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Wailing Caverns with the boss card open",
+      "kind": "scene"
+    },
+    {
+      "id": "review-report",
+      "src": "rc3:20261030-173139-scenario-boss-card-review/08-A-review-report.png",
+      "box": [
+        790,
+        375,
+        1770,
+        745
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "/flc review: abilities in review, ready to copy",
+      "kind": "ui"
+    },
+    {
+      "id": "level-together",
+      "src": "site04:level-together.png",
+      "box": [
+        0,
+        0,
+        590,
+        440
+      ],
+      "flc": "0.4.0",
+      "date": "2026-10-25",
+      "what": "Level Together: the group's shared route; your own guide is saved",
+      "kind": "ui"
+    },
+    {
+      "id": "party-help",
+      "src": "site04:party-help.png",
+      "box": [
+        0,
+        0,
+        590,
+        420
+      ],
+      "flc": "0.4.0",
+      "date": "2026-10-24",
+      "what": "Help Player: following a party member's route",
+      "kind": "ui"
+    },
+    {
+      "id": "party-panel",
+      "src": "rc2:20261030-021146-scenario-group/07-A-dungeons.png",
+      "box": [
+        960,
+        400,
+        1540,
+        740
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Party Mode panel: members, Level together, Group catch-up, Find dungeon",
+      "kind": "ui"
+    },
+    {
+      "id": "map-pin",
+      "src": "rc2:20261030-012427-scenario-waypoint/03-A-map-pin.png",
+      "box": [
+        0,
+        40,
+        1960,
+        1140
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Waypoint button: the game's own map pin on the step",
+      "kind": "scene"
+    },
+    {
+      "id": "atlas-dungeons",
+      "src": "rc2:20261030-022021-scenario-loot-atlas/05-A-dungeons.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Loot Atlas: dungeons and raids, filters, wishlist",
+      "kind": "ui"
+    },
+    {
+      "id": "atlas-forme",
+      "src": "rc2:20261030-022021-scenario-loot-atlas/09-A-for-me.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Loot Atlas 'For me': items rated for the character, slot by slot",
+      "kind": "ui"
+    },
+    {
+      "id": "dungeon-prep",
+      "src": "rc2:20261030-022515-scenario-dungeon-advisor/05-A-preparation.png",
+      "box": [
+        912,
+        300,
+        1467,
+        812
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Dungeon Quest Advisor: preparing Wailing Caverns",
+      "kind": "ui"
+    },
+    {
+      "id": "skin-blizzlike",
+      "src": "rc2:20261030-013547-scenario-integration-skins/03-A-atlas-blizzlike.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Skin: Blizzlike / Forever",
+      "kind": "ui"
+    },
+    {
+      "id": "skin-elvuilike",
+      "src": "rc2:20261030-013547-scenario-integration-skins/04-A-atlas-elvuilike.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Skin: ElvUI-like",
+      "kind": "ui"
+    },
+    {
+      "id": "skin-minimal",
+      "src": "rc2:20261030-013547-scenario-integration-skins/05-A-atlas-minimal.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Skin: Minimal",
+      "kind": "ui"
+    },
+    {
+      "id": "skin-fantasy",
+      "src": "rc2:20261030-013547-scenario-integration-skins/06-A-atlas-fantasy.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Skin: Fantasy",
+      "kind": "ui"
+    },
+    {
+      "id": "skin-flc",
+      "src": "rc2:20261030-013547-scenario-integration-skins/07-A-atlas-flc.png",
+      "box": [
+        715,
+        228,
+        1845,
+        1005
+      ],
+      "flc": "0.8.0-rc2",
+      "date": "2026-10-30",
+      "what": "Skin: FLC (default)",
+      "kind": "ui"
+    },
+    {
+      "id": "guides-window",
+      "src": "rc3:20261104-011308-scenario-guides/03-A-routes.png",
+      "box": [
+        990,
+        390,
+        1590,
+        930
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Guides window (/flc guides): routes by zone, the one suggested for the level, progress in each. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "reward-mark",
+      "src": "rc3:20261104-011956-scenario-quest-flow/04-A-reward-marked.png",
+      "box": [
+        20,
+        140,
+        445,
+        610
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Quest turn-in: FLC marks the reward that is an upgrade and leaves the choice to the player. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "minimap-menu",
+      "src": "rc3:20261104-011519-scenario-minimap/05-A-menu.png",
+      "box": [
+        2040,
+        0,
+        2560,
+        478
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Minimap button, right click: Guides, Loot Atlas, Party Mode, Appearance, Options, Report a bug. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "party-help-0811",
+      "src": "rc3:20261104-012705-scenario-party/10-A-helping-flcdos.png",
+      "box": [
+        1832,
+        462,
+        2212,
+        622
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Helping a party member (two clients): 'your progress is saved'. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "skin2-blizzlike",
+      "src": "rc3:20261104-012321-scenario-appearance/03-A-skin-blizzlike.png",
+      "box": [
+        1822,
+        452,
+        2560,
+        790
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Guide and Quests windows, Blizzlike skin. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "skin2-elvuilike",
+      "src": "rc3:20261104-012321-scenario-appearance/04-A-skin-elvuilike.png",
+      "box": [
+        1822,
+        452,
+        2560,
+        790
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Guide and Quests windows, ElvUI-like skin, same moment. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    }
+  ]
+}

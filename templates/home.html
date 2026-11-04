@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}{{ t('home.title') }}{% endblock %}
+{% block description %}{{ t('meta.site_description') }}{% endblock %}
+{% block main %}{% import "macros.html" as m with context %}
+{% set dl = site.download %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero__top">
+      <div class="hero__head">
+        <p class="hero__eyebrow">{{ m.emblem('hero__eyemark') }}<span>{{ t('home.eyebrow') }}</span></p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line">{{ t('home.h1_a') }}</span>
+          <span class="hero__line">{{ t('home.h1_b') }}</span>
+          <span class="hero__line hero__line--accent">{{ t('home.h1_c') }}</span>
+        </h1>
+      </div>
+      <div class="hero__text">
+        <p class="hero__sub">{{ t('home.sub') }}</p>
+        <p class="hero__free">{{ m.icon('shield') }}<span>{{ t('home.free_line') }}</span></p>
+        <div class="hero__ctas">
+          {% if dl.enabled %}
+          <a class="btn btn--primary" href="{{ url('download') }}">{{ m.icon('download') }}<span>{{ t('home.cta_download') }}</span><small>{{ dl.version }}</small></a>
+          {% else %}
+          <a class="btn btn--primary btn--pending" href="{{ url('download') }}">{{ m.icon('download') }}<span>{{ t('home.cta_download_soon') }}</span></a>
+          {% endif %}
+          <a class="btn btn--ghost" href="#journey">{{ m.icon('route') }}<span>{{ t('home.cta_explore') }}</span></a>
+          <a class="btn btn--quiet" href="{{ url('support') }}">{{ m.icon('flame') }}<span>{{ t('home.cta_support') }}</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__art">
+      <svg class="hero__compass" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="190" fill="none" stroke="currentColor" stroke-width=".8"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" stroke-width=".5" stroke-dasharray="2 6"/>
+        <path d="M200 10v380M10 200h380" stroke="currentColor" stroke-width=".5"/>
+        <path d="M200 40 214 186 360 200 214 214 200 360 186 214 40 200 186 186Z" fill="none" stroke="currentColor" stroke-width=".9"/>
+        <text x="200" y="32" text-anchor="middle">N</text>
+      </svg>
+      <figure class="hero__photo frame frame--hero">
+        <div class="frame__inner">{{ picture('hero-photo', t('home.hero_alt'), sizes='(min-width: 1240px) 1160px, 100vw', eager=true, small='hero-mobile') }}</div>
+      </figure>
+      <figure class="pin pin--step">
+        <div class="pin__img">{{ picture('guide-kill', t('home.pin_step_alt'), eager=true) }}</div>
+        <figcaption>{{ t('home.pin_step') }}</figcaption>
+      </figure>
+      <p class="hero__credit">{{ m.icon('eye') }}{{ t('common.composition') }}</p>
+    </div>
+
+    {% if dl.enabled %}
+    <p class="status-ribbon status-ribbon--live">
+      <span class="status-ribbon__dot" aria-hidden="true"></span>
+      <strong>{{ t('home.status_rel') }}</strong>
+      <span>{{ t('home.status_rel_line', v=dl.version, date=fmt_date(dl.date), build=site.status.build) }}</span>
+      <a href="{{ url('download') }}">{{ t('home.status_rel_link') }}</a>
+    </p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="journey" id="journey" aria-labelledby="journey-title">
+  <div class="wrap">
+    <header class="sechead">
+      {{ m.kicker(t('home.journey_kicker'), 'route') }}
+      <h2 id="journey-title">{{ t('home.journey_title') }}</h2>
+      <p>{{ t('home.journey_intro') }}</p>
+    </header>
+    <ol class="route" data-route>
+      {% set stops = [
+        ('stop1', 'leveling', 'arrow-stairs', 'compass', ['arrow', 'approach']),
+        ('stop2', 'leveling#party', 'party-help-0811', 'party', ['help', 'together']),
+        ('stop3', 'dungeons', 'boss-card', 'gate', ['bosscard']),
+        ('stop4', 'loot-atlas', 'atlas-forme', 'chest', ['lootadv', 'wishlist']),
+        ('stop5', 'customization', 'skin-fantasy', 'brush', ['adapt', 'skins']),
+        ('stop6', 'download#install', 'minimap-menu', 'route', ['minimap'])] %}
+      {% for key, target, img, ic, feats in stops %}
+      <li class="stop reveal">
+        <div class="stop__marker" aria-hidden="true"><span>{{ loop.index }}</span></div>
+        <div class="stop__body">
+          <h3 class="stop__title">{{ m.icon(ic) }}{{ t('home.' ~ key ~ '_t') }}</h3>
+          <p>{{ t('home.' ~ key ~ '_d') }}</p>
+          <ul class="proof">
+            {% for f in feats %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}
+          </ul>
+          <a class="link-arrow" href="{{ url(target) }}">{{ t('home.' ~ key ~ '_link') }}{{ m.icon('arrow') }}</a>
+        </div>
+        <div class="stop__media">{{ m.shot(img, t('home.' ~ key ~ '_cap'), sizes='(min-width: 1100px) 560px, 100vw') }}</div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% if changelog.next %}
+    <aside class="next next--home">
+      <h3 class="next__h">{{ m.icon('compass') }}{{ t('home.next_t') }}</h3>
+      <ul class="bullets">{% for item in changelog.next[lang] %}<li>{{ item }}</li>{% endfor %}</ul>
+      <p class="next__note">{{ t('home.next_note') }} <a href="{{ url('changelog') }}">{{ t('nav.changelog') }}</a></p>
+    </aside>
+    {% endif %}
+  </div>
+</section>
+
+<section class="values" aria-labelledby="values-title">
+  <div class="wrap">
+    <h2 class="sr" id="values-title">{{ t('home.values_kicker') }}</h2>
+    {{ m.kicker(t('home.values_kicker'), 'shield') }}
+    <div class="ledger">
+      {% for k, ic in [('v1','compass'),('v2','question'),('v3','shield')] %}
+      <div class="ledger__item reveal">
+        {{ m.icon(ic, 'ledger__icon') }}
+        <h3>{{ t('home.' ~ k ~ '_t') }}</h3>
+        <p>{{ t('home.' ~ k ~ '_d', report=url('report'), status=url('features')) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="twin" aria-label="{{ t('nav.report') }} / {{ t('nav.support_long') }}">
+  <div class="wrap twin__grid">
+    <div class="twin__item twin__item--report reveal">
+      {{ m.icon('bug', 'twin__icon') }}
+      <h2>{{ t('home.report_t') }}</h2>
+      <p>{{ t('home.report_d') }}</p>
+      <a class="btn btn--ghost" href="{{ url('report') }}">{{ t('home.report_cta') }}</a>
+    </div>
+    <div class="twin__item twin__item--support reveal">
+      {{ m.icon('flame', 'twin__icon') }}
+      <h2>{{ t('home.support_t') }}</h2>
+      <p>{{ t('home.support_d') }}</p>
+      <a class="btn btn--primary" href="{{ url('support') }}">{{ t('home.support_cta') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

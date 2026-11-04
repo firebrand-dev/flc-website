@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('report', 'bug') }}
+<div class="wrap">
+  <section aria-labelledby="kinds-title">
+    <h2 class="sr" id="kinds-title">{{ t('report.kinds_t') }}</h2>
+    <div class="kinds">
+      <article class="kind reveal">
+        <p class="kind__cmd"><code>{{ t('report.bug_cmd') }}</code></p>
+        <h3>{{ t('report.bug_t') }}</h3>
+        <p>{{ t('report.bug_d') }}</p>
+        <a class="btn btn--primary" href="{{ site.reports.error_form }}" rel="noopener" target="_blank">{{ m.icon('bug') }}<span>{{ t('report.bug_btn') }}</span><span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+      </article>
+      <article class="kind kind--review reveal">
+        <p class="kind__cmd"><code>{{ t('report.review_cmd') }}</code></p>
+        <h3>{{ t('report.review_t') }}</h3>
+        <p>{{ t('report.review_d') }}</p>
+        <a class="btn btn--primary" href="{{ site.reports.review_form }}" rel="noopener" target="_blank">{{ m.icon('question') }}<span>{{ t('report.review_btn') }}</span><span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature__grid report-how" aria-labelledby="steps-title">
+    <div>
+      <h2 id="steps-title">{{ t('report.steps_t') }}</h2>
+      <ol class="numbered">
+        <li>{{ t('report.st1') }}</li>
+        <li>{{ t('report.st2') }}</li>
+        <li>{{ t('report.st3') }}</li>
+        <li>{{ t('report.st4') }}</li>
+      </ol>
+    </div>
+    <div>{{ m.shot('review-report', t('report.cap'), sizes='(min-width: 1100px) 560px, 100vw') }}</div>
+  </section>
+
+  <div class="split">
+    <section class="parchment">
+      <h2 class="parchment__h">{{ m.icon('shield') }}{{ t('report.privacy_t') }}</h2>
+      <p>{{ t('report.privacy_d') }}</p>
+    </section>
+    <section>
+      <h2>{{ t('report.all_t') }}</h2>
+      <p>{{ t('report.all_d') }}</p>
+      <a class="btn btn--ghost" href="{{ site.reports.open_issues }}" rel="noopener" target="_blank">{{ t('report.all_btn') }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+      <h3 class="report-links__h">{{ t('report.links_t') }}</h3>
+      <ul class="report-links">
+        <li><a class="link-arrow" href="{{ url('download#known') }}">{{ t('report.links_known') }}{{ m.icon('arrow') }}</a></li>
+        <li><a class="link-arrow" href="{{ url('changelog') }}">{{ t('report.links_changelog') }}{{ m.icon('arrow') }}</a></li>
+        <li><a class="link-arrow" href="{{ site.reports.home }}" rel="noopener" target="_blank">github.com/firebrand-dev/FLC-reportes<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+{% endblock %}

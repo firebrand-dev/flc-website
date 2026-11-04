@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('credits', 'scroll', 'nointro') }}
+<div class="wrap narrow prose">
+  <section><h2>{{ t('credits.authors_t') }}</h2><p>{{ t('credits.authors_d') }}</p></section>
+  <section><h2>{{ t('credits.addon_t') }}</h2><p>{{ t('credits.addon_d') }}</p></section>
+  <section>
+    <h2>{{ t('credits.catalog_t') }}</h2>
+    <p>{{ t('credits.catalog_d') }}</p>
+    <ul class="bullets">
+      <li><a href="https://github.com/TrinityCore/TrinityCore" rel="noopener" target="_blank">TrinityCore</a> (TDB)</li>
+      <li><a href="https://github.com/vmangos/core" rel="noopener" target="_blank">VMaNGOS</a></li>
+      <li><a href="https://github.com/advocaite/TrinityCore" rel="noopener" target="_blank">advocaite/TrinityCore</a> (forever)</li>
+    </ul>
+  </section>
+  <section><h2>{{ t('credits.tools_t') }}</h2><p>{{ t('credits.tools_d') }}</p></section>
+  <section>
+    <h2>{{ t('credits.site_t') }}</h2>
+    <p>{{ t('credits.site_fonts') }} <a href="{{ root }}/assets/fonts/OFL-Cinzel.txt">OFL (Cinzel)</a> · <a href="{{ root }}/assets/fonts/OFL-AlegreyaSans.txt">OFL (Alegreya Sans)</a></p>
+    <p>{{ t('credits.site_shots') }}</p>
+    <p>{{ t('credits.site_art') }}</p>
+  </section>
+  {{ m.divider() }}
+  <section><h2>{{ t('credits.trademark_t') }}</h2><p>{{ t('credits.trademark_d') }}</p></section>
+</div>
+{% endblock %}

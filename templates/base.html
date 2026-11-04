@@ -1,0 +1,143 @@
+{% import "macros.html" as m with context %}
+<!doctype html>
+<html lang="{{ t('meta.html_lang') }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ t(page_key ~ '.title') }} · FLC{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ t(page_key ~ '.meta') }}{% endblock %}">
+<meta name="theme-color" content="#0b1220">
+<meta name="color-scheme" content="dark">
+{% if canonical %}
+<link rel="canonical" href="{{ canonical }}">
+{% for lg, path in alternates.items() %}
+<link rel="alternate" hreflang="{{ lg }}" href="{{ origin }}{{ path }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ origin }}{{ alternates[default_lang] }}">
+{% else %}
+<meta name="robots" content="noindex">
+{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Forever Leveling Companion">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{ t('meta.og_locale') }}">
+{% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ root }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="{{ root }}/assets/fonts/cinzel-latin-normal-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}/assets/fonts/alegreya-sans-latin-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}/assets/fonts/alegreya-sans-latin-normal-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ root }}/assets/css/fonts.css">
+<link rel="stylesheet" href="{{ root }}/assets/css/site.css?v={{ v['site.css'] }}">
+{% if lang == default_lang and canonical %}
+<script>
+/* First visit only: follow the browser's language when we have it. A choice made with the language menu wins. */
+(function () {
+  try {
+    var pref = localStorage.getItem("flc-lang");
+    var want = pref || ((navigator.languages && navigator.languages[0]) || navigator.language || "").slice(0, 2).toLowerCase();
+    if (want && want !== "{{ default_lang }}") {
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
+      if (alt) location.replace(new URL(alt.href).pathname + location.hash);
+    }
+  } catch (e) {}
+})();
+</script>
+{% endif %}
+<script type="application/ld+json">
+{% set dl = site.download %}{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Forever Leveling Companion","alternateName":"FLC","url":{{ (origin ~ root ~ '/')|tojson }},"applicationCategory":"GameApplication","applicationSubCategory":"World of Warcraft addon","operatingSystem":"Windows","softwareRequirements":"World of Warcraft: Forever","description":{{ t('meta.site_description')|string|tojson }},"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"inLanguage":["en","es"]{% if dl.enabled %},"softwareVersion":{{ dl.version|tojson }},"datePublished":{{ dl.date|tojson }},"downloadUrl":{{ dl.url|tojson }},"fileSize":{{ human_size(dl.size_bytes)|tojson }},"releaseNotes":{{ (origin ~ url('changelog'))|tojson }},"sameAs":[{{ ('https://github.com/' ~ site.repos.releases)|tojson }}]{% endif %}}
+</script>
+</head>
+<body class="page-{{ page_key }}">
+<a class="skip" href="#main">{{ t('meta.skip') }}</a>
+<div class="topo" aria-hidden="true"></div>
+
+<header class="masthead" data-masthead>
+  <div class="masthead__inner">
+    <a class="brand" href="{{ url('') }}" aria-label="Forever Leveling Companion, {{ t('nav.home') }}">
+      {{ m.emblem('brand__mark') }}
+      <span class="brand__text"><span class="brand__abbr">FLC</span><span class="brand__name">Forever Leveling Companion</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="{{ t('nav.main') }}" data-nav>
+      {% set addon = [('leveling','leveling','compass'),('dungeons','dungeons','gate'),('loot-atlas','loot','chest'),('customization','custom','brush'),('features','features','scroll')] %}
+      <ul class="nav__list">
+        {% for s, k in [('download','download'),('report','report_short'),('faq','faq')] %}
+        <li class="nav__top"><a class="nav__link" href="{{ url(s) }}"{% if slug == s %} aria-current="page"{% endif %}>{{ t('nav.' ~ k) }}</a></li>
+        {% endfor %}
+        <li class="nav__group" data-dropdown>
+          <button class="nav__link nav__toggle{% if slug in ['leveling','dungeons','loot-atlas','customization','features','changelog','credits'] %} is-current{% endif %}" type="button" aria-expanded="false" aria-controls="nav-addon">{{ t('nav.explore') }}<svg class="nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          <p class="nav__label" aria-hidden="true">{{ t('nav.explore') }}</p>
+          <div class="nav__panel" id="nav-addon">
+            <ul class="nav__items">
+              {% for s, k, ic in addon %}
+              <li><a class="nav__item" href="{{ url(s) }}"{% if slug == s %} aria-current="page"{% endif %}>{{ m.icon(ic) }}<span><strong>{{ t('nav.' ~ k) }}</strong><small>{{ t('nav.' ~ k ~ '_d') }}</small></span></a></li>
+              {% endfor %}
+            </ul>
+            <p class="nav__minor">
+              <a href="{{ url('changelog') }}"{% if slug == 'changelog' %} aria-current="page"{% endif %}>{{ t('nav.changelog') }}</a>
+              <a href="{{ url('credits') }}"{% if slug == 'credits' %} aria-current="page"{% endif %}>{{ t('nav.credits') }}</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="nav__extra">{{ m.langswitch() }}</div>
+    </nav>
+    <a class="nav__support" href="{{ url('support') }}"{% if slug == 'support' %} aria-current="page"{% endif %}>{{ m.icon('flame') }}<span>{{ t('nav.support') }}</span></a>
+    <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-btn>
+      <span class="menu-btn__bars" aria-hidden="true"></span><span class="menu-btn__label">{{ t('meta.menu') }}</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="{{ url('') }}">{{ m.emblem('brand__mark') }}<span class="brand__text"><span class="brand__abbr">FLC</span><span class="brand__name">Forever Leveling Companion</span></span></a>
+      <p>{{ t('footer.tagline') }}</p>
+    </div>
+    <nav aria-label="{{ t('nav.explore') }}">
+      <h2 class="footer__h">{{ t('nav.explore') }}</h2>
+      <ul>
+        {% for s, k in [('leveling','leveling'),('dungeons','dungeons'),('loot-atlas','loot'),('customization','custom'),('features','features')] %}
+        <li><a href="{{ url(s) }}">{{ t('nav.' ~ k) }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <nav aria-label="{{ t('nav.project') }}">
+      <h2 class="footer__h">{{ t('nav.project') }}</h2>
+      <ul>
+        {% for s, k in [('download','download'),('support','support_long'),('changelog','changelog'),('credits','credits')] %}
+        <li><a href="{{ url(s) }}">{{ t('nav.' ~ k) }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <nav aria-label="{{ t('nav.help') }}">
+      <h2 class="footer__h">{{ t('nav.help') }}</h2>
+      <ul>
+        <li><a href="{{ url('report') }}">{{ t('nav.report') }}</a></li>
+        <li><a href="{{ url('faq') }}">{{ t('nav.faq') }}</a></li>
+        <li><a href="{{ site.reports.home }}" rel="noopener" target="_blank">FLC-reportes <span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external', 'i-ext') }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer__legal">
+    <p>{{ t('footer.disclaimer') }}</p>
+    <p class="footer__meta"><span>{{ t('footer.copyright', year=year) }}</span><span>{{ t('footer.updated', date=fmt_date(site.site.updated)) }}</span>{{ m.langswitch('footer') }}</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" data-lightbox-dialog aria-label="{{ t('common.captured') }}">
+  <form method="dialog"><button class="lightbox__close" aria-label="{{ t('meta.close') }}">×</button></form>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</dialog>
+<script src="{{ root }}/assets/js/site.js?v={{ v['site.js'] }}" defer></script>
+</body>
+</html>

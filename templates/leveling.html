@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('leveling', 'compass') }}
+
+<section class="feature">
+  <div class="wrap feature__grid">
+    <div class="feature__text reveal">
+      <h2>{{ t('leveling.s1_t') }}</h2>
+      <p>{{ t('leveling.s1_d') }}</p>
+      <ul class="statuses"><li>{{ m.badge('client') }} {{ t('feat.guide.t') }}</li><li>{{ m.badge('client') }} {{ t('feat.arrow.t') }}</li></ul>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('guide-step', t('leveling.s1_cap'), sizes='(min-width: 1100px) 560px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="feature feature--flip">
+  <div class="wrap feature__grid">
+    <div class="feature__text reveal">
+      <h2>{{ t('leveling.s5_t') }}</h2>
+      <p>{{ t('leveling.s5_d') }}</p>
+      <ul class="statuses"><li>{{ m.badge('client') }} {{ t('feat.guideswin.t') }}</li></ul>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('guides-window', t('leveling.s5_cap'), sizes='(min-width: 1100px) 600px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature__grid">
+    <div class="feature__text reveal">
+      <h2>{{ t('leveling.s6_t') }}</h2>
+      <p>{{ t('leveling.s6_d') }}</p>
+      <ul class="statuses"><li>{{ m.badge('client') }} {{ t('feat.questflow.t') }}</li></ul>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('reward-mark', t('leveling.s6_cap'), sizes='(min-width: 1100px) 430px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="feature feature--flip">
+  <div class="wrap feature__grid">
+    <div class="feature__text reveal">
+      <h2>{{ t('leveling.s2_t') }}</h2>
+      <p>{{ t('leveling.s2_d') }}</p>
+      <ul class="hints">
+        {% for h in t('leveling.s2_list') %}<li>{{ m.icon('route') }}<span>{{ h }}</span></li>{% endfor %}
+      </ul>
+      <p class="note">{{ m.badge('review') }} {{ t('leveling.s2_note') }}</p>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('arrow-stairs', t('leveling.s2_cap'), sizes='(min-width: 1100px) 560px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature__grid">
+    <div class="feature__text reveal">
+      <h2>{{ t('leveling.s3_t') }}</h2>
+      <p>{{ t('leveling.s3_d') }}</p>
+      <h2 class="feature__h2b">{{ t('leveling.s4_t') }}</h2>
+      <p>{{ t('leveling.s4_d') }}</p>
+      <p>{{ t('leveling.s4_modes') }}</p>
+      <p>{{ t('leveling.s4_class') }}</p>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('map-pin', t('leveling.map_cap'), sizes='(min-width: 1100px) 600px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="party" id="party" aria-labelledby="party-title">
+  <div class="wrap">
+    <header class="sechead">
+      {{ m.kicker(t('leveling.party_kicker'), 'party') }}
+      <h2 id="party-title">{{ t('leveling.party_t') }}</h2>
+      <p>{{ t('leveling.party_d') }}</p>
+    </header>
+    <div class="party__grid">
+      <div class="party__modes">
+        {% for k in ['p1','p2','p3','p4'] %}
+        <div class="mode reveal"><h3>{{ t('leveling.' ~ k ~ '_t') }}</h3><p>{{ t('leveling.' ~ k ~ '_d') }}</p></div>
+        {% endfor %}
+        <p class="note">{{ t('leveling.party_note') }}</p>
+        {% if changelog.next %}
+        <aside class="next">
+          <h3 class="next__h">{{ m.icon('compass') }}{{ t('leveling.next_t') }}</h3>
+          <p class="next__note">{{ t('leveling.next_d') }}</p>
+          <ul class="bullets">{% for item in changelog.next[lang] %}<li>{{ item }}</li>{% endfor %}</ul>
+        </aside>
+        {% endif %}
+      </div>
+      <div class="party__shots">
+        {{ m.shot('level-together', t('leveling.p_cap_together'), sizes='(min-width: 1100px) 420px, 100vw', cls='reveal') }}
+        {{ m.shot('party-help-0811', t('leveling.p_cap_help'), sizes='(min-width: 1100px) 420px, 100vw', cls='reveal') }}
+        {{ m.shot('party-panel', t('leveling.p_cap_panel'), sizes='(min-width: 1100px) 420px, 100vw', cls='reveal') }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap narrow">
+  <h2>{{ t('common.commands') }}</h2>
+  {{ m.cmdtable([('/flc','leveling.cmd_flc'),('/flc party','leveling.cmd_party'),('/flc path','leveling.cmd_path'),('/flc guide auto','leveling.cmd_auto'),('/flc share yes','leveling.cmd_share'),('/flc announce','leveling.cmd_announce')]) }}
+  <h2>{{ t('leveling.routes_t') }}</h2>
+  <p>{{ m.badge('review') }} {{ t('leveling.routes_d', report=url('report')) }}</p>
+</section>
+{% endblock %}

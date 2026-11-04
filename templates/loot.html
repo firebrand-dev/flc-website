@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('loot', 'chest') }}
+
+<section class="feature">
+  <div class="wrap feature__grid feature__grid--wide">
+    <div class="feature__text reveal">
+      <h2>{{ t('loot.s1_t') }}</h2>
+      <p>{{ t('loot.s1_d') }}</p>
+      <ul class="statuses"><li>{{ m.badge('client') }} {{ t('feat.atlas.t') }}</li></ul>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('atlas-dungeons', t('loot.s1_cap'), sizes='(min-width: 1100px) 680px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="feature feature--flip">
+  <div class="wrap feature__grid feature__grid--wide">
+    <div class="feature__text reveal">
+      <h2>{{ t('loot.s2_t') }}</h2>
+      <p>{{ t('loot.s2_d') }}</p>
+    </div>
+    <div class="feature__media reveal">{{ m.shot('atlas-forme', t('loot.s2_cap'), sizes='(min-width: 1100px) 680px, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="ledger ledger--two">
+    <div class="ledger__item reveal">
+      {{ m.icon('chest', 'ledger__icon') }}
+      <h2 class="ledger__h">{{ t('loot.s3_t') }}</h2>
+      <p>{{ t('loot.s3_d') }}</p>
+      {{ m.badge('client') }}
+    </div>
+    <div class="ledger__item reveal">
+      {{ m.icon('scroll', 'ledger__icon') }}
+      <h2 class="ledger__h">{{ t('loot.s4_t') }}</h2>
+      <p>{{ t('loot.s4_d') }}</p>
+      {{ m.badge('client') }}
+    </div>
+  </div>
+  <p class="note center">{{ t('loot.note') }}</p>
+</section>
+{% endblock %}

@@ -1,0 +1,162 @@
+{
+  "_comment": "Feature ledger shown on /features/ and in each section. status: client = passed real game-client test runs (our development server); review = works, but its data or part of it is still being confirmed ('in review'); offline = automated tests only; planned. Texts: i18n feat.<id>. Evidence: the addon's docs/STATUS.md, docs/ADAPTIVE_UI.md, docs/release/WEB_HANDOFF_LAUNCH.md and LAUNCH_REPORT_2026-11-04.md (FLC 0.8.1.1, client 1.60.1.70755).",
+  "groups": [
+    {
+      "id": "leveling",
+      "page": "leveling",
+      "items": [
+        {
+          "id": "guide",
+          "status": "client"
+        },
+        {
+          "id": "guideswin",
+          "status": "client"
+        },
+        {
+          "id": "questflow",
+          "status": "client"
+        },
+        {
+          "id": "arrow",
+          "status": "client"
+        },
+        {
+          "id": "waypoint",
+          "status": "client"
+        },
+        {
+          "id": "approach",
+          "status": "review"
+        },
+        {
+          "id": "travel",
+          "status": "review"
+        },
+        {
+          "id": "path",
+          "status": "review"
+        },
+        {
+          "id": "modes",
+          "status": "client"
+        },
+        {
+          "id": "classq",
+          "status": "client"
+        },
+        {
+          "id": "routes",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "party",
+      "page": "leveling",
+      "anchor": "party",
+      "items": [
+        {
+          "id": "sync",
+          "status": "client"
+        },
+        {
+          "id": "together",
+          "status": "client"
+        },
+        {
+          "id": "catchup",
+          "status": "client"
+        },
+        {
+          "id": "help",
+          "status": "client"
+        },
+        {
+          "id": "proposals",
+          "status": "client"
+        },
+        {
+          "id": "focus",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "dungeons",
+      "page": "dungeons",
+      "items": [
+        {
+          "id": "dguides",
+          "status": "client"
+        },
+        {
+          "id": "rguides",
+          "status": "client"
+        },
+        {
+          "id": "bosscard",
+          "status": "review"
+        },
+        {
+          "id": "dadvisor",
+          "status": "client"
+        }
+      ]
+    },
+    {
+      "id": "loot",
+      "page": "loot-atlas",
+      "items": [
+        {
+          "id": "atlas",
+          "status": "client"
+        },
+        {
+          "id": "lootadv",
+          "status": "client"
+        },
+        {
+          "id": "wishlist",
+          "status": "client"
+        }
+      ]
+    },
+    {
+      "id": "custom",
+      "page": "customization",
+      "items": [
+        {
+          "id": "skins",
+          "status": "client"
+        },
+        {
+          "id": "adapt",
+          "status": "client"
+        },
+        {
+          "id": "setup",
+          "status": "client"
+        },
+        {
+          "id": "minimap",
+          "status": "client"
+        },
+        {
+          "id": "lang",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "page": "report",
+      "items": [
+        {
+          "id": "reports",
+          "status": "client"
+        }
+      ]
+    }
+  ]
+}

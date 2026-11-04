@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ t('notfound.title') }} · FLC{% endblock %}
+{% block description %}{{ t('notfound.d') }}{% endblock %}
+{% block main %}{% import "macros.html" as m with context %}
+<section class="lost">
+  <div class="wrap lost__inner">
+    <div class="lost__compass" aria-hidden="true">{{ m.emblem() }}</div>
+    <h1>{{ t('notfound.h1') }}</h1>
+    <p>{{ t('notfound.d') }}</p>
+    <a class="btn btn--primary" href="{{ url('') }}">{{ m.icon('compass') }}<span>{{ t('notfound.btn') }}</span></a>
+  </div>
+</section>
+{% endblock %}

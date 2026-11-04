@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "lang_name": "Español",
+    "html_lang": "es",
+    "og_locale": "es_AR",
+    "switch_label": "Idioma",
+    "skip": "Ir al contenido",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "site_description": "Addon gratuito de leveleo para World of Warcraft Forever: guías de misiones con flecha, Modo Grupo, guías de mazmorras y bandas con fichas de jefes, un Atlas de botín y aspectos que combinan con tu interfaz."
+  },
+  "nav": {
+    "home": "Inicio",
+    "features": "Estado de las funciones",
+    "leveling": "Leveleo",
+    "dungeons": "Mazmorras y bandas",
+    "loot": "Atlas de botín",
+    "custom": "Personalización",
+    "download": "Descargar",
+    "support": "Apoyar",
+    "support_long": "Apoyar el desarrollo",
+    "changelog": "Novedades",
+    "report": "Reportar un problema",
+    "faq": "Preguntas frecuentes",
+    "credits": "Créditos y licencias",
+    "explore": "El addon",
+    "project": "Proyecto",
+    "help": "Ayuda",
+    "main": "Principal",
+    "leveling_d": "Rutas, flecha y Modo Grupo",
+    "dungeons_d": "Guías de mazmorras y fichas de jefes",
+    "loot_d": "Qué cae y qué te sirve",
+    "custom_d": "Aspectos, o igual a tu interfaz",
+    "features_d": "Cada función y cómo se probó",
+    "report_short": "Reportes"
+  },
+  "common": {
+    "free": "Gratis",
+    "status_client": "Probado en el cliente del juego",
+    "status_client_short": "Probado en el cliente",
+    "status_review": "En revisión",
+    "status_offline": "Solo pruebas automáticas",
+    "status_planned": "Planeado",
+    "captured": "Captura del juego",
+    "captured_flc": "Captura del juego · FLC {v}",
+    "composition": "Composición con capturas reales del juego",
+    "see_status": "Ver qué está probado",
+    "read_more": "Ver más",
+    "coming_soon": "Muy pronto",
+    "not_published": "Todavía no publicado",
+    "commands": "Comandos",
+    "command": "Comando",
+    "what_it_does": "Qué hace",
+    "back_top": "Volver arriba",
+    "new_tab": "(abre GitHub en otra pestaña)",
+    "honesty_title": "Qué significa \"en revisión\"",
+    "honesty_body": "Las rutas y los datos de jefes de FLC se armaron y probaron durante el desarrollo, antes del lanzamiento del juego. Lo que todavía no está confirmado contra el juego en vivo lleva la etiqueta <em>en revisión</em>, o <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>: así mejoran las guías."
+  },
+  "footer": {
+    "tagline": "Forever Leveling Companion lo hacen jugadores, para jugadores, en su tiempo libre.",
+    "disclaimer": "Forever Leveling Companion es un proyecto independiente de fans. No está afiliado, avalado ni patrocinado por Blizzard Entertainment. World of Warcraft, WoW y Blizzard Entertainment son marcas comerciales o registradas de Blizzard Entertainment, Inc. Las capturas muestran el juego de Blizzard con FLC en pantalla.",
+    "updated": "Sitio actualizado el {date}",
+    "copyright": "© {year} los autores de FLC"
+  },
+  "home": {
+    "title": "Forever Leveling Companion (FLC): addon gratuito de leveleo para WoW Forever",
+    "eyebrow": "Addon para World of Warcraft Forever · niveles 1 a 60",
+    "h1_a": "Tu aventura.",
+    "h1_b": "Tu ruta.",
+    "h1_c": "Tu compañero.",
+    "sub": "Un compañero para subir de nivel en World of Warcraft Forever: rutas de misiones, leveleo en grupo, guías de mazmorras y mucho más.",
+    "free_line": "Gratis para cada aventurero. Sostenido por la comunidad.",
+    "cta_download": "Descargar FLC",
+    "cta_download_soon": "Descarga: muy pronto",
+    "cta_explore": "Ver funciones",
+    "cta_support": "Apoyar el desarrollo",
+    "pin_step": "La ventana de la guía: qué hacer y cuánto te falta",
+    "hero_alt": "En el mundo del juego, la flecha de FLC marca el camino hacia el paso actual.",
+    "journey_kicker": "La ruta",
+    "journey_title": "De tu primera misión a tu primera banda",
+    "journey_intro": "Lo que FLC hace por vos en el camino, cada cosa con la captura del juego que la muestra y hasta dónde se probó.",
+    "stop1_t": "Encontrá cómo llegar al objetivo",
+    "stop1_d": "La flecha apunta al próximo paso con su distancia y te avisa cuando ya estás en la zona. Si quien da la misión espera arriba o detrás de una pared, te dice cómo llegar: \"Subí la escalera dentro de la torre\".",
+    "stop2_t": "Ayudá a un amigo y retomá tu guía",
+    "stop2_d": "Seguí la ruta de alguien de tu grupo por un rato: las muertes cuentan para los dos mientras estén agrupados y cerca. Cuando terminás, tu guía vuelve al paso donde la dejaste. También pueden subir juntos con una sola ruta compartida.",
+    "stop3_t": "Consultá qué hace el próximo jefe",
+    "stop3_d": "Antes del pull, una ficha muestra cada habilidad según a quién golpea (el tanque, un jugador al azar, todos alrededor) y resalta lo que importa para tu rol. Viene con la entrada, las misiones para llevar y cada jefe en orden, para 23 mazmorras y 12 bandas.",
+    "stop4_t": "Sabé qué botín te mejora",
+    "stop4_d": "El Atlas de botín recorre ranura por ranura y evalúa los objetos de cada jefe para tu personaje: probablemente mejor, o no. Marcá lo que querés y, cuando prepares una mazmorra, FLC te recuerda qué jefes lo sueltan.",
+    "stop5_t": "Que combine con el resto de tu interfaz",
+    "stop5_d": "Si usás ElvUI, NDui, RealUI, SpartanUI o GW2 UI, FLC toma sus colores, su fuente y su textura de barras. Si no, elegí uno de los cinco aspectos incluidos.",
+    "values_kicker": "Cómo hacemos FLC",
+    "v1_t": "Nunca juega por vos",
+    "v1_d": "FLC te muestra el camino y qué hacer. Vos caminás, peleás y elegís: nunca mueve a tu personaje ni hace clic por vos.",
+    "v2_t": "Etiquetas honestas",
+    "v2_d": "Lo que todavía no está confirmado contra el juego en vivo dice <em>en revisión</em>, o muestra <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a> y las guías mejoran.",
+    "v3_t": "Tus datos se quedan en el juego",
+    "v3_d": "FLC no envía nada fuera del juego. El progreso del grupo se comparte solo con tu grupo y solo si aceptás.",
+    "report_t": "¿Algo no cierra?",
+    "report_d": "Escribí <code>/flc bug</code> o <code>/flc review</code> en el juego, copiá el texto y pegalo en nuestra página pública de reportes.",
+    "report_cta": "Cómo reportar",
+    "support_t": "Ayudanos a mantener viva la aventura",
+    "support_d": "Las donaciones pagan el tiempo de mantener las rutas y los datos de jefes al día con el juego en vivo.",
+    "support_cta": "Apoyar el desarrollo",
+    "pin_step_alt": "Ventana de la guía de FLC (interfaz en inglés): matar Mottled Boar, 1 de 10, ya en la zona.",
+    "stop1_cap": "Isla de Zephras: la flecha dentro de la torre, con su indicación (interfaz en inglés).",
+    "stop1_link": "Leveleo y navegación",
+    "stop2_cap": "Ayudando a alguien del grupo: FLC sigue su ruta y guarda tu propio progreso.",
+    "stop2_link": "Modo Grupo",
+    "stop3_cap": "Cuevas de los Lamentos: la ficha de Lady Anacondra. Las habilidades con (?) siguen en revisión.",
+    "stop3_link": "Mazmorras y bandas",
+    "stop4_cap": "\"Para mí\": objetos evaluados para un guerrero, ranura por ranura (interfaz en inglés).",
+    "stop4_link": "Atlas de botín",
+    "stop5_cap": "El aspecto Fantasía en el Atlas de botín.",
+    "stop5_link": "Personalización",
+    "status_rel": "Ya disponible",
+    "status_rel_line": "Versión {v} · {date} · probada con el cliente {build}",
+    "status_rel_link": "Descargar",
+    "stop6_t": "Todo a un clic",
+    "stop6_d": "El botón de FLC en el minimapa muestra u oculta la guía con un clic izquierdo. Con el derecho abrís Guías, Atlas de botín, Modo Grupo, Aspecto, Opciones y Reportar un error.",
+    "stop6_cap": "Clic derecho en el botón de FLC del minimapa: el menú rápido (interfaz en inglés).",
+    "stop6_link": "Descargar e instalar",
+    "next_t": "En desarrollo: 0.8.2",
+    "next_note": "No está en la descarga actual."
+  },
+  "features": {
+    "title": "Estado de las funciones",
+    "meta": "Todas las funciones de Forever Leveling Companion y cómo se probaron: en el cliente de WoW Forever, en revisión o solo con pruebas automáticas.",
+    "kicker": "Registro de misiones",
+    "h1": "Qué hace FLC y qué está comprobado",
+    "intro": "Cada función muestra el nivel de prueba más alto que alcanzó, según los informes de prueba. \"Probado en el cliente\" quiere decir pruebas automáticas en el cliente real de WoW Forever, en nuestro propio servidor de desarrollo, con la versión que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales.",
+    "legend": "Referencias",
+    "legend_client": "Pasó pruebas automáticas en el cliente real de WoW Forever, en nuestro servidor de desarrollo, con capturas.",
+    "legend_review": "Funciona en el cliente, pero sus datos, o una parte, todavía no están confirmados contra el juego en vivo.",
+    "legend_offline": "Cubierto solo por pruebas automáticas fuera del juego.",
+    "numbers_t": "En números, según los informes de prueba",
+    "n_dungeons": "guías de mazmorra, más 12 de banda",
+    "n_live": "rutas comprobadas en los reinos oficiales, por ahora",
+    "group_leveling": "Leveleo y navegación",
+    "group_party": "Modo Grupo",
+    "group_dungeons": "Mazmorras y bandas",
+    "group_loot": "Botín",
+    "group_custom": "Aspecto, acceso e idioma",
+    "group_community": "Reportes",
+    "go": "Detalles",
+    "n_build": "versión del cliente en la que pasaron las {suites} baterías de prueba del lanzamiento con 0.8.1.1",
+    "n_errors": "errores de Lua de FLC en esas pruebas"
+  },
+  "feat": {
+    "guide": {
+      "t": "Guía paso a paso",
+      "d": "Qué hacer después, con contadores y avance automático: matar, saquear criaturas y objetos, comprar, aceptar y entregar."
+    },
+    "arrow": {
+      "t": "Flecha de navegación",
+      "d": "Apunta al paso con su distancia y te avisa cuando estás \"en la zona\"."
+    },
+    "waypoint": {
+      "t": "Punto en el mapa",
+      "d": "Pone el marcador del propio mapa del juego en el paso. También funciona con TomTom si lo tenés (probado solo fuera del juego)."
+    },
+    "approach": {
+      "t": "Indicaciones de llegada",
+      "d": "Escaleras, rodeos, pisos y agua en el último tramo, con puntos intermedios. Probado en el cliente en una torre; el resto está calculado y marcado \"en revisión\"."
+    },
+    "travel": {
+      "t": "Cómo llegar",
+      "d": "Para pasos lejanos: los maestros de vuelo que conocés, barcos, zepelines, portales y tu piedra de hogar, en un solo plan de viaje."
+    },
+    "path": {
+      "t": "Camino del 1 al 60",
+      "d": "Para cada raza, qué zona sigue y cuándo conviene volver a una. Una sugerencia armada con la XP de las misiones, no una partida medida."
+    },
+    "modes": {
+      "t": "Modos de leveleo",
+      "d": "Optimizado, primero mazmorras o solo misiones."
+    },
+    "classq": {
+      "t": "Asesor de misiones de clase",
+      "d": "Te ofrece las misiones de clase que valen la pena (mascotas, formas, actitudes, tótems, recompensas fuertes): ahora, después u omitir."
+    },
+    "routes": {
+      "t": "Rutas de misiones",
+      "d": "Rutas por raza, clase y facción, armadas con datos de desarrollo. Las zonas iniciales se recorrieron paso a paso en el cliente; el resto está en revisión hasta confirmarlo en el reino en vivo."
+    },
+    "sync": {
+      "t": "Progreso del grupo",
+      "d": "Mirá el avance de misiones de cada integrante, entre jugadores que usan FLC y aceptan compartir."
+    },
+    "together": {
+      "t": "Subir juntos",
+      "d": "Una ruta compartida para todo el grupo; la guía de cada uno se guarda y se restaura."
+    },
+    "catchup": {
+      "t": "Ponerse al día",
+      "d": "Ayuda a que el integrante que quedó atrás alcance al resto."
+    },
+    "help": {
+      "t": "Ayudar a un jugador",
+      "d": "Seguí la ruta de un amigo un rato y después volvé a la tuya justo donde la dejaste."
+    },
+    "proposals": {
+      "t": "Propuestas del líder",
+      "d": "El líder propone una ruta de grupo; cada integrante acepta o rechaza."
+    },
+    "focus": {
+      "t": "Foco en mazmorras",
+      "d": "Sugiere una mazmorra que le sirva al grupo. Solo se probó donde todavía no corresponde ninguna (niveles muy bajos)."
+    },
+    "dguides": {
+      "t": "Guías de mazmorra",
+      "d": "23 mazmorras: la entrada, los objetivos de misión adentro, cada jefe en el orden del juego y la salida. Los jefes se encontraron en el cliente en un reino de desarrollo (146 de 159 ubicados)."
+    },
+    "rguides": {
+      "t": "Guías de banda",
+      "d": "12 bandas con el mismo motor que las guías de mazmorra."
+    },
+    "bosscard": {
+      "t": "Ficha del jefe",
+      "d": "Habilidades ordenadas según a quién golpean, con lo que afecta a tu rol resaltado. 688 de 1.009 habilidades están confirmadas; el resto muestra \"(?)\". Sin temporizadores ni alertas: el juego les oculta a los addons los lanzamientos de los jefes."
+    },
+    "dadvisor": {
+      "t": "Asesor de misiones de mazmorra",
+      "d": "Las misiones para llevar antes de una mazmorra y, en grupo, quién tiene cada una y quién puede compartirla."
+    },
+    "atlas": {
+      "t": "Atlas de botín",
+      "d": "Cada jefe de mazmorra y banda con su botín, búsqueda y filtros: cualquier calidad, utilizable por mí."
+    },
+    "lootadv": {
+      "t": "Asesor de botín",
+      "d": "Evalúa los objetos de un jefe para tu personaje. Una estimación según las estadísticas, nunca una decisión de necesidad o codicia."
+    },
+    "wishlist": {
+      "t": "Lista de deseos",
+      "d": "Marcá los objetos que querés y volvé a verlos al preparar una mazmorra."
+    },
+    "skins": {
+      "t": "Aspectos",
+      "d": "FLC, Blizzlike / Forever, estilo ElvUI, Minimal y Fantasía. Cada cambio se ve en vivo antes de aplicarlo."
+    },
+    "adapt": {
+      "t": "Adaptar a mi interfaz",
+      "d": "Toma los colores y las fuentes de ElvUI, NDui, RealUI, SpartanUI y GW2 UI, cada uno probado en el cliente. Tukui todavía no tiene versión para este cliente."
+    },
+    "setup": {
+      "t": "Configuración inicial",
+      "d": "La primera vez que arranca FLC: adaptarlo a tu interfaz, configurarlo u omitir. /flc setup la vuelve a abrir."
+    },
+    "lang": {
+      "t": "Inglés y español",
+      "d": "La interfaz de FLC en inglés y español, probada en el cliente. Otros siete idiomas están traducidos y probados solo fuera del juego."
+    },
+    "reports": {
+      "t": "/flc bug y /flc review",
+      "d": "Una ventana de reporte con los datos que necesitamos, lista para copiar en nuestra página pública de reportes."
+    },
+    "guideswin": {
+      "t": "Ventana de guías",
+      "d": "Elegí qué seguir: rutas de subida por zona, guías de mazmorra y de banda, solo las de tu personaje, con sus niveles y tu progreso. \"Automático\" le devuelve la elección a FLC (/flc guides)."
+    },
+    "questflow": {
+      "t": "Misiones solas",
+      "d": "FLC acepta y entrega las misiones de la guía, nunca en combate ni con Shift apretado. Si hay que elegir recompensa, no elige: marca la que te sirve. Se cambia con /flc auto o en Opciones."
+    },
+    "minimap": {
+      "t": "Botón del minimapa",
+      "d": "Clic izquierdo muestra u oculta FLC; clic derecho abre Guías, Atlas de botín, Modo Grupo, Aspecto, Opciones y Reportar un error. Shift + arrastrar lo mueve. Los minimapas cuadrados todavía no se probaron en el cliente."
+    }
+  },
+  "leveling": {
+    "title": "Leveleo: rutas, flecha y Modo Grupo",
+    "meta": "Addon de guías de misiones para WoW Forever: rutas paso a paso con flecha, una ventana de guías, misiones que se aceptan y entregan solas, planes de viaje, un camino del 1 al 60 y Modo Grupo para subir con amigos.",
+    "kicker": "Leveleo 1–60",
+    "h1": "Sabé siempre cuál es tu próximo paso",
+    "intro": "Elegí una ruta o dejá que FLC elija una para tu raza, facción y nivel. La guía muestra un paso a la vez y la flecha te lleva hasta ahí.",
+    "s1_t": "Un paso, una flecha",
+    "s1_d": "Cada paso dice qué hacer y con qué, en tu idioma: \"Matar: Jabalí moteado\", \"Saquear el objeto: …\", \"Aceptar … de Gornek\". Los contadores se actualizan mientras jugás y el paso se completa solo. Saltealo, volvé atrás o marcá el mapa con Waypoint.",
+    "s1_cap": "La ventana de la guía: paso, distancia y su etiqueta (acá, \"in review\": en revisión).",
+    "s2_t": "Cuando el camino no es recto",
+    "s2_d": "Algunos personajes de misión esperan en un piso de arriba, detrás de una pared o bajo el agua. La flecha de FLC pasa por algunos puntos intermedios y te explica cómo llegar en una línea:",
+    "s2_list": [
+      "Subí la escalera dentro de la torre: el PNJ está en el piso de arriba",
+      "Rodeá el obstáculo",
+      "Seguí el camino: el paso directo está bloqueado",
+      "Está bajo el agua: nadá hasta abajo"
+    ],
+    "s2_note": "Estas indicaciones se calculan a partir del terreno del juego. Se probaron en el cliente en la torre de Thendal, en la Isla de Zephras; las demás llevan \"(en revisión)\" hasta que los jugadores las confirmen.",
+    "s2_cap": "La flecha dentro de la torre, con su indicación (FLC 0.5, Isla de Zephras).",
+    "s3_t": "¿Queda lejos? Un plan de viaje",
+    "s3_d": "Cuando el próximo paso está en otro continente o muy lejos, la flecha apunta al primer maestro de vuelo, muelle o portal, y la guía muestra el plan completo: \"Volá de El Cruce a Orgrimmar\", \"Tomá el barco en Puerto Menethil hacia Isla Theramore\". Usa las rutas de vuelo que conocés y tu piedra de hogar cuando está lista.",
+    "s4_t": "Un camino del 1 al 60",
+    "s4_d": "Para cada raza, FLC sabe qué zona sigue, cuándo conviene volver a una y qué niveles no cubre ninguna ruta. La decisión siempre es tuya: <code>/flc guide auto</code> elige una ruta para tu nivel y <code>/flc path</code> muestra el camino completo.",
+    "s4_modes": "Modos de leveleo: <strong>Optimizado</strong>, <strong>Primero mazmorras</strong> o <strong>Solo misiones</strong>.",
+    "s4_class": "El <strong>Asesor de misiones de clase</strong> te ofrece las misiones de clase que importan (una mascota, una forma, una actitud, tótems, una recompensa mucho mejor): ahora, después u omitir. Tu decisión se guarda por personaje.",
+    "map_cap": "Waypoint: el marcador del mapa del juego cae justo en el paso.",
+    "party_kicker": "Modo Grupo",
+    "party_t": "Mejor en grupo",
+    "party_d": "El Modo Grupo funciona entre jugadores del mismo grupo que usan FLC y aceptan compartir su progreso de misiones (<code>/flc share yes</code>). Se abre con <code>/flc party</code>.",
+    "p1_t": "Subir juntos",
+    "p1_d": "Todo el grupo sigue una misma ruta. La guía de cada uno se guarda antes y vuelve intacta cuando terminan.",
+    "p2_t": "Ayudar a un amigo",
+    "p2_d": "Sumate a la ruta de alguien del grupo un rato: las muertes cuentan para los dos mientras estén agrupados y cerca. Después volvés a tu guía.",
+    "p3_t": "Ponerse al día",
+    "p3_d": "¿Alguien quedó atrás? El grupo lo ayuda a alcanzar al resto.",
+    "p4_t": "Propuestas del líder",
+    "p4_d": "El líder propone una ruta; cada integrante acepta o rechaza.",
+    "p_cap_together": "Subir juntos: tu guía queda guardada.",
+    "p_cap_help": "Ayudando a alguien del grupo: FLC sigue su ruta y tu progreso queda guardado.",
+    "p_cap_panel": "El panel del Modo Grupo: integrantes, pasos y sincronización.",
+    "party_note": "Cuando se arma el grupo, el progreso de un integrante puede tardar hasta unos 15 segundos en aparecer.",
+    "routes_t": "Sobre las rutas",
+    "routes_d": "Las rutas por raza, clase y facción salen de datos de desarrollo. Las zonas iniciales se recorrieron paso a paso en el cliente; todavía no se jugó nada en el reino en vivo. Los pasos que no están confirmados dicen \"en revisión\": si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>.",
+    "cmd_flc": "Mostrar u ocultar la guía",
+    "cmd_party": "Panel del Modo Grupo",
+    "cmd_path": "Tu camino completo del 1 al 60",
+    "cmd_auto": "Elegir una ruta para tu nivel",
+    "cmd_share": "Aceptar compartir el progreso de misiones con tu grupo",
+    "cmd_announce": "Avisos en el chat de grupo: apagados, objetivos, 25 %, 50 %, cada avance",
+    "s5_t": "Elegí cualquier guía",
+    "s5_d": "La ventana de guías (<code>/flc guides</code>) muestra las rutas de subida por zona y las guías de mazmorra y de banda que puede usar tu personaje, con sus niveles y hasta dónde llegaste. Seguí una, o tocá Automático y dejá que FLC elija. Tu progreso en cada guía se guarda cuando cambiás.",
+    "s5_cap": "La ventana de guías: rutas por zona, la sugerida para tu nivel y tu progreso en cada una (interfaz en inglés).",
+    "s6_t": "Misiones que se aceptan y entregan solas",
+    "s6_d": "Cuando hablás con quien da una misión de tu ruta, FLC acepta y entrega las misiones de la guía por su cuenta, nunca en combate y nunca mientras tengas Shift apretado. Si hay que elegir recompensa, FLC no elige: marca el objeto que te serviría. Se apaga con <code>/flc auto off</code> o en Opciones.",
+    "s6_cap": "Entregando una misión: FLC marca la recompensa que te mejora y te deja elegir a vos (interfaz en inglés).",
+    "next_t": "Próximamente en 0.8.2",
+    "next_d": "En desarrollo, no está en la descarga actual:"
+  },
+  "dungeons": {
+    "title": "Mazmorras y bandas: guías y fichas de jefes",
+    "meta": "Addon de guías de mazmorras para WoW Forever: guías para 23 mazmorras y 12 bandas, fichas de jefes según tu rol y las misiones para llevar antes de entrar.",
+    "kicker": "Mazmorras y bandas",
+    "h1": "Conocé al jefe antes del pull",
+    "intro": "Una guía de mazmorra te lleva desde la entrada hasta el último jefe y de vuelta afuera, y avanza con los propios eventos de encuentro del juego.",
+    "scene_alt": "Cuevas de los Lamentos en World of Warcraft Forever, con la ficha de FLC de Lady Anacondra abierta.",
+    "s1_t": "23 mazmorras, 12 bandas",
+    "s1_d": "Cada guía tiene la entrada, los objetivos de misión de adentro, cada jefe en el orden del juego y la salida. Los jefes que patrullan o aparecen después de un evento están marcados.",
+    "s2_t": "La ficha del jefe",
+    "s2_d": "Antes y durante la pelea, la ficha lista las habilidades del jefe según a quién apuntan: al tanque, a un jugador al azar, a todos los que están cerca. Lo que afecta a tu rol aparece resaltado. Básica o detallada, como prefieras.",
+    "s2_q": "Las habilidades marcadas con <span class=\"q\">(?)</span> todavía no están confirmadas. De 1.009 habilidades, 688 se verificaron con fuentes independientes del juego en vivo; el resto espera que los jugadores las confirmen con <code>/flc review</code>.",
+    "s2_limit": "Sin temporizadores ni alertas de lanzamiento: el juego no les muestra a los addons lo que lanzan los jefes, así que FLC no lo finge.",
+    "s2_cap": "La ficha del jefe en las Cuevas de los Lamentos, vista detallada (la interfaz de la captura está en inglés).",
+    "s3_t": "Primero, las misiones",
+    "s3_d": "El Asesor de misiones de mazmorra lista las misiones que conviene llevar antes de entrar, dónde conseguirlas y qué falta. En grupo, muestra quién tiene cada misión, quién puede tomarla y quién puede compartirla.",
+    "s3_cap": "Preparando las Cuevas de los Lamentos: qué conviene llevar.",
+    "list_t": "Guías incluidas",
+    "list_dungeons": "Mazmorras",
+    "list_raids": "Bandas",
+    "limits_t": "Para tener en cuenta",
+    "limits": [
+      "La flecha no tiene posición dentro de las instancias (un límite del juego): la guía avanza con los eventos de encuentro.",
+      "Las posiciones de los jefes se comprobaron en el cliente en un reino de desarrollo: 146 de 159 jefes ubicados.",
+      "Algunos datos pueden cambiar en el reino en vivo: reportá lo que no coincida con /flc review."
+    ],
+    "raids_more": "Más {n} guías de banda cuyos datos de jefes todavía están incompletos."
+  },
+  "loot": {
+    "title": "Atlas de botín: qué cae y qué te sirve",
+    "meta": "El Atlas de botín de FLC para WoW Forever: el botín de cada jefe de mazmorra y banda, evaluado para tu personaje, con búsqueda, filtros y lista de deseos.",
+    "kicker": "Atlas de botín",
+    "h1": "Qué cae y qué te sirve",
+    "intro": "Recorré cada jefe de mazmorra y banda, mirá su botín y dejá que FLC te diga qué piezas probablemente sean una mejora.",
+    "s1_t": "Cada jefe, cada objeto",
+    "s1_d": "Elegí una mazmorra o una banda y después un jefe: su botín, sus habilidades y un botón para empezar su guía. Buscá por nombre y filtrá por calidad o por lo que puede usar tu clase.",
+    "s1_cap": "Atlas de botín: mazmorras y bandas, con filtros y lista de deseos (interfaz en inglés).",
+    "s2_t": "Para mí",
+    "s2_d": "La vista \"Para mí\" recorre ranura por ranura, de la cabeza al abalorio, y muestra los objetos evaluados para tu personaje: probablemente mejor, o no.",
+    "s2_cap": "\"Para mí\": objetos evaluados para un guerrero, ranura por ranura.",
+    "s3_t": "Asesor de botín",
+    "s3_d": "Cuando enfrentás a un jefe, su ficha puede listar el botín que te sirve. La evaluación es una estimación según las estadísticas del objeto, nunca una decisión de necesidad o codicia: la tirada es tuya.",
+    "s4_t": "Lista de deseos",
+    "s4_d": "Sumá objetos a tu lista desde cualquier página del atlas. Cuando preparás una mazmorra, FLC te recuerda qué jefes los sueltan.",
+    "note": "El atlas muestra las tablas de botín sin probabilidades de caída. Los datos de objetos pueden cambiar en el reino en vivo."
+  },
+  "custom": {
+    "title": "Personalización: aspectos y Adaptar a mi interfaz",
+    "meta": "Aspectos y adaptación de FLC: Blizzlike, estilo ElvUI, Minimal, Fantasía y adaptación automática a ElvUI, NDui, RealUI, SpartanUI y GW2 UI.",
+    "kicker": "Personalización",
+    "h1": "Como si siempre hubiera sido parte de tu interfaz",
+    "intro": "FLC puede usar su propio aspecto o tomar los colores y las fuentes de la interfaz que ya usás. No cambia nada de tu interfaz.",
+    "cmp_t": "Compará los aspectos",
+    "cmp_d": "Las mismas dos ventanas, el Atlas de botín y el panel de Apariencia, capturadas en el cliente con cada aspecto incluido.",
+    "cmp_label": "Elegí un aspecto",
+    "cmp_cap": "Aspecto: {name} (interfaz en inglés).",
+    "skin_flc": "FLC",
+    "skin_blizzlike": "Blizzlike",
+    "skin_elvuilike": "Estilo ElvUI",
+    "skin_minimal": "Minimal",
+    "skin_fantasy": "Fantasía",
+    "skin_flc_d": "El predeterminado: paneles oscuros con acento turquesa.",
+    "skin_blizzlike_d": "Parecido al aspecto del juego: sus fuentes y los bordes de sus ventanas.",
+    "skin_elvuilike_d": "Paneles oscuros planos y líneas finas.",
+    "skin_minimal_d": "Paneles livianos y translúcidos, sin bordes.",
+    "skin_fantasy_d": "Tonos cálidos y bordes clásicos.",
+    "adapt_t": "Adaptar a mi interfaz",
+    "adapt_d": "FLC detecta la interfaz que usás y arma un aspecto a juego con sus colores, su fuente y su textura de barras. Primero ves una vista previa: Aplicar lo guarda, Cancelar vuelve atrás.",
+    "adapt_tested": "Probado en el cliente",
+    "adapt_notyet": "Reconocido, sin adaptador",
+    "adapt_tukui": "Todavía sin versión para este cliente",
+    "adapt_kkthnx": "Sin versión para este cliente",
+    "manual_t": "O configuralo a mano",
+    "manual_d": "Acento (también el color de tu clase), opacidad del fondo, fuente, tamaño del texto, escala de las ventanas y bordes. Por cuenta o por personaje. Exportá tu aspecto en una línea y compartilo; al importar solo vuelven los ajustes validados.",
+    "setup_t": "Configuración inicial",
+    "setup_d": "La primera vez que arranca, FLC pregunta: adaptar a mi interfaz, configurar u omitir. <code>/flc setup</code> la vuelve a abrir; <code>/flc appearance</code> abre el panel de Apariencia.",
+    "adapt_list": "Interfaces",
+    "two_t": "Blizzlike y estilo ElvUI, lado a lado",
+    "two_d": "Las mismas ventanas de guía y de misiones en el mismo momento, con cada aspecto: el dorado y los bordes del juego, o detalles azules y líneas finas.",
+    "two_cap": "Aspecto: {name}. Ventana de la guía y ventana de misiones (interfaz en inglés)."
+  },
+  "download": {
+    "title": "Descargar FLC",
+    "meta": "Descargá Forever Leveling Companion, el addon gratuito de leveleo para WoW Forever: el zip oficial de GitHub, su SHA-256, las versiones del juego probadas, la instalación en Windows y la solución de problemas.",
+    "kicker": "Descargar",
+    "h1": "Descargar FLC",
+    "soon_t": "La primera versión pública todavía no salió",
+    "soon_d": "La descarga va a aparecer acá, enlazada a la página oficial del lanzamiento, apenas se publique una versión. Ningún otro sitio tiene una descarga oficial de FLC.",
+    "soon_watch": "Mientras tanto, podés seguir el avance del proyecto en las novedades.",
+    "ready_t": "Versión {v}",
+    "ready_date": "Publicada el {date}",
+    "ready_btn": "Descargar {file}",
+    "ready_size": "{size}",
+    "ready_page": "Página del lanzamiento en GitHub",
+    "sha_t": "Checksum SHA-256",
+    "sha_d": "Para comprobar que el archivo está completo y sin modificar, abrí PowerShell en tu carpeta de Descargas y ejecutá:",
+    "sha_d2": "El resultado tiene que ser exactamente este:",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "req_t": "Requisitos",
+    "req": [
+      "World of Warcraft: Forever en Windows. Versión probada: 1.60.1.70755.",
+      "No hace falta ningún otro addon. TomTom es opcional.",
+      "Una cuenta gratuita de GitHub, solo si querés mandar reportes."
+    ],
+    "builds_t": "Versiones del juego",
+    "builds_d": "Qué probamos y dónde. Todas las pruebas fueron en nuestro propio servidor de desarrollo.",
+    "build_client": "Cliente del juego",
+    "build_status": "Estado",
+    "install_t": "Instalación en Windows",
+    "install_d": "Unos dos minutos. Solo hay que copiar dos carpetas.",
+    "i1_t": "Descargá el zip",
+    "i1_d": "El botón de arriba baja {file} desde GitHub. Podés comprobarlo con su SHA-256.",
+    "i2_t": "Cerrá World of Warcraft",
+    "i2_d": "Los addons se leen cuando arranca el juego.",
+    "i3_t": "Abrí tu carpeta AddOns",
+    "i3_d": "Normalmente es <code>World of Warcraft\\_forever_\\Interface\\AddOns</code>. Si tu instalación usa otro nombre de carpeta, buscá la que contiene <code>Interface\\AddOns</code>.",
+    "i4_t": "Extraé las dos carpetas",
+    "i4_d": "Copiá <strong>ForeverLevelingCompanion</strong> y <strong>FLC_Guides_Catalog</strong> del zip a AddOns. El zip también trae INSTALL.txt, con estos mismos pasos: no hace falta en AddOns.",
+    "i5_t": "Comprobá que no quede nada duplicado",
+    "i5_d": "Las dos carpetas tienen que quedar una al lado de la otra, no una dentro de otra carpeta con el mismo nombre:",
+    "tree_ok": "Correcto",
+    "tree_bad": "Incorrecto: una carpeta dentro de otra",
+    "update_t": "Actualizar y desinstalar",
+    "update_d": "Para actualizar, primero borrá las dos carpetas viejas y después extraé el zip nuevo. <code>/flc version</code> te dice qué versión tenés y dónde bajar la nueva. Para desinstalar, borrá las dos carpetas.",
+    "known_t": "Problemas conocidos",
+    "known": [
+      "Los datos de misiones salen de nuestro servidor de prueba: niveles, quién da cada misión y lugares pueden cambiar en los reinos oficiales. Lo que no está confirmado dice \"en revisión\" o \"(?)\": reportalo con /flc review.",
+      "Algunas habilidades de jefes siguen en revisión.",
+      "Memoria: unos 18 MB al entrar, con el catálogo, y hasta unos 20 MB después de abrir el Atlas de botín y generar una ruta.",
+      "Los minimapas cuadrados y los lanzadores de LibDataBroker (los datatexts de ElvUI, Titan Panel) todavía no se probaron en el cliente.",
+      "En la ventana de recompensa de una misión, la marca de FLC tapa un poco el nombre del objeto (es solo visual).",
+      "La flecha no tiene posición dentro de las mazmorras (un límite del juego): las guías de mazmorra avanzan con los eventos de encuentro del juego."
+    ],
+    "known_more": "¿Algo más? Puede que alguien ya lo haya reportado:",
+    "links_changelog": "Novedades",
+    "links_report": "Reportar un problema",
+    "ready_build": "Probada con el cliente {build} en nuestro propio servidor de desarrollo, todavía no en los reinos oficiales.",
+    "ready_files": "Un zip con dos carpetas: el addon y su catálogo de misiones.",
+    "ready_changes": "Novedades de {v}",
+    "build_note_current": "La versión que instala Battle.net hoy: pasaron todas las pruebas del lanzamiento con 0.8.1.1",
+    "build_note_prev": "Probada con 0.8.1 y 0.8.1.1",
+    "build_note_dev": "Probada durante el desarrollo (candidata de 0.8.1)",
+    "build_note_superseded": "No tuvimos un cliente de esas versiones; las reemplazó la 70755",
+    "build_realm": "Reinos oficiales de WoW: Forever",
+    "build_note_realm": "Todavía sin comprobar",
+    "build_untested": "Sin probar",
+    "i6_t": "Abrí el juego",
+    "i6_d": "Entrá como siempre.",
+    "i7_t": "Activá FLC",
+    "i7_d": "En la pantalla de personajes, abrí <strong>AddOns</strong> y fijate que estén activados los dos: <em>Forever Leveling Companion</em> y <em>FLC Guides: Forever quest catalog</em>.",
+    "i8_t": "Elegí la apariencia",
+    "i8_d": "La primera vez, la configuración inicial te pregunta: adaptar FLC a tu interfaz, configurarlo a mano u omitir. <code>/flc setup</code> la vuelve a abrir.",
+    "trouble_t": "Solución de problemas",
+    "trouble": [
+      {
+        "q": "FLC no aparece",
+        "a": "Escribí <code>/flc</code> en el chat: muestra u oculta la ventana de la guía. Un clic izquierdo en el botón de FLC del minimapa hace lo mismo. Si no pasa nada, FLC no está cargado: mirá el punto siguiente."
+      },
+      {
+        "q": "El addon no carga",
+        "a": "En la pantalla de personajes, abrí AddOns: tienen que figurar los dos y estar activados. Si no están, las carpetas quedaron en otro lugar o una dentro de otra (paso 5). Si solo aparece el catálogo y avisa que le falta una dependencia, falta la carpeta ForeverLevelingCompanion o tiene otro nombre. ¿Sigue sin andar? Borrá las dos carpetas, bajá el zip de nuevo, comprobá su SHA-256 y copialas otra vez."
+      },
+      {
+        "q": "No veo el ícono del minimapa",
+        "a": "Escribí <code>/flc minimap show</code> o activalo en Opciones. Con Shift apretado podés arrastrarlo alrededor del minimapa. Los minimapas cuadrados (ElvUI y otros) están contemplados pero todavía no se probaron en el cliente: si se ve mal, contanos."
+      },
+      {
+        "q": "¿Cómo abro las Opciones?",
+        "a": "<code>/flc options</code>, o clic derecho en el botón del minimapa y elegí Opciones."
+      },
+      {
+        "q": "¿Cómo cambio la apariencia?",
+        "a": "<code>/flc appearance</code>, o clic derecho en el botón del minimapa y elegí Aspecto. Aplicar deja la vista previa, Cancelar vuelve atrás. <code>/flc setup</code> abre de nuevo la configuración inicial."
+      },
+      {
+        "q": "¿Cómo abro el Atlas de botín?",
+        "a": "<code>/flc atlas</code>, o clic derecho en el botón del minimapa y elegí Atlas de botín."
+      },
+      {
+        "q": "¿Cómo reporto un error?",
+        "a": "Escribí <code>/flc bug</code> cuando pase: FLC arma un texto con lo que necesitamos. Copialo y pegalo en nuestra <a href=\"{report}\">página de reportes</a>."
+      }
+    ],
+    "links_issues": "Reportes abiertos",
+    "install_kicker": "Paso a paso"
+  },
+  "support": {
+    "title": "Apoyar el desarrollo",
+    "meta": "FLC es gratis para todos. Las donaciones voluntarias ayudan a mantener las guías, corregir errores y mejorar la compatibilidad. No desbloquean nada.",
+    "kicker": "Apoyar el desarrollo",
+    "h1": "Ayudanos a mantener viva la aventura",
+    "intro": "Forever Leveling Companion es gratis para todos. Tu apoyo nos ayuda a mantener las guías, corregir errores, mejorar la compatibilidad y desarrollar nuevas funciones.",
+    "kofi_t": "Ko-fi",
+    "kofi_d": "Internacional, en dólares, a través de PayPal.",
+    "cafecito_t": "Cafecito",
+    "cafecito_d": "Desde Argentina, en pesos, con Mercado Pago o transferencia.",
+    "soon": "Las donaciones van a estar disponibles pronto.",
+    "soon_d": "Estamos configurando las cuentas. Esta página va a enlazarlas cuando estén listas y probadas.",
+    "go": "Apoyar en {name}",
+    "use_t": "En qué se usa tu apoyo",
+    "use": [
+      "Tiempo para mantener las rutas y los datos de jefes al día con el juego en vivo.",
+      "Corregir los problemas que reportan los jugadores.",
+      "Compatibilidad con nuevas versiones del juego y addons de interfaz.",
+      "Nuevas funciones."
+    ],
+    "rules_t": "Nuestras reglas",
+    "rules": [
+      "Las donaciones son solo en esta web. FLC nunca pide dinero dentro del juego: sin botones, ventanas, mensajes en el chat ni publicidad.",
+      "Donar no desbloquea nada: ni funciones, ni contenido, ni acceso anticipado, ni ventajas. Cada actualización es igual para todos.",
+      "Donar es voluntario, y FLC sigue siendo gratis pase lo que pase."
+    ],
+    "other_t": "Otras formas de ayudar",
+    "other": [
+      "Reportá errores y datos que no coincidan con el juego.",
+      "Confirmá las habilidades marcadas (?) cuando las veas.",
+      "Contale a tu hermandad sobre FLC."
+    ],
+    "campaign_t": "Objetivo de desarrollo",
+    "campaign_raised": "{raised} recaudados de {goal}",
+    "campaign_source": "Fuente y fecha"
+  },
+  "changelog": {
+    "title": "Novedades",
+    "meta": "Novedades y correcciones de Forever Leveling Companion, versión por versión, desde la primera versión pública, 0.8.1.",
+    "kicker": "Novedades",
+    "h1": "Novedades y correcciones",
+    "intro": "Qué cambió en cada versión. La 0.8.1 fue la primera versión pública; lo anterior es historia del desarrollo.",
+    "rc": "Versión candidata",
+    "unpublished": "no publicada",
+    "dev": "Versión de desarrollo",
+    "release": "Publicada",
+    "get": "Descargar {v}",
+    "next_t": "En desarrollo: 0.8.2",
+    "next_note": "No está en la descarga actual. Lo mostramos para que sepas qué viene; los planes pueden cambiar."
+  },
+  "report": {
+    "title": "Reportar un problema",
+    "meta": "¿Encontraste un error o un dato que no coincide con el juego? Usá /flc bug o /flc review en el juego y pegá el texto en la página pública de reportes de FLC.",
+    "kicker": "Reportar un problema",
+    "h1": "Contanos qué muestra el juego",
+    "intro": "Un addon no puede enviar nada fuera del juego, así que FLC arma el reporte y vos lo pegás en nuestra página pública de reportes. Lleva un minuto y ayuda a todos los jugadores.",
+    "kinds_t": "Dos tipos de reporte",
+    "bug_t": "Algo falló",
+    "bug_d": "Un error de FLC, una ventana que no funciona, un paso que nunca se completa.",
+    "bug_cmd": "/flc bug",
+    "bug_btn": "Abrir el formulario de error",
+    "review_t": "Un dato no coincide",
+    "review_d": "Una misión, una posición o una habilidad de jefe distinta en el juego, o una habilidad marcada (?) que podés confirmar.",
+    "review_cmd": "/flc review",
+    "review_btn": "Abrir el formulario de dato en revisión",
+    "steps_t": "Cómo funciona",
+    "st1": "En el juego, escribí <code>/flc bug</code> o <code>/flc review</code> en el paso que querés reportar.",
+    "st2": "Se abre una ventana con el texto: seleccioná todo con <kbd>Ctrl</kbd>+<kbd>A</kbd> y copialo con <kbd>Ctrl</kbd>+<kbd>C</kbd>.",
+    "st3": "Abrí el formulario que corresponde (hace falta una cuenta gratuita de GitHub) y pegalo con <kbd>Ctrl</kbd>+<kbd>V</kbd>.",
+    "st4": "Contanos qué muestra el juego. Una captura de pantalla ayuda mucho.",
+    "cap": "La ventana de reporte: versión de FLC y del juego, clase y nivel, guía, paso y lo que está en revisión. No se envía nada automáticamente.",
+    "privacy_t": "Qué incluye el texto",
+    "privacy_d": "La versión de FLC, la versión y el idioma del juego, tu clase y nivel, la guía y el paso, y los últimos errores de FLC. <strong>No</strong> incluye el nombre de tu personaje, tu reino ni tu cuenta. Nunca pegues contraseñas ni datos de tu cuenta.",
+    "all_t": "Todos los reportes son públicos",
+    "all_d": "Podés leer los reportes abiertos antes de escribir el tuyo: quizás alguien ya lo encontró.",
+    "all_btn": "Ver reportes abiertos",
+    "links_known": "Problemas conocidos",
+    "links_changelog": "Novedades",
+    "links_t": "Antes de escribir"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "meta": "Preguntas frecuentes sobre Forever Leveling Companion: precio, instalación, compatibilidad, datos, privacidad y donaciones.",
+    "kicker": "Preguntas frecuentes",
+    "h1": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿FLC es gratis de verdad?",
+        "a": "Sí. Todas las funciones son gratis para todos y van a seguir siéndolo. No hay versión premium y no hay nada bloqueado. Las donaciones son voluntarias y no desbloquean nada."
+      },
+      {
+        "q": "¿Dónde descargo FLC?",
+        "a": "En la página Descargar de este sitio, que enlaza al lanzamiento oficial en GitHub ({v}). Ningún otro sitio tiene una descarga oficial de FLC."
+      },
+      {
+        "q": "¿Funciona en los reinos oficiales?",
+        "a": "FLC {v} se probó con el cliente 1.60.1.70755, el que instala Battle.net hoy, en nuestro propio servidor de desarrollo. Todavía no se comprobó nada en los reinos oficiales, así que los datos de misiones que no están confirmados dicen \"en revisión\". Si el juego muestra otra cosa, reportalo con /flc review."
+      },
+      {
+        "q": "¿Qué significa \"en revisión\" o (?)?",
+        "a": "Que ese dato (un paso, una posición, una habilidad de jefe) todavía no está confirmado contra el juego en vivo. Si el juego muestra otra cosa, reportalo con /flc review. Si coincide, también sirve saberlo."
+      },
+      {
+        "q": "¿FLC necesita otros addons?",
+        "a": "No. TomTom es opcional. Si usás ElvUI, NDui, RealUI, SpartanUI o GW2 UI, FLC puede adaptar su aspecto."
+      },
+      {
+        "q": "¿FLC envía mis datos a algún lado?",
+        "a": "No. Un addon no puede enviar nada fuera del juego. El Modo Grupo comparte el progreso de misiones solo con tu grupo, solo si aceptás (/flc share yes) y solo de las misiones en común."
+      },
+      {
+        "q": "¿FLC juega por mí?",
+        "a": "No. Te muestra adónde ir y qué hacer. Vos caminás, peleás y decidís. Nunca mueve a tu personaje ni hace clic por vos."
+      },
+      {
+        "q": "¿Lo puedo usar en español?",
+        "a": "Sí. La interfaz de FLC está en inglés y en español, probada en el cliente del juego. Los nombres de misiones y PNJ vienen en diez idiomas; todavía falta una prueba completa con un cliente del juego en español."
+      },
+      {
+        "q": "¿Cómo reporto un problema?",
+        "a": "Escribí /flc bug o /flc review en el juego, copiá el texto y pegalo en nuestra página de reportes. Está todo explicado en Reportar un problema."
+      },
+      {
+        "q": "¿FLC es de Blizzard?",
+        "a": "No. FLC es un proyecto independiente de fans, sin afiliación ni aval de Blizzard Entertainment."
+      },
+      {
+        "q": "¿Por qué no hay temporizadores de jefes?",
+        "a": "El juego no les muestra a los addons lo que lanzan los jefes. FLC te dice qué hace cada habilidad y a quién, pero no puede medir sus tiempos."
+      }
+    ]
+  },
+  "credits": {
+    "title": "Créditos y licencias",
+    "meta": "Quién hace Forever Leveling Companion, las licencias del addon y de su catálogo de misiones, y las atribuciones.",
+    "kicker": "Créditos y licencias",
+    "h1": "Créditos y licencias",
+    "authors_t": "Autores",
+    "authors_d": "Forever Leveling Companion lo crean y mantienen los autores de FLC, un equipo independiente de jugadores. El desarrollo, las pruebas y la documentación se hicieron con la ayuda de Claude (Anthropic) como asistente de programación.",
+    "addon_t": "El addon",
+    "addon_d": "El código de FLC y sus guías de ejemplo originales: © 2026 los autores de FLC, todos los derechos reservados, de uso libre. Sin funciones pagas, sin ofuscación, sin publicidad.",
+    "catalog_t": "El catálogo de misiones",
+    "catalog_d": "El catálogo de misiones (la carpeta FLC_Guides_Catalog) se distribuye bajo la Licencia Pública General de GNU v2.0, separado del addon, con su texto de licencia y su aviso. Se genera a partir de bases de datos del juego hechas por estos proyectos GPL-2.0; gracias a sus autores y colaboradores:",
+    "tools_t": "Integraciones opcionales",
+    "tools_d": "TomTom se usa solo mientras jugás, si lo tenés instalado; nunca se incluye.",
+    "site_t": "Este sitio",
+    "site_fonts": "Tipografías: <strong>Cinzel</strong> (The Cinzel Project Authors) y <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), ambas bajo la SIL Open Font License 1.1, servidas desde este sitio.",
+    "site_shots": "Las capturas las tomó el equipo de FLC en el cliente de WoW Forever, con FLC en pantalla. Las imágenes del juego pertenecen a Blizzard Entertainment.",
+    "site_art": "El logo, los mapas, la brújula y los ornamentos de este sitio son ilustraciones originales hechas para FLC.",
+    "trademark_t": "Marcas",
+    "trademark_d": "World of Warcraft, WoW y Blizzard Entertainment son marcas comerciales o registradas de Blizzard Entertainment, Inc. Los nombres de misiones, PNJ, objetos y lugares que muestra FLC son de Blizzard. FLC es un proyecto de fans, sin afiliación ni aval de Blizzard Entertainment."
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "h1": "Te saliste de la ruta",
+    "d": "Esta página no existe. La flecha apunta al inicio.",
+    "btn": "Volver al inicio"
+  }
+}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{% set don = site.donations %}
+<header class="pagehead pagehead--campfire">
+  <div class="wrap">
+    {{ m.kicker(t('support.kicker'), 'flame') }}
+    <h1 class="pagehead__title">{{ t('support.h1') }}</h1>
+    <p class="pagehead__intro">{{ t('support.intro') }}</p>
+  </div>
+</header>
+<div class="wrap">
+  {% if don.campaign.enabled and don.campaign.source_url %}
+  <section class="campaign" aria-labelledby="camp-title">
+    <h2 id="camp-title">{{ t('support.campaign_t') }}</h2>
+    {% set pct = (100 * don.campaign.raised_usd / don.campaign.goal_usd) if don.campaign.goal_usd else 0 %}
+    <div class="campaign__bar" role="progressbar" aria-valuemin="0" aria-valuemax="{{ don.campaign.goal_usd }}" aria-valuenow="{{ don.campaign.raised_usd }}"><span style="width: {{ [pct, 100]|min }}%"></span></div>
+    <p>{{ t('support.campaign_raised', raised='USD ' ~ don.campaign.raised_usd, goal='USD ' ~ don.campaign.goal_usd) }} · <a href="{{ don.campaign.source_url }}" rel="noopener" target="_blank">{{ t('support.campaign_source') }}: {{ fmt_date(don.campaign.as_of) }}</a></p>
+  </section>
+  {% endif %}
+
+  <section class="tokens" aria-label="{{ t('nav.support_long') }}">
+    {% for p in don.platforms %}
+    <article class="token token--{{ p.id }}{% if not p.url %} is-soon{% endif %}">
+      <div class="token__coin" aria-hidden="true">{% if p.id == 'kofi' %}<span>$</span>{% else %}<span>$</span>{% endif %}<small>{{ p.currency }}</small></div>
+      <h2>{{ t('support.' ~ p.id ~ '_t') }}</h2>
+      <p>{{ t('support.' ~ p.id ~ '_d') }}</p>
+      {% if p.url %}
+      <a class="btn btn--primary" href="{{ p.url }}" rel="noopener" target="_blank">{{ t('support.go', name=p.name) }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+      {% else %}
+      <p class="token__soon"><strong>{{ t('support.soon') }}</strong> {{ t('support.soon_d') }}</p>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+
+  {{ m.divider() }}
+
+  <div class="split split--three">
+    <section class="reveal">
+      <h2>{{ t('support.use_t') }}</h2>
+      <ul class="bullets">{% for u in t('support.use') %}<li>{{ u }}</li>{% endfor %}</ul>
+    </section>
+    <section class="reveal">
+      <h2>{{ t('support.rules_t') }}</h2>
+      <ul class="bullets bullets--check">{% for u in t('support.rules') %}<li>{{ u }}</li>{% endfor %}</ul>
+    </section>
+    <section class="reveal">
+      <h2>{{ t('support.other_t') }}</h2>
+      <ul class="bullets">{% for u in t('support.other') %}<li>{{ u }}</li>{% endfor %}</ul>
+      <a class="link-arrow" href="{{ url('report') }}">{{ t('nav.report') }}{{ m.icon('arrow') }}</a>
+    </section>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{
+  "_comment": "THE file to edit when FLC changes. Everything the pages show about versions, downloads, donations, reports and builds comes from here (texts live in i18n/<lang>.json). Leave a url empty and the page shows an honest 'not available yet' state instead of a link. See README.md, section 'Updating'.",
+  "site": {
+    "name": "Forever Leveling Companion",
+    "short": "FLC",
+    "base_url": "https://flc.quest",
+    "_base_url": "The public address (no trailing slash): https://flc.quest, registered by the owner at Porkbun on 2026-11-04. It can also hold a folder (e.g. https://firebrand-dev.github.io/ForeverLevelingCompanion). The build writes dist/CNAME for a custom domain.",
+    "preview_url": "http://localhost:8791",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "default_language": "en",
+    "updated": "2026-11-04"
+  },
+  "status": {
+    "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with (our development server, never the official realms). suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
+    "stage": "released",
+    "build": "1.60.1.70755",
+    "suites": "10/10",
+    "lua_errors": "0"
+  },
+  "download": {
+    "_comment": "Public download. enabled: true only for a real GitHub Release asset the owner approved. tools/sync_release.py --from-github fills version/file/size/sha256/date and checks SHA256SUMS.txt. 0.8.1.1 verified 2026-11-04: zip downloaded back, SHA-256 matches.",
+    "enabled": true,
+    "version": "0.8.1.1",
+    "file": "FLC-0.8.1.1.zip",
+    "url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.1/FLC-0.8.1.1.zip",
+    "release_page": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/tag/v0.8.1.1",
+    "size_bytes": 1004876,
+    "sha256": "756879fd789f9d6506d4e0a8b6bc30db83d5a1b3a3e0684a7228973d4cb63761",
+    "date": "2026-11-04",
+    "checksums_url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.1/SHA256SUMS.txt"
+  },
+  "builds": {
+    "_comment": "Game client builds and what was checked on each, newest first. status: tested | untested. note: an i18n key under download.build_note_*. Every run was on our development server.",
+    "list": [
+      {
+        "client": "1.60.1.70755",
+        "status": "tested",
+        "note": "current"
+      },
+      {
+        "client": "1.60.1.70707",
+        "status": "tested",
+        "note": "prev"
+      },
+      {
+        "client": "1.60.1.70532",
+        "status": "tested",
+        "note": "dev"
+      },
+      {
+        "client": "1.60.1.70658 · 70685",
+        "status": "untested",
+        "note": "superseded"
+      },
+      {
+        "client": "realm",
+        "status": "untested",
+        "note": "realm"
+      }
+    ]
+  },
+  "repos": {
+    "releases": "firebrand-dev/ForeverLevelingCompanion",
+    "reports": "firebrand-dev/FLC-reportes"
+  },
+  "reports": {
+    "home": "https://github.com/firebrand-dev/FLC-reportes",
+    "choose": "https://github.com/firebrand-dev/FLC-reportes/issues/new/choose",
+    "error_form": "https://github.com/firebrand-dev/FLC-reportes/issues/new?template=1-error.yml",
+    "review_form": "https://github.com/firebrand-dev/FLC-reportes/issues/new?template=2-review.yml",
+    "open_issues": "https://github.com/firebrand-dev/FLC-reportes/issues",
+    "issues": "https://github.com/firebrand-dev/FLC-reportes/issues"
+  },
+  "donations": {
+    "_comment": "Put the owner's OWN page addresses here once the accounts exist and are tested (docs/DONATIONS.md). Never the platform's home page. Empty url: the card says 'coming soon'. Donations unlock nothing.",
+    "platforms": [
+      {
+        "id": "kofi",
+        "name": "Ko-fi",
+        "url": "",
+        "currency": "USD",
+        "region": "international"
+      },
+      {
+        "id": "cafecito",
+        "name": "Cafecito",
+        "url": "",
+        "currency": "ARS",
+        "region": "argentina"
+      }
+    ],
+    "campaign": {
+      "_comment": "Only real, verifiable numbers. enabled false hides the whole block.",
+      "enabled": false,
+      "goal_usd": 0,
+      "raised_usd": 0,
+      "source_url": "",
+      "as_of": ""
+    }
+  }
+}

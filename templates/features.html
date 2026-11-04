@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{{ m.pagehead('features', 'scroll') }}
+<div class="wrap">
+  <section class="legend" aria-labelledby="legend-title">
+    <h2 class="sr" id="legend-title">{{ t('features.legend') }}</h2>
+    <dl class="legend__list">
+      <div><dt>{{ m.badge('client') }}</dt><dd>{{ t('features.legend_client') }}</dd></div>
+      <div><dt>{{ m.badge('review') }}</dt><dd>{{ t('features.legend_review') }}</dd></div>
+      <div><dt>{{ m.badge('offline') }}</dt><dd>{{ t('features.legend_offline') }}</dd></div>
+    </dl>
+  </section>
+
+  <section class="tally" aria-labelledby="tally-title">
+    <h2 class="tally__h" id="tally-title">{{ t('features.numbers_t') }}</h2>
+    <ul class="tally__list">
+      <li><strong>{{ site.status.build.split('.')[-1] }}</strong><span>{{ t('features.n_build', suites=site.status.suites.split('/')[0]) }} ({{ site.status.build }})</span></li>
+      <li><strong>{{ site.status.lua_errors }}</strong><span>{{ t('features.n_errors') }}</span></li>
+      <li><strong>{{ dungeons.dungeons|length }}</strong><span>{{ t('features.n_dungeons') }}</span></li>
+      <li class="tally__zero"><strong>0</strong><span>{{ t('features.n_live') }}</span></li>
+    </ul>
+  </section>
+
+  {% for g in features.groups %}
+  <section class="questlog" aria-labelledby="g-{{ g.id }}">
+    <div class="questlog__head">
+      <h2 id="g-{{ g.id }}">{{ t('features.group_' ~ g.id) }}</h2>
+      <a class="link-arrow" href="{{ url(g.page ~ ('#' ~ g.anchor if g.get('anchor') else '')) }}">{{ t('features.go') }}<span class="sr">: {{ t('features.group_' ~ g.id) }}</span>{{ m.icon('arrow') }}</a>
+    </div>
+    <ul class="questlog__list">
+      {% for f in g['items'] %}
+      <li class="quest quest--{{ f.status }}">
+        <div class="quest__main">
+          <h3>{{ t('feat.' ~ f.id ~ '.t') }}</h3>
+          <p>{{ t('feat.' ~ f.id ~ '.d') }}</p>
+        </div>
+        <div class="quest__status">{{ m.badge(f.status) }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+
+  {{ m.honesty() }}
+</div>
+{% endblock %}

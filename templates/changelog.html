@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block main %}{% import "macros.html" as m with context %}
+{% set dl = site.download %}
+{{ m.pagehead('changelog', 'scroll') }}
+<div class="wrap narrow">
+  {% if changelog.next %}
+  <aside class="next" aria-labelledby="next-title">
+    <h2 class="next__h" id="next-title">{{ m.icon('compass') }}{{ t('changelog.next_t') }}</h2>
+    <ul class="bullets">{% for item in changelog.next[lang] %}<li>{{ item }}</li>{% endfor %}</ul>
+    <p class="next__note">{{ t('changelog.next_note') }}</p>
+  </aside>
+  {% endif %}
+  <ol class="chronicle">
+    {% for e in changelog.entries %}
+    <li class="entry entry--{{ e.kind }}">
+      <div class="entry__head">
+        <h2 id="v{{ e.version|replace('.', '-') }}">{{ e.label }}</h2>
+        <p class="entry__meta">
+          <time datetime="{{ e.date }}">{{ fmt_date(e.date) }}</time>
+          {% if e.kind == 'release' %}<span class="badge badge--client">{{ m.icon('check') }}{{ t('changelog.release') }}</span>
+          {% elif e.kind == 'rc' %}<span class="badge badge--review">{{ t('changelog.rc') }} · {{ t('changelog.unpublished') }}</span>
+          {% elif e.kind == 'dev' %}<span class="badge">{{ t('changelog.dev') }}</span>{% endif %}
+        </p>
+      </div>
+      <ul class="bullets">{% for item in e[lang] %}<li>{{ item }}</li>{% endfor %}</ul>
+      {% if dl.enabled and e.version == dl.version %}<p><a class="btn btn--ghost" href="{{ url('download') }}">{{ m.icon('download') }}<span>{{ t('changelog.get', v=e.version) }}</span></a></p>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endblock %}

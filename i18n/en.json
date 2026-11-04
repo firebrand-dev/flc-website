@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "lang_name": "English",
+    "html_lang": "en",
+    "og_locale": "en_US",
+    "switch_label": "Language",
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "site_description": "Free leveling addon for World of Warcraft Forever: quest guides with an arrow, Party Mode, dungeon and raid guides with boss cards, a Loot Atlas and skins that match your interface."
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Feature status",
+    "leveling": "Leveling",
+    "dungeons": "Dungeons & Raids",
+    "loot": "Loot Atlas",
+    "custom": "Customization",
+    "download": "Download",
+    "support": "Support",
+    "support_long": "Support Development",
+    "changelog": "Changelog",
+    "report": "Report an issue",
+    "faq": "FAQ",
+    "credits": "Credits & Licenses",
+    "explore": "The addon",
+    "project": "Project",
+    "help": "Help",
+    "main": "Main",
+    "leveling_d": "Routes, arrow and Party Mode",
+    "dungeons_d": "Dungeon guides and boss cards",
+    "loot_d": "What drops, and what suits you",
+    "custom_d": "Skins, or match your interface",
+    "features_d": "Each feature and how it was tested",
+    "report_short": "Reports"
+  },
+  "common": {
+    "free": "Free",
+    "status_client": "Tested in the game client",
+    "status_client_short": "Tested in client",
+    "status_review": "In review",
+    "status_offline": "Automated tests only",
+    "status_planned": "Planned",
+    "captured": "In-game capture",
+    "captured_flc": "In-game capture · FLC {v}",
+    "composition": "Composition of real in-game captures",
+    "see_status": "See what is tested",
+    "read_more": "Read more",
+    "coming_soon": "Coming soon",
+    "not_published": "Not published yet",
+    "commands": "Commands",
+    "command": "Command",
+    "what_it_does": "What it does",
+    "back_top": "Back to top",
+    "new_tab": "(opens GitHub in a new tab)",
+    "honesty_title": "What \"in review\" means",
+    "honesty_body": "FLC's routes and boss data were built and tested during development, before the game's launch. Anything not yet confirmed against the live game carries an <em>in review</em> label, or <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a>: that is how the guides get better."
+  },
+  "footer": {
+    "tagline": "Forever Leveling Companion is made by players, for players, in their free time.",
+    "disclaimer": "Forever Leveling Companion is an independent fan project. It is not affiliated with, endorsed or sponsored by Blizzard Entertainment. World of Warcraft, WoW and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. Game screenshots show Blizzard's game with FLC on screen.",
+    "updated": "Site updated {date}",
+    "copyright": "© {year} the FLC authors"
+  },
+  "home": {
+    "title": "Forever Leveling Companion (FLC): free leveling addon for WoW Forever",
+    "eyebrow": "Addon for World of Warcraft Forever · levels 1–60",
+    "h1_a": "Your Adventure.",
+    "h1_b": "Your Route.",
+    "h1_c": "Your Companion.",
+    "sub": "A leveling companion for World of Warcraft Forever: quest routes, group leveling, dungeon guides and more.",
+    "free_line": "Free for every adventurer. Supported by the community.",
+    "cta_download": "Download FLC",
+    "cta_download_soon": "Download: coming soon",
+    "cta_explore": "Explore features",
+    "cta_support": "Support development",
+    "pin_step": "The guide window: what to do, and how far along you are",
+    "hero_alt": "In the game world, FLC's arrow points the way to the current step.",
+    "journey_kicker": "The route",
+    "journey_title": "From your first quest to your first raid",
+    "journey_intro": "What FLC does for you on the way, each with the in-game capture that shows it and how far it was tested.",
+    "stop1_t": "Find your way to the objective",
+    "stop1_d": "The arrow points at the next step with its distance and tells you when you are in the area. If the quest giver waits upstairs or behind a wall, it says how to get there: \"Go up the stairs inside the tower\".",
+    "stop2_t": "Help a friend, then pick up your own guide",
+    "stop2_d": "Follow a party member's route for a while: kills count for both of you while you are grouped and nearby. When you are done, your guide comes back at the step where you left it. You can also level together on one shared route.",
+    "stop3_t": "See what the next boss does",
+    "stop3_d": "Before the pull, a card lists each ability by who it hits (the tank, a random player, everyone nearby) and highlights what matters for your role. It comes with the way in, the quests to bring and every boss in order, for 23 dungeons and 12 raids.",
+    "stop4_t": "Know which drops are upgrades for you",
+    "stop4_d": "The Loot Atlas goes slot by slot and rates each boss's items for your character: likely better, or not. Mark what you want, and when you prepare a dungeon FLC reminds you which bosses drop it.",
+    "stop5_t": "Make it look like the rest of your UI",
+    "stop5_d": "If you use ElvUI, NDui, RealUI, SpartanUI or GW2 UI, FLC takes its colors, font and bar texture. If not, pick one of five built-in looks.",
+    "values_kicker": "How FLC is made",
+    "v1_t": "It never plays for you",
+    "v1_d": "FLC shows the way and what to do. You walk, fight and choose: it never moves your character or clicks for you.",
+    "v2_t": "Honest labels",
+    "v2_d": "Anything not confirmed against the live game yet says <em>in review</em>, or shows <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a> and the guides get better.",
+    "v3_t": "Your data stays in the game",
+    "v3_d": "FLC sends nothing out of the game. Party progress is shared only with your group, and only after you agree.",
+    "report_t": "Something looks wrong?",
+    "report_d": "Type <code>/flc bug</code> or <code>/flc review</code> in the game, copy the text and paste it in our public reports page.",
+    "report_cta": "How to report",
+    "support_t": "Help keep the adventure alive",
+    "support_d": "Donations pay for the time it takes to keep routes and boss data in step with the live game.",
+    "support_cta": "Support development",
+    "pin_step_alt": "FLC's guide window: Kill: Mottled Boar, 1 of 10 slain, in the area.",
+    "stop1_cap": "Zephras Isle: the arrow inside the tower, with its hint.",
+    "stop1_link": "Leveling and navigation",
+    "stop2_cap": "Helping a party member: FLC follows their route and keeps your own progress.",
+    "stop2_link": "Party Mode",
+    "stop3_cap": "Wailing Caverns: Lady Anacondra's card. Abilities marked (?) are still in review.",
+    "stop3_link": "Dungeons & Raids",
+    "stop4_cap": "\"For me\": items rated for a warrior, slot by slot.",
+    "stop4_link": "Loot Atlas",
+    "stop5_cap": "The Fantasy skin on the Loot Atlas.",
+    "stop5_link": "Customization",
+    "status_rel": "Available now",
+    "status_rel_line": "Version {v} · {date} · tested with game client {build}",
+    "status_rel_link": "Download",
+    "stop6_t": "Everything one click away",
+    "stop6_d": "FLC's minimap button shows or hides the guide with a left click. A right click opens Guides, Loot Atlas, Party Mode, Appearance, Options and Report a bug.",
+    "stop6_cap": "Right click on FLC's minimap button: the quick menu.",
+    "stop6_link": "Download and install",
+    "next_t": "In development: 0.8.2",
+    "next_note": "Not part of the current download."
+  },
+  "features": {
+    "title": "Feature status",
+    "meta": "Every Forever Leveling Companion feature and how it was tested: in the WoW Forever game client, in review, or automated tests only.",
+    "kicker": "Quest log",
+    "h1": "What FLC does, and what is proven",
+    "intro": "Each feature carries the highest level of proof it reached, taken from the test reports. \"Tested in the client\" means automated runs in the real WoW Forever client on our own development server, with the build Battle.net installs today. Nothing has been checked on the official realms yet.",
+    "legend": "Legend",
+    "legend_client": "Passed automated runs in the real WoW Forever client, on our development server, with screenshots.",
+    "legend_review": "Works in the client, but its data, or part of it, is not confirmed against the live game yet.",
+    "legend_offline": "Covered by automated tests outside the game only.",
+    "numbers_t": "In numbers, from the test reports",
+    "n_dungeons": "dungeon guides, plus 12 raid guides",
+    "n_live": "routes checked on the official realms so far",
+    "group_leveling": "Leveling and navigation",
+    "group_party": "Party Mode",
+    "group_dungeons": "Dungeons & Raids",
+    "group_loot": "Loot",
+    "group_custom": "Look, access and language",
+    "group_community": "Reports",
+    "go": "Details",
+    "n_build": "game client build where all {suites} launch test suites passed with 0.8.1.1",
+    "n_errors": "Lua errors from FLC in those runs"
+  },
+  "feat": {
+    "guide": {
+      "t": "Step-by-step guide",
+      "d": "What to do next, with counts and automatic completion: kill, loot creatures and objects, buy, accept and turn in."
+    },
+    "arrow": {
+      "t": "Navigation arrow",
+      "d": "Points at the step with its distance and says when you are \"in the area\"."
+    },
+    "waypoint": {
+      "t": "Map waypoint",
+      "d": "Puts the game's own map pin on the step. TomTom works too if you have it (tested outside the game only)."
+    },
+    "approach": {
+      "t": "Approach hints",
+      "d": "Stairs, detours, floors and water on the last stretch, through intermediate points. Tested in the client on one tower; the others are computed and marked \"in review\"."
+    },
+    "travel": {
+      "t": "How to get there",
+      "d": "For far steps: flight masters you know, boats, zeppelins, portals and your Hearthstone, as one travel plan."
+    },
+    "path": {
+      "t": "Leveling path 1–60",
+      "d": "For each race, which zone comes next and when to go back to one. A suggestion built from quest XP, not a measured playthrough."
+    },
+    "modes": {
+      "t": "Leveling modes",
+      "d": "Optimized, dungeons first, or quests only."
+    },
+    "classq": {
+      "t": "Class Quest Advisor",
+      "d": "Offers the class quests worth doing (pets, forms, stances, totems, strong rewards): do it now, later or skip."
+    },
+    "routes": {
+      "t": "Quest routes",
+      "d": "Routes by race, class and faction, built from development data. Starting zones were walked step by step in the client; the rest is in review until confirmed on the live realm."
+    },
+    "sync": {
+      "t": "Party progress",
+      "d": "See each member's quest progress, between players who use FLC and agree to share."
+    },
+    "together": {
+      "t": "Level Together",
+      "d": "One shared route for the whole group; each guide is saved and restored."
+    },
+    "catchup": {
+      "t": "Group Catch-Up",
+      "d": "Helps the member who is behind reach the others."
+    },
+    "help": {
+      "t": "Help Player",
+      "d": "Follow a friend's route for a while, then go back to yours exactly where you left it."
+    },
+    "proposals": {
+      "t": "Leader proposals",
+      "d": "The leader proposes a group route; each member accepts or declines."
+    },
+    "focus": {
+      "t": "Dungeon Focus",
+      "d": "Suggests a dungeon that fits the group. Only tested where no dungeon fits yet (very low levels)."
+    },
+    "dguides": {
+      "t": "Dungeon guides",
+      "d": "23 dungeons: the entrance, quest objectives inside, each boss in the game's order and the way out. Bosses were found in the client on a development realm (146 of 159 placed)."
+    },
+    "rguides": {
+      "t": "Raid guides",
+      "d": "12 raids on the same engine as the dungeon guides."
+    },
+    "bosscard": {
+      "t": "Boss card",
+      "d": "Abilities sorted by who they hit, with what concerns your role highlighted. 688 of 1,009 abilities are confirmed; the others show \"(?)\". No timers or alerts: the game hides boss casts from addons."
+    },
+    "dadvisor": {
+      "t": "Dungeon Quest Advisor",
+      "d": "The quests to pick up before a dungeon, and in a group, who has each one and who can share it."
+    },
+    "atlas": {
+      "t": "Loot Atlas",
+      "d": "Every dungeon and raid boss with its loot, search and filters: any quality, usable by me."
+    },
+    "lootadv": {
+      "t": "Smart Loot Advisor",
+      "d": "Rates a boss's items for your character. An estimate from item stats, never a need or greed call."
+    },
+    "wishlist": {
+      "t": "Wishlist",
+      "d": "Mark the items you want and see them when you prepare a dungeon."
+    },
+    "skins": {
+      "t": "Skins",
+      "d": "FLC, Blizzlike / Forever, ElvUI-like, Minimal and Fantasy. Every change is a live preview."
+    },
+    "adapt": {
+      "t": "Adapt to my interface",
+      "d": "Takes the colors and fonts of ElvUI, NDui, RealUI, SpartanUI and GW2 UI, each tested in the client. Tukui has no build for this game client yet."
+    },
+    "setup": {
+      "t": "Welcome setup",
+      "d": "The first time FLC starts: adapt to your interface, configure it, or skip. /flc setup opens it again."
+    },
+    "lang": {
+      "t": "English and Spanish",
+      "d": "FLC's interface in English and Spanish, tested in the client. Seven more languages are translated and tested outside the game only."
+    },
+    "reports": {
+      "t": "/flc bug and /flc review",
+      "d": "A report window with the details we need, ready to copy into our public reports page."
+    },
+    "guideswin": {
+      "t": "Guides window",
+      "d": "Choose what to follow: leveling routes by zone, dungeon and raid guides, only your character's, with their levels and your progress. \"Automatic\" gives the choice back to FLC (/flc guides)."
+    },
+    "questflow": {
+      "t": "Quests by themselves",
+      "d": "FLC accepts and turns in the guide's quests, never in combat or with Shift held. On a reward choice it never picks: it marks the one that helps you. Change it with /flc auto or in Options."
+    },
+    "minimap": {
+      "t": "Minimap button",
+      "d": "Left click shows or hides FLC; right click opens Guides, Loot Atlas, Party Mode, Appearance, Options and Report a bug. Shift + drag moves it. Square minimaps are not tested in the client yet."
+    }
+  },
+  "leveling": {
+    "title": "Leveling: routes, arrow and Party Mode",
+    "meta": "WoW Forever quest guide addon: step-by-step routes with an arrow, a Guides window, quests accepted and turned in for you, travel plans, a 1–60 path and Party Mode for leveling with friends.",
+    "kicker": "Leveling 1–60",
+    "h1": "Always know your next step",
+    "intro": "Pick a route, or let FLC choose one for your race, faction and level. The guide shows one step at a time; the arrow takes you there.",
+    "s1_t": "One step, one arrow",
+    "s1_d": "Each step says what to do and with what, in your language: \"Kill: Mottled Boar\", \"Loot the object: …\", \"Accept … from Gornek\". Counts update as you play and the step completes by itself. Skip, go back, or put a pin on the map with Waypoint.",
+    "s1_cap": "The guide window: step, distance and its label (here, \"in review\").",
+    "s2_t": "When the way is not straight",
+    "s2_d": "Some quest givers wait on an upper floor, behind a wall or under water. FLC's arrow goes through a few intermediate points and tells you how in one line:",
+    "s2_list": [
+      "Go up the stairs inside the tower: the NPC is on the upper floor",
+      "Go round the obstacle",
+      "Follow the path: the straight way is blocked",
+      "It is under water: swim down to it"
+    ],
+    "s2_note": "These hints are computed from the game's terrain. They were tested in the client on the Thendal tower in Zephras Isle; the others carry \"(in review)\" until players confirm them.",
+    "s2_cap": "The arrow inside the tower, with its hint (FLC 0.5, Zephras Isle).",
+    "s3_t": "Far away? A travel plan",
+    "s3_d": "When the next step is on another continent or very far, the arrow points at the first flight master, dock or portal, and the guide shows the whole plan: \"Fly from Crossroads to Orgrimmar\", \"Take the boat at Menethil Harbor to Theramore Isle\". It uses the flight paths you know and your Hearthstone when it is ready.",
+    "s4_t": "A path from 1 to 60",
+    "s4_d": "For each race FLC knows which zone comes next, when to come back to one, and which levels no route covers. You always choose: <code>/flc guide auto</code> picks a route for your level, <code>/flc path</code> prints the whole path.",
+    "s4_modes": "Leveling modes: <strong>Optimized</strong>, <strong>Dungeons first</strong> or <strong>Quests only</strong>.",
+    "s4_class": "The <strong>Class Quest Advisor</strong> offers the class quests that matter (a pet, a form, a stance, totems, a much better reward): do it now, later, or skip. Your decision is kept per character.",
+    "map_cap": "Waypoint: the game's own map pin lands on the step.",
+    "party_kicker": "Party Mode",
+    "party_t": "Better together",
+    "party_d": "Party Mode works between players in the same group who use FLC and agree to share their quest progress (<code>/flc share yes</code>). Open it with <code>/flc party</code>.",
+    "p1_t": "Level Together",
+    "p1_d": "The whole group follows one route. Everyone's guide is saved first and comes back intact when you end it.",
+    "p2_t": "Help a friend",
+    "p2_d": "Join a party member's route for a while: kills count for both of you while you are grouped and nearby. Then go back to your own guide.",
+    "p3_t": "Catch-Up",
+    "p3_d": "Someone fell behind? The group helps them reach the others.",
+    "p4_t": "Leader proposals",
+    "p4_d": "The leader proposes a route; each member accepts or declines.",
+    "p_cap_together": "Level Together: your guide is saved.",
+    "p_cap_help": "Helping a party member: FLC follows their route; your own progress is saved.",
+    "p_cap_panel": "The Party Mode panel: members, steps and sync.",
+    "party_note": "After a group forms, a member's progress can take up to about 15 seconds to show.",
+    "routes_t": "About the routes",
+    "routes_d": "Routes by race, class and faction come from development data. The starting zones were walked step by step in the client; nothing has been played on the live realm yet. Steps that are not confirmed say \"in review\": if the game shows something else, <a href=\"{report}\">tell us</a>.",
+    "cmd_flc": "Show or hide the guide",
+    "cmd_party": "Party Mode panel",
+    "cmd_path": "Your whole 1–60 path",
+    "cmd_auto": "Pick a route for your level",
+    "cmd_share": "Agree to share quest progress with your group",
+    "cmd_announce": "Party chat announcements: off, objectives, 25%, 50%, every update",
+    "s5_t": "Pick any guide",
+    "s5_d": "The Guides window (<code>/flc guides</code>) lists the leveling routes by zone and the dungeon and raid guides your character can use, with their levels and how far you got. Follow one, or press Automatic and let FLC choose. Your progress in each guide is kept when you switch.",
+    "s5_cap": "The Guides window: routes by zone, the one suggested for your level, and your progress in each.",
+    "s6_t": "Quests accepted and turned in for you",
+    "s6_d": "When you talk to a quest giver on your route, FLC accepts and turns in the guide's quests by itself, never in combat and never while you hold Shift. When there is a reward to choose, FLC does not choose: it marks the item that would help you. Turn it off with <code>/flc auto off</code> or in Options.",
+    "s6_cap": "Turning in a quest: FLC marks the reward that is an upgrade and leaves the choice to you.",
+    "next_t": "Coming in 0.8.2",
+    "next_d": "In development, not in the current download:"
+  },
+  "dungeons": {
+    "title": "Dungeons & Raids: guides and boss cards",
+    "meta": "WoW Forever dungeon guide addon: guides for 23 dungeons and 12 raids, boss cards by role and the quests to take before you go in.",
+    "kicker": "Dungeons & Raids",
+    "h1": "Know the boss before the pull",
+    "intro": "A dungeon guide takes you from the entrance to the last boss and out again, moving on with the game's own encounter events.",
+    "scene_alt": "Wailing Caverns in World of Warcraft Forever, with FLC's boss card for Lady Anacondra open.",
+    "s1_t": "23 dungeons, 12 raids",
+    "s1_d": "Each guide has the way in, the quest objectives inside, every boss in the game's order and the way out. Bosses that patrol or appear after an event are marked as such.",
+    "s2_t": "The boss card",
+    "s2_d": "Before and during the fight, the card lists the boss's abilities by who they go at: the tank, a random player, everyone around it. What concerns your role is highlighted. Basic or detailed, as you prefer.",
+    "s2_q": "Abilities marked <span class=\"q\">(?)</span> are not confirmed yet. Of 1,009 abilities, 688 were checked against independent sources of the live game; the rest wait for players to confirm them with <code>/flc review</code>.",
+    "s2_limit": "No timers and no cast alerts: the game does not show boss casts to addons, so FLC does not pretend to.",
+    "s2_cap": "The boss card in Wailing Caverns, detailed view.",
+    "s3_t": "Quests first",
+    "s3_d": "The Dungeon Quest Advisor lists the quests worth picking up before a dungeon, where to get them and what is still missing. In a group, it shows who has each quest, who can take it and who can share it.",
+    "s3_cap": "Preparing Wailing Caverns: what to pick up first.",
+    "list_t": "Guides included",
+    "list_dungeons": "Dungeons",
+    "list_raids": "Raids",
+    "limits_t": "Good to know",
+    "limits": [
+      "The arrow has no position inside instances (a game limit): the guide moves on with encounter events instead.",
+      "Boss positions were checked in the client on a development realm: 146 of 159 placed bosses.",
+      "Some data may change on the live realm: report what differs with /flc review."
+    ],
+    "raids_more": "Plus {n} more raid guides whose boss data is still incomplete."
+  },
+  "loot": {
+    "title": "Loot Atlas: what drops, and what is good for you",
+    "meta": "FLC's Loot Atlas for WoW Forever: every dungeon and raid boss's loot, rated for your character, with search, filters and a wishlist.",
+    "kicker": "Loot Atlas",
+    "h1": "What drops, and what is good for you",
+    "intro": "Browse every dungeon and raid boss, see their loot, and let FLC tell you which pieces would likely be an upgrade.",
+    "s1_t": "Every boss, every item",
+    "s1_d": "Pick a dungeon or a raid, then a boss: its loot, its abilities, and a button to start its guide. Search by name and filter by quality or by what your class can use.",
+    "s1_cap": "Loot Atlas: dungeons and raids, with filters and the wishlist.",
+    "s2_t": "For me",
+    "s2_d": "The \"For me\" view goes slot by slot, from head to trinket, and shows items rated for your character: likely better, or not.",
+    "s2_cap": "\"For me\": items rated for a warrior, slot by slot.",
+    "s3_t": "Smart Loot Advisor",
+    "s3_d": "When you face a boss, its card can list its loot for you. The rating is an estimate from item stats, never a need or greed call: the roll is yours.",
+    "s4_t": "Wishlist",
+    "s4_d": "Add items to your wishlist from any page of the atlas. When you prepare a dungeon, FLC reminds you which bosses drop them.",
+    "note": "The atlas shows loot tables without drop chances. Item data may change on the live realm."
+  },
+  "custom": {
+    "title": "Customization: skins and Adapt to my interface",
+    "meta": "FLC's skins and Adaptive UI: Blizzlike, ElvUI-like, Minimal, Fantasy, and automatic adaptation to ElvUI, NDui, RealUI, SpartanUI and GW2 UI.",
+    "kicker": "Customization",
+    "h1": "Looks like it was always part of your UI",
+    "intro": "FLC can wear its own look, or borrow the colors and fonts of the interface you already use. Nothing of your interface is changed.",
+    "cmp_t": "Compare the skins",
+    "cmp_d": "The same two windows, the Loot Atlas and the Appearance panel, captured in the client with each built-in skin.",
+    "cmp_label": "Choose a skin",
+    "cmp_cap": "Skin: {name}.",
+    "skin_flc": "FLC",
+    "skin_blizzlike": "Blizzlike",
+    "skin_elvuilike": "ElvUI-like",
+    "skin_minimal": "Minimal",
+    "skin_fantasy": "Fantasy",
+    "skin_flc_d": "The default: dark panels with a teal accent.",
+    "skin_blizzlike_d": "Close to the game's own look: its fonts and tooltip borders.",
+    "skin_elvuilike_d": "Flat dark panels and thin lines.",
+    "skin_minimal_d": "Light, see-through panels with no borders.",
+    "skin_fantasy_d": "Warm tones and classic borders.",
+    "adapt_t": "Adapt to my interface",
+    "adapt_d": "FLC detects the interface you use and builds a matching look from its colors, font and bar texture. You see a preview first: Apply keeps it, Cancel goes back.",
+    "adapt_tested": "Tested in the client",
+    "adapt_notyet": "Recognized, no adapter",
+    "adapt_tukui": "No build for this game client yet",
+    "adapt_kkthnx": "No build for this game client",
+    "manual_t": "Or set it by hand",
+    "manual_d": "Accent (your class color too), background opacity, font, text size, window scale and borders. Per account or per character. Export your look as one line and share it; import only brings back validated settings.",
+    "setup_t": "Welcome setup",
+    "setup_d": "The first time FLC starts, it asks: adapt to my interface, configure it, or skip. <code>/flc setup</code> opens it again; <code>/flc appearance</code> opens the Appearance panel.",
+    "adapt_list": "Interfaces",
+    "two_t": "Blizzlike and ElvUI-like, side by side",
+    "two_d": "The same guide and quest windows at the same moment, with each skin: the game's gold and borders, or blue accents and thin lines.",
+    "two_cap": "Skin: {name}. Guide window and Quests window."
+  },
+  "download": {
+    "title": "Download FLC",
+    "meta": "Download Forever Leveling Companion, the free leveling addon for WoW Forever: the official zip from GitHub, its SHA-256, tested game builds, install steps for Windows and troubleshooting.",
+    "kicker": "Download",
+    "h1": "Download FLC",
+    "soon_t": "The first public version is not out yet",
+    "soon_d": "The download will appear here, linked to the official release page, as soon as a version is published. No other site has an official FLC download.",
+    "soon_watch": "Meanwhile, you can follow the project's progress in the changelog.",
+    "ready_t": "Version {v}",
+    "ready_date": "Released {date}",
+    "ready_btn": "Download {file}",
+    "ready_size": "{size}",
+    "ready_page": "Release page on GitHub",
+    "sha_t": "SHA-256 checksum",
+    "sha_d": "To check that your file is complete and untouched, open PowerShell in your Downloads folder and run:",
+    "sha_d2": "The result must be exactly this:",
+    "copy": "Copy",
+    "copied": "Copied",
+    "req_t": "Requirements",
+    "req": [
+      "World of Warcraft: Forever on Windows. Tested build: 1.60.1.70755.",
+      "No other addon is needed. TomTom is optional.",
+      "A free GitHub account, only if you want to send reports."
+    ],
+    "builds_t": "Game builds",
+    "builds_d": "What we tested, and where. Every run was on our own development server.",
+    "build_client": "Game client",
+    "build_status": "Status",
+    "install_t": "Install on Windows",
+    "install_d": "About two minutes. You only copy two folders.",
+    "i1_t": "Download the zip",
+    "i1_d": "The button above gets {file} from GitHub. You can check it with its SHA-256.",
+    "i2_t": "Close World of Warcraft",
+    "i2_d": "Addons are read when the game starts.",
+    "i3_t": "Open your AddOns folder",
+    "i3_d": "Usually <code>World of Warcraft\\_forever_\\Interface\\AddOns</code>. If your install uses another folder name, look for the one that contains <code>Interface\\AddOns</code>.",
+    "i4_t": "Extract the two folders",
+    "i4_d": "Copy <strong>ForeverLevelingCompanion</strong> and <strong>FLC_Guides_Catalog</strong> from the zip into AddOns. The zip also holds INSTALL.txt, with these same steps: AddOns does not need it.",
+    "i5_t": "Check that nothing is doubled",
+    "i5_d": "The two folders must sit side by side, not one inside another folder with the same name:",
+    "tree_ok": "Correct",
+    "tree_bad": "Wrong: a folder inside a folder",
+    "update_t": "Updating and uninstalling",
+    "update_d": "To update, delete both old folders first, then extract the new zip. <code>/flc version</code> tells you which version you have and where to get the new one. To uninstall, delete both folders.",
+    "known_t": "Known issues",
+    "known": [
+      "Quest data comes from our test server: levels, quest givers and places may differ on the official realms. What is not confirmed says \"in review\" or \"(?)\": report it with /flc review.",
+      "Some boss abilities are still in review.",
+      "Memory: about 18 MB at login with the catalog, up to about 20 MB after opening the Loot Atlas and generating a route.",
+      "Square minimaps and LibDataBroker launchers (ElvUI datatexts, Titan Panel) are not tested in the client yet.",
+      "On the quest reward window, FLC's mark slightly overlaps the item's name (cosmetic).",
+      "The arrow has no position inside dungeons (a game limit): dungeon guides move on with the game's encounter events instead."
+    ],
+    "known_more": "Something else? Maybe someone already reported it:",
+    "links_changelog": "Changelog",
+    "links_report": "Report a problem",
+    "ready_build": "Tested with game client {build} on our own development server, not yet on the official realms.",
+    "ready_files": "One zip with two folders: the addon and its quest catalog.",
+    "ready_changes": "What's new in {v}",
+    "build_note_current": "The build Battle.net installs today: every launch test passed with 0.8.1.1",
+    "build_note_prev": "Tested with 0.8.1 and 0.8.1.1",
+    "build_note_dev": "Tested during development (0.8.1 candidate)",
+    "build_note_superseded": "No client of these builds was available; replaced by 70755",
+    "build_realm": "Official WoW: Forever realms",
+    "build_note_realm": "Not checked yet",
+    "build_untested": "Not tested",
+    "i6_t": "Start the game",
+    "i6_d": "Log in as usual.",
+    "i7_t": "Turn FLC on",
+    "i7_d": "On the character screen, open <strong>AddOns</strong> and check that both are enabled: <em>Forever Leveling Companion</em> and <em>FLC Guides: Forever quest catalog</em>.",
+    "i8_t": "Choose your look",
+    "i8_d": "The first time, the welcome setup asks: adapt FLC to your interface, configure it yourself, or skip. <code>/flc setup</code> opens it again.",
+    "trouble_t": "Troubleshooting",
+    "trouble": [
+      {
+        "q": "FLC does not appear",
+        "a": "Type <code>/flc</code> in the chat: it shows or hides the guide window. A left click on FLC's minimap button does the same. If nothing happens, FLC is not loaded: see the next point."
+      },
+      {
+        "q": "The addon does not load",
+        "a": "On the character screen, open AddOns: both must be listed and enabled. If they are missing, the folders are in the wrong place or one is inside another (step 5). If only the catalog is listed and it reports a missing dependency, the ForeverLevelingCompanion folder is missing or renamed. Still stuck? Delete both folders, download the zip again, check its SHA-256 and copy them once more."
+      },
+      {
+        "q": "I can't see the minimap button",
+        "a": "Type <code>/flc minimap show</code>, or turn it on in Options. Hold Shift and drag it to move it around the minimap. Square minimaps (ElvUI and others) are supported but not tested in the client yet: if it looks wrong, tell us."
+      },
+      {
+        "q": "How do I open Options?",
+        "a": "<code>/flc options</code>, or right-click the minimap button and choose Options."
+      },
+      {
+        "q": "How do I change FLC's look?",
+        "a": "<code>/flc appearance</code>, or right-click the minimap button and choose Appearance. Apply keeps the preview, Cancel goes back. <code>/flc setup</code> opens the welcome setup again."
+      },
+      {
+        "q": "How do I open the Loot Atlas?",
+        "a": "<code>/flc atlas</code>, or right-click the minimap button and choose Loot Atlas."
+      },
+      {
+        "q": "How do I report a bug?",
+        "a": "Type <code>/flc bug</code> when it happens: FLC prepares a text with what we need. Copy it and paste it on our <a href=\"{report}\">reports page</a>."
+      }
+    ],
+    "links_issues": "Open reports",
+    "install_kicker": "Step by step"
+  },
+  "support": {
+    "title": "Support Development",
+    "meta": "FLC is free for everyone. Voluntary donations help maintain guides, fix issues and improve compatibility. Donations unlock nothing.",
+    "kicker": "Support Development",
+    "h1": "Help Keep the Adventure Alive",
+    "intro": "Forever Leveling Companion is free for everyone. Your support helps us maintain guides, fix issues, improve compatibility and develop new features.",
+    "kofi_t": "Ko-fi",
+    "kofi_d": "International, in US dollars, through PayPal.",
+    "cafecito_t": "Cafecito",
+    "cafecito_d": "From Argentina, in pesos, with Mercado Pago or bank transfer.",
+    "soon": "Donations will be available soon.",
+    "soon_d": "We are setting up the accounts. This page will link to them once they are ready and tested.",
+    "go": "Support on {name}",
+    "use_t": "Where your support goes",
+    "use": [
+      "Time to keep routes and boss data up to date with the live game.",
+      "Fixing the issues players report.",
+      "Compatibility with new game builds and interface addons.",
+      "New features."
+    ],
+    "rules_t": "Our rules",
+    "rules": [
+      "Donations happen only on this website. FLC never asks for money inside the game: no buttons, windows, chat messages or ads.",
+      "Donating unlocks nothing: no features, content, early access or perks. Every update is the same for everyone.",
+      "Donating is voluntary, and FLC stays free whatever happens."
+    ],
+    "other_t": "Other ways to help",
+    "other": [
+      "Report bugs and data that does not match the game.",
+      "Confirm the abilities marked (?) when you see them.",
+      "Tell your guild about FLC."
+    ],
+    "campaign_t": "Development goal",
+    "campaign_raised": "{raised} raised of {goal}",
+    "campaign_source": "Source and date"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "meta": "Forever Leveling Companion updates and fixes, version by version, from the first public version 0.8.1.",
+    "kicker": "Changelog",
+    "h1": "Updates and fixes",
+    "intro": "What changed in each version. 0.8.1 was the first public version; what comes before it is development history.",
+    "rc": "Release candidate",
+    "unpublished": "not published",
+    "dev": "Development build",
+    "release": "Published",
+    "get": "Download {v}",
+    "next_t": "In development: 0.8.2",
+    "next_note": "Not part of the current download. Shown so you know what is coming; plans can change."
+  },
+  "report": {
+    "title": "Report an issue",
+    "meta": "Found a bug or data that does not match the game? Use /flc bug or /flc review in the game and paste the text in FLC's public reports page.",
+    "kicker": "Report an issue",
+    "h1": "Tell us what the game shows",
+    "intro": "An addon cannot send anything out of the game, so FLC prepares the report and you paste it on our public reports page. It takes a minute and helps every player.",
+    "kinds_t": "Two kinds of report",
+    "bug_t": "Something failed",
+    "bug_d": "An FLC error, a window that does not work, a step that never completes.",
+    "bug_cmd": "/flc bug",
+    "bug_btn": "Open the error form",
+    "review_t": "Data does not match",
+    "review_d": "A quest, a position or a boss ability that differs from the game, or an ability marked (?) that you can confirm.",
+    "review_cmd": "/flc review",
+    "review_btn": "Open the data in review form",
+    "steps_t": "How it works",
+    "st1": "In the game, type <code>/flc bug</code> or <code>/flc review</code> on the step you want to report.",
+    "st2": "A window opens with the text: select it all with <kbd>Ctrl</kbd>+<kbd>A</kbd> and copy it with <kbd>Ctrl</kbd>+<kbd>C</kbd>.",
+    "st3": "Open the right form below (a free GitHub account is needed) and paste it with <kbd>Ctrl</kbd>+<kbd>V</kbd>.",
+    "st4": "Tell us what the game shows. A screenshot helps a lot.",
+    "cap": "The report window: FLC and game version, class and level, guide, step and what is in review. Nothing is sent automatically.",
+    "privacy_t": "What the text contains",
+    "privacy_d": "FLC's version, the game's version and language, your class and level, the guide and step, and FLC's latest errors. It does <strong>not</strong> include your character's name, your realm or your account. Never paste passwords or account details.",
+    "all_t": "All reports are public",
+    "all_d": "You can read the open reports before writing yours: maybe someone already found it.",
+    "all_btn": "See open reports",
+    "links_known": "Known issues",
+    "links_changelog": "Changelog",
+    "links_t": "Before you write"
+  },
+  "faq": {
+    "title": "FAQ",
+    "meta": "Frequently asked questions about Forever Leveling Companion: price, installation, compatibility, data, privacy and donations.",
+    "kicker": "FAQ",
+    "h1": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Is FLC really free?",
+        "a": "Yes. Every feature is free for everyone and will stay that way. There is no premium version and nothing is locked. Donations are voluntary and unlock nothing."
+      },
+      {
+        "q": "Where do I download FLC?",
+        "a": "On this site's Download page, which links to the official GitHub release ({v}). No other site has an official FLC download."
+      },
+      {
+        "q": "Does it work on the official realms?",
+        "a": "FLC {v} was tested with game client 1.60.1.70755, the one Battle.net installs today, on our own development server. Nothing has been checked on the official realms yet, so quest data that is not confirmed says \"in review\". If the game shows something else, report it with /flc review."
+      },
+      {
+        "q": "What does \"in review\" or (?) mean?",
+        "a": "That piece of data (a step, a position, a boss ability) is not confirmed against the live game yet. If the game shows something else, report it with /flc review. If it matches, that helps too."
+      },
+      {
+        "q": "Does FLC need other addons?",
+        "a": "No. TomTom is optional. If you use ElvUI, NDui, RealUI, SpartanUI or GW2 UI, FLC can adapt its look to it."
+      },
+      {
+        "q": "Does FLC send my data anywhere?",
+        "a": "No. An addon cannot send anything out of the game. Party Mode shares quest progress only with your group, only after you agree (/flc share yes), and only for the quests involved."
+      },
+      {
+        "q": "Does FLC play for me?",
+        "a": "No. It shows you where to go and what to do. You walk, fight and choose. It never moves your character or clicks for you."
+      },
+      {
+        "q": "Can I use it in Spanish?",
+        "a": "Yes. FLC's interface is in English and Spanish, tested in the game client. Quest and NPC names are included in ten languages; a full run on a Spanish game client is still pending."
+      },
+      {
+        "q": "How do I report a problem?",
+        "a": "Type /flc bug or /flc review in the game, copy the text, and paste it on our reports page. Everything is explained on the Report an issue page."
+      },
+      {
+        "q": "Is FLC made by Blizzard?",
+        "a": "No. FLC is an independent fan project, not affiliated with or endorsed by Blizzard Entertainment."
+      },
+      {
+        "q": "Why are there no boss timers?",
+        "a": "The game does not show boss casts to addons. FLC tells you what each ability does and to whom, but it cannot time them."
+      }
+    ]
+  },
+  "credits": {
+    "title": "Credits & Licenses",
+    "meta": "Who makes Forever Leveling Companion, the licenses of the addon and its quest catalog, and attributions.",
+    "kicker": "Credits & Licenses",
+    "h1": "Credits & Licenses",
+    "authors_t": "Authors",
+    "authors_d": "Forever Leveling Companion is created and maintained by the FLC authors, an independent team of players. Development, testing and documentation were done with the help of Claude (Anthropic) as a coding assistant.",
+    "addon_t": "The addon",
+    "addon_d": "FLC's code and its original sample guides: © 2026 the FLC authors, all rights reserved, free to use. No paid features, no obfuscation, no advertising.",
+    "catalog_t": "The quest catalog",
+    "catalog_d": "The quest catalog (the FLC_Guides_Catalog folder) is distributed under the GNU General Public License v2.0, separately from the addon, with its license text and notice. It is generated from game databases built by these GPL-2.0 projects; thanks to their authors and contributors:",
+    "tools_t": "Optional integrations",
+    "tools_d": "TomTom is called only at runtime if you have it installed; it is never bundled.",
+    "site_t": "This website",
+    "site_fonts": "Typefaces: <strong>Cinzel</strong> (The Cinzel Project Authors) and <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), both under the SIL Open Font License 1.1, served from this site.",
+    "site_shots": "Screenshots were taken by the FLC team in the WoW Forever game client, with FLC on screen. Game imagery belongs to Blizzard Entertainment.",
+    "site_art": "Logo, maps, compass and ornaments on this site are original artwork made for FLC.",
+    "trademark_t": "Trademarks",
+    "trademark_d": "World of Warcraft, WoW and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. Quest, NPC, item and place names shown by FLC are Blizzard's. FLC is a fan project, not affiliated with or endorsed by Blizzard Entertainment."
+  },
+  "notfound": {
+    "title": "Page not found",
+    "h1": "You wandered off the route",
+    "d": "This page does not exist. The arrow points home.",
+    "btn": "Back to the start"
+  }
+}
