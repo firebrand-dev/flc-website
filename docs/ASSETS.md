@@ -4,7 +4,8 @@
 |---|---|---|
 | Capturas (`media/src`, lista en `media/manifest.json`) | Tomadas por el equipo de FLC con su agente de pruebas en el cliente de WoW Forever (reino de desarrollo, personajes de prueba), entre FLC 0.4 y 0.8.0-rc2. Cada entrada guarda el archivo de origen, el recorte, la versión y la fecha. | Muestran el juego de Blizzard con FLC en pantalla. Uso como capturas de un proyecto de fans, con aviso de no afiliación. **Revisar** la política de contenido de fans de Blizzard antes de publicar, porque el sitio pide donaciones (el sitio no vende ni usa arte de Blizzard fuera de las capturas). |
 | Logo/emblema, brújula, curvas de nivel, ornamentos, íconos | Originales, dibujados para este sitio (`templates/macros.html`, `tools/art.py`). | Del proyecto FLC. |
-| Tipografías Cinzel y Alegreya Sans | Google Fonts, autoalojadas en `assets/fonts` (solo latin y latin-ext). | SIL Open Font License 1.1; las licencias van junto a los archivos y se enlazan desde Créditos. |
+| Sellos de lacre (`assets/img/seal-tested.svg`, `seal-review.svg`) y textura de cuero (`assets/img/leather.webp`) | Generados por código, de forma determinista, con `python tools/art.py` (sin imágenes de terceros ni IA). | Del proyecto FLC. |
+| Tipografías IM Fell English SC (Igino Marini) y Alegreya Sans | Google Fonts, autoalojadas en `assets/fonts` (IM Fell: latin; Alegreya Sans: latin y latin-ext). | SIL Open Font License 1.1; las licencias van junto a los archivos y se enlazan desde Créditos. |
 | Datos (mazmorras, funciones, changelog) | Documentos del repositorio del addon (`docs/STATUS.md`, `docs/release/*`, `CHANGELOG.md`, `docs/DUNGEON_GUIDE.md`), leídos el 2026-10-30. | Textos propios. Los nombres de lugares son de Blizzard. |
 
 ## Decisiones sobre las capturas
@@ -24,3 +25,12 @@
   aclaran donde hace falta.
 - Pendiente cuando haya cliente en vivo: reemplazar por capturas del reino oficial con la versión publicada
   (`media/manifest.json` → `python tools/media.py`).
+
+## Rediseño "The Adventurer's Codex" (2026-11-04, rama `redesign/impeccable`)
+
+- Hero de escritorio (`hero-scene`): captura de 0.8.1.1-rc1 (mismo código que 0.8.1.1) en el cliente 1.60.1.70755, con la
+  ventana de misiones de FLC en el lugar del rastreador del juego. En ese cuadro está abierta la configuración inicial; en
+  escritorio queda debajo de la página de misión del hero (tapada por la maqueta, no retocada).
+- Celular: sigue `hero-mobile` + `guide-kill` (0.8.0-rc3), del mismo momento.
+- Nuevas: `guide-scene`, `party-back-0811`, `camp-brazier`, `welcome-setup` (0.8.1.1-rc1, 70755/70707). Todas con
+  origen y recorte en `media/manifest.json`.

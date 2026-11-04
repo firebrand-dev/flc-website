@@ -6,6 +6,7 @@
 <section class="questhero" aria-labelledby="hero-title">
   <figure class="questhero__scene">
     {{ picture('hero-scene', t('home.hero_alt'), sizes='100vw', eager=true, small='hero-mobile') }}
+    <p class="questhero__note" aria-hidden="true">{{ t('home.pin_step') }}</p>
     <figcaption class="questhero__credit">{{ m.icon('eye') }}<span class="only-wide">{{ t('common.captured_flc', v=shots['hero-scene'].meta.flc) }}</span><span class="only-narrow">{{ t('common.composition') }}</span></figcaption>
   </figure>
   <div class="questhero__stage">
@@ -20,7 +21,7 @@
         <li class="objective" data-obj="folders"><span>{{ t('home.obj2') }}</span><span class="objective__count" data-need="2">0/2</span></li>
         <li class="objective" data-obj="flc"><span>{{ t('home.obj3') }} <code>/flc</code></span><span class="objective__count" data-need="1">0/1</span></li>
       </ol>
-      <p class="questpage__reward"><span class="questpage__label">{{ t('home.reward') }}</span> {{ t('home.free_line') }}</p>
+      <p class="questpage__reward"><span class="questpage__label">{{ t('home.reward') }}</span> {{ t('home.reward_text') }}</p>
       <div class="questpage__actions">
         {% if dl.enabled %}
         <a class="btn btn--primary" href="{{ dl.url }}" data-accept>{{ m.icon('download') }}<span>{{ t('home.accept') }}</span><small>{{ dl.version }}</small></a>
@@ -46,10 +47,10 @@
 
 <div class="codex" id="codex">
   <section class="chapter chapter--route" aria-labelledby="ch-route">
-    <div class="wrap chapter__grid">
+    <div class="wrap"><div class="folio chapter__grid">
       <div class="chapter__text">
         <h2 id="ch-route">{{ t('home.stop1_t') }}</h2>
-        <p>{{ t('home.stop1_d') }}</p>
+        <p class="chapter__lead">{{ t('home.stop1_d') }}</p>
         <ul class="proof">{% for f in ['guide', 'arrow', 'approach', 'guideswin'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
         <a class="link-arrow" href="{{ url('leveling') }}">{{ t('home.stop1_link') }}{{ m.icon('arrow') }}</a>
       </div>
@@ -57,15 +58,17 @@
         {{ m.shot('guides-window', t('leveling.s5_cap'), sizes='600px') }}
         {{ m.shot('arrow-stairs', t('home.stop1_cap'), sizes='560px', cls='chapter__aside') }}
       </div>
-    </div>
+      <span class="folio__no" aria-hidden="true">fol. i</span>
+    </div></div>
   </section>
 
   <section class="chapter chapter--party" id="party" aria-labelledby="ch-party">
     <div class="wrap">
       <div class="leaf leaf--wide partyleaf">
+        <span class="folio__no folio__no--ink" aria-hidden="true">fol. ii</span>
         <div class="partyleaf__text">
           <h2 id="ch-party">{{ t('home.stop2_t') }}</h2>
-          <p>{{ t('home.stop2_d') }}</p>
+          <p class="chapter__lead">{{ t('home.stop2_d') }}</p>
           <p class="partyleaf__req">{{ t('home.party_req') }}</p>
           <ul class="proof proof--ink">{% for f in ['help', 'together', 'sync'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
           <a class="link-arrow" href="{{ url('leveling#party') }}">{{ t('home.stop2_link') }}{{ m.icon('arrow') }}</a>
@@ -87,10 +90,10 @@
   </section>
 
   <section class="chapter chapter--pair" aria-label="{{ t('home.stop3_t') }} · {{ t('home.stop4_t') }}">
-    <div class="wrap pair">
+    <div class="wrap"><div class="folio folio--spread pair">
       <article class="pair__item">
         <h2>{{ t('home.stop3_t') }}</h2>
-        <p>{{ t('home.stop3_d') }}</p>
+        <p class="chapter__lead">{{ t('home.stop3_d') }}</p>
         {{ m.shot('boss-card', t('home.stop3_cap'), sizes='580px') }}
         <ul class="proof">{% for f in ['dguides', 'bosscard'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
         <a class="link-arrow" href="{{ url('dungeons') }}">{{ t('home.stop3_link') }}{{ m.icon('arrow') }}</a>
@@ -102,14 +105,15 @@
         <ul class="proof">{% for f in ['lootadv', 'wishlist'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
         <a class="link-arrow" href="{{ url('loot-atlas') }}">{{ t('home.stop4_link') }}{{ m.icon('arrow') }}</a>
       </article>
-    </div>
+      <span class="folio__no" aria-hidden="true">fol. iii</span>
+    </div></div>
   </section>
 
   <section class="chapter chapter--looks" aria-labelledby="ch-looks">
-    <div class="wrap">
+    <div class="wrap"><div class="folio folio--inset">
       <div class="chapter__head">
         <h2 id="ch-looks">{{ t('home.stop5_t') }}</h2>
-        <p>{{ t('home.stop5_d') }}</p>
+        <p class="chapter__lead">{{ t('home.stop5_d') }}</p>
       </div>
       <figure class="compare" data-compare>
         <div class="compare__stage">
@@ -126,19 +130,21 @@
       </figure>
       <ul class="proof proof--row">{% for f in ['adapt', 'skins', 'setup'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
       <a class="link-arrow" href="{{ url('customization') }}">{{ t('home.stop5_link') }}{{ m.icon('arrow') }}</a>
-    </div>
+      <span class="folio__no" aria-hidden="true">fol. iv</span>
+    </div></div>
   </section>
 
   <section class="chapter chapter--minimap" aria-labelledby="ch-minimap">
-    <div class="wrap chapter__grid chapter__grid--flip">
+    <div class="wrap"><div class="folio folio--loose chapter__grid chapter__grid--flip">
       <div class="chapter__plates">{{ m.shot('minimap-menu', t('home.stop6_cap'), sizes='520px') }}</div>
       <div class="chapter__text">
         <h2 id="ch-minimap">{{ t('home.stop6_t') }}</h2>
-        <p>{{ t('home.stop6_d') }}</p>
+        <p class="chapter__lead">{{ t('home.stop6_d') }}</p>
         <ul class="proof">{% for f in ['minimap'] %}<li>{{ m.badge(status_of[f], true) }}<span>{{ t('feat.' ~ f ~ '.t') }}</span></li>{% endfor %}</ul>
         <a class="link-arrow" href="{{ url('download') }}#install">{{ t('home.stop6_link') }}{{ m.icon('arrow') }}</a>
       </div>
-    </div>
+      <span class="folio__no" aria-hidden="true">fol. v</span>
+    </div></div>
   </section>
 </div>
 

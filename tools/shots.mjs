@@ -145,16 +145,30 @@ async function main() {
       let shot;
       if (flag('menu')) { await cdp.send('Runtime.evaluate', { expression: "document.querySelector('[data-menu-btn]').click()" }); await sleep(700); }
       if (FULL) {
-        // a capture taller than ~16k device pixels repeats from the top: lower the density for long pages
-        const fullDpr = Math.max(1, Math.min(v.dpr, Math.floor(16000 / res.height)));
+        // load every lazy image first, then measure: the page grows as they arrive
+        await cdp.send('Runtime.evaluate', { awaitPromise: true, expression: `(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += innerHeight / 2) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)); } scrollTo(0, 0); await new Promise(r => setTimeout(r, 400)); })()` });
+        res.height = (await cdp.send('Runtime.evaluate', { returnByValue: true, expression: 'document.documentElement.scrollHeight' })).result.value;
+        // a single capture taller than 16384 device pixels repeats from the top: long pages are captured in
+        // slices (name.partN.png) that tools/stitch.py joins; full pages use DPR 2 at most
+        const fullDpr = Math.min(v.dpr, 2);
         await cdp.send('Emulation.setDeviceMetricsOverride', { width: v.width, height: res.height, deviceScaleFactor: fullDpr, mobile: v.mobile });
         await sleep(1200);
-        shot = await cdp.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true });
+        const slice = Math.floor(16000 / fullDpr);
+        if (res.height <= slice) {
+          shot = await cdp.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true });
+        } else {
+          for (let y = 0, n = 0; y < res.height; y += slice, n++) {
+            const part = await cdp.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true,
+              clip: { x: 0, y, width: v.width, height: Math.min(slice, res.height - y), scale: 1 } });
+            await writeFile(join(OUT, `${name}.part${n}.png`), Buffer.from(part.data, 'base64'));
+          }
+          shot = null;
+        }
         await cdp.send('Emulation.setDeviceMetricsOverride', { width: v.width, height: v.height, deviceScaleFactor: v.dpr, mobile: v.mobile });
       } else {
         shot = await cdp.send('Page.captureScreenshot', { format: 'png' });
       }
-      await writeFile(join(OUT, name + '.png'), Buffer.from(shot.data, 'base64'));
+      if (shot) await writeFile(join(OUT, name + '.png'), Buffer.from(shot.data, 'base64'));
       // Todo lo que pide la página si la visita se recorre entera (imágenes diferidas incluidas).
       await cdp.send('Runtime.evaluate', { awaitPromise: true, expression: `(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += innerHeight / 2) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)); } })()` });
       await sleep(THROTTLE ? 4000 : 800);

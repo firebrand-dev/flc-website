@@ -1,160 +1,150 @@
 {
- "schemaVersion": 2,
- "generatedAt": "2026-11-04T17:18:21.769295+00:00",
- "title": "Design System: Forever Leveling Companion",
- "extensions": {
-  "colorMeta": {
-   "burnished-gold": {
-    "role": "primary",
-    "displayName": "Burnished Gold"
-   },
-   "aged-bronze": {
-    "role": "primary",
-    "displayName": "Aged Bronze"
-   },
-   "verdant-proof": {
-    "role": "secondary",
-    "displayName": "Verdant Proof"
-   },
-   "lantern-amber": {
-    "role": "secondary",
-    "displayName": "Lantern Amber"
-   },
-   "waypoint-teal": {
-    "role": "tertiary",
-    "displayName": "Waypoint Teal"
-   },
-   "night-paper": {
-    "role": "neutral",
-    "displayName": "Night Paper",
-    "tonalRamp": [
-     "#060a12",
-     "#0b1220",
-     "#0e1728",
-     "#121c31",
-     "#1b2742",
-     "#273556",
-     "#3a4a6e",
-     "#5a6a8e"
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T00:00:00Z",
+  "title": "Design System: Forever Leveling Companion",
+  "extensions": {
+    "colorMeta": {
+      "rubric": { "role": "primary", "displayName": "Rubric Red", "canonical": "#8f2a17", "tonalRamp": ["#2e0c05", "#4d1409", "#6e1e0f", "#8f2a17", "#ad3a1f", "#c96a50", "#e2a48f", "#f6dcd2"] },
+      "rubric-ink": { "role": "primary", "displayName": "Rubric Ink", "canonical": "#7c2412", "tonalRamp": ["#280b05", "#45140a", "#62200f", "#7c2412", "#9c3a24", "#bf6a55", "#dda394", "#f4dbd3"] },
+      "gilt": { "role": "secondary", "displayName": "Gold Leaf", "canonical": "#c9a24d", "tonalRamp": ["#2b220f", "#4f3f1e", "#7a6232", "#a3843f", "#c9a24d", "#e3c47c", "#efdcab", "#f9f0da"] },
+      "gilt-hi": { "role": "secondary", "displayName": "Burnished Gold Leaf", "canonical": "#e3c47c" },
+      "gilt-lo": { "role": "secondary", "displayName": "Tarnished Gold Leaf", "canonical": "#7a6232" },
+      "seal-green": { "role": "tertiary", "displayName": "Tested Seal Green", "canonical": "#2f8a5f", "tonalRamp": ["#0c2419", "#164030", "#1f5a3c", "#2f8a5f", "#4aa97b", "#6fc79b", "#93e0b8", "#d6f4e4"] },
+      "seal-amber": { "role": "tertiary", "displayName": "Review Seal Amber", "canonical": "#c4862c", "tonalRamp": ["#2e1d06", "#4f330c", "#6b440a", "#9a6420", "#c4862c", "#dca452", "#f2c776", "#fbebc8"] },
+      "waypoint": { "role": "tertiary", "displayName": "Waypoint Teal", "canonical": "#4fc3c0", "tonalRamp": ["#0d2827", "#164443", "#21625f", "#2f8b88", "#4fc3c0", "#7fd6d3", "#c4ece9", "#e8f8f7"] },
+      "leather-900": { "role": "neutral", "displayName": "Midnight Leather", "canonical": "#100d0b", "tonalRamp": ["#090706", "#100d0b", "#15110e", "#1b1612", "#261f19", "#3a2f24", "#5a4a3a", "#8a7862"] },
+      "text": { "role": "neutral", "displayName": "Binding Ink Cream", "canonical": "#ede4cc", "tonalRamp": ["#4a4436", "#6e6754", "#918872", "#ada389", "#cbc1a8", "#ede4cc", "#f6f0e0", "#fff8e6"] },
+      "vellum": { "role": "neutral", "displayName": "Vellum", "canonical": "#e9dcbc", "tonalRamp": ["#5e5034", "#857451", "#a8956b", "#cbb789", "#ddcca2", "#e9dcbc", "#f3ead4", "#fffcf0"] },
+      "ink": { "role": "neutral", "displayName": "Iron-gall Ink", "canonical": "#2a2016", "tonalRamp": ["#140f0a", "#2a2016", "#3c2f21", "#4f4130", "#6b5a45", "#8a7860", "#ab9a80", "#cfc2aa"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Inner-page titles, max 20ch." },
+      "quest-title": { "displayName": "Quest Title", "purpose": "The home quest page title in rubric ink; release, board and party titles use the same rubric treatment." },
+      "headline": { "displayName": "Headline", "purpose": "Chapter and section titles (h2), balanced." },
+      "rubric-label": { "displayName": "Rubric Label", "purpose": "Small display-face terms inside structures: objectives heading, rules terms, install moves, table and footer heads, board names." },
+      "title": { "displayName": "Title", "purpose": "h3, quest rows, FAQ questions." },
+      "body": { "displayName": "Body", "purpose": "Reading text at 56 to 66ch." },
+      "caption": { "displayName": "Provenance Caption", "purpose": "Italic provenance line under every plate and scene, with the eye icon." },
+      "mono": { "displayName": "Mono", "purpose": "Commands, objective counts, build ids, file names in buttons." }
+    },
+    "shadows": [
+      { "name": "lift", "value": "0 22px 44px -22px rgba(0,0,0,.85), 0 3px 8px rgba(0,0,0,.35)", "purpose": "The single elevation: leaves, plates, folios, nav panel." },
+      { "name": "leaf-burn", "value": "inset 0 0 0 1px rgba(122,98,50,.55), inset 0 0 48px rgba(122,88,40,.28)", "purpose": "Aged parchment edge, combined with lift." },
+      { "name": "tooling", "value": "inset 0 0 0 5px rgba(9,7,6,.55), inset 0 0 0 6px rgba(201,162,77,.17)", "purpose": "Tooled border of folio panels." },
+      { "name": "rubric-press", "value": "inset 0 1px 0 rgba(255,220,190,.25), inset 0 0 0 1px rgba(0,0,0,.25), 0 10px 18px -12px rgba(0,0,0,.9)", "purpose": "The primary rubric button only." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.2, .7, .2, 1)", "purpose": "All state transitions (nav underline, arrow slide, chevrons)." },
+      { "name": "ink-check", "value": "seal .45s-.5s: from rotate(45deg) scale(.4) opacity .2", "purpose": "The only entry-free motion: a ticked objective or install step is stamped once. Disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "hero-note", "value": "1600px (min)" },
+      { "name": "footer", "value": "1080px" },
+      { "name": "menu", "value": "960px" },
+      { "name": "single-column", "value": "860px" },
+      { "name": "phone", "value": "680px" },
+      { "name": "small-phone", "value": "420px" }
     ]
-   },
-   "parchment": {
-    "role": "neutral",
-    "displayName": "Parchment"
-   }
   },
-  "shadows": [
-   {
-    "name": "pinned-object",
-    "value": "0 18px 40px -18px rgba(0,0,0,.75), 0 2px 6px rgba(0,0,0,.35)",
-    "purpose": "Framed captures and parchment notes."
-   },
-   {
-    "name": "gold-lift",
-    "value": "inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px -8px rgba(212,177,111,.6)",
-    "purpose": "Primary button."
-   }
+  "components": [
+    {
+      "name": "Primary Button (Rubric)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one red action per view: Accept and download FLC.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14\"/></svg><span>Accept: Download FLC</span><small>0.8.1.1</small></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: .55em; min-height: 48px; padding: .7em 1.3em; font: 700 1.02rem/1.15 \"Alegreya Sans\", \"Segoe UI\", system-ui, sans-serif; letter-spacing: .01em; text-decoration: none; color: #f8eed6; border: 1px solid #b5492c; border-radius: 2px; background: linear-gradient(180deg, #9f3219, #8f2a17 55%, #6e1e0f); box-shadow: inset 0 1px 0 rgba(255,220,190,.25), inset 0 0 0 1px rgba(0,0,0,.25), 0 10px 18px -12px rgba(0,0,0,.9); transition: background-color .2s cubic-bezier(.2,.7,.2,1), border-color .2s; } .ds-btn-primary small { font: 500 .82rem ui-monospace, Consolas, monospace; color: #f3dcc0; } .ds-btn-primary:hover { color: #fff6e2; background: linear-gradient(180deg, #ad3a1f, #9a2f19 55%, #771f10); border-color: #e3c47c; } .ds-btn-primary:focus-visible { outline: 2px solid #4fc3c0; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on the leather binding.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Support development</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: .55em; min-height: 48px; padding: .7em 1.3em; font: 700 1.02rem/1.15 \"Alegreya Sans\", \"Segoe UI\", system-ui, sans-serif; text-decoration: none; color: #ede4cc; background: rgba(27,22,18,.7); border: 1px solid #7a6232; border-radius: 2px; transition: background-color .2s, border-color .2s; } .ds-btn-ghost:hover { background: #261f19; border-color: #c9a24d; } .ds-btn-ghost:focus-visible { outline: 2px solid #4fc3c0; outline-offset: 3px; }"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Default secondary action: bold link with a sliding arrow.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">Leveling and navigation<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m0 0-5-5m5 5-5 5\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: .4em; min-height: 44px; font: 700 1.125rem \"Alegreya Sans\", system-ui, sans-serif; color: #e3c47c; text-decoration: none; } .ds-link-arrow svg { transition: transform .25s cubic-bezier(.2,.7,.2,1); } .ds-link-arrow:hover { color: #ede4cc; } .ds-link-arrow:hover svg { transform: translateX(3px); } .ds-link-arrow:focus-visible { outline: 2px solid #4fc3c0; outline-offset: 3px; }"
+    },
+    {
+      "name": "Parchment Leaf with Objectives",
+      "kind": "card",
+      "refersTo": "leaf",
+      "description": "The quest page: parchment leaf, rubric title, FLC-style objectives with counts.",
+      "html": "<article class=\"ds-leaf\"><h2 class=\"ds-leaf__title\">Your Adventure. Your Route.</h2><p>A leveling companion for World of Warcraft Forever.</p><ol class=\"ds-objectives\"><li class=\"is-done\"><span>Download FLC 0.8.1.1</span><b>1/1</b></li><li><span>Copy its two folders into AddOns</span><b>0/2</b></li><li><span>Start the game and type /flc</span><b>0/1</b></li></ol></article>",
+      "css": ".ds-leaf { position: relative; max-width: 34rem; padding: 32px; color: #2a2016; font: 400 1.125rem/1.62 \"Alegreya Sans\", system-ui, sans-serif; border-radius: 1px; background: radial-gradient(140% 90% at 0% 0%, rgba(255,252,240,.45), transparent 55%), radial-gradient(120% 120% at 100% 100%, rgba(150,112,52,.32), transparent 60%), #e9dcbc; box-shadow: 0 22px 44px -22px rgba(0,0,0,.85), 0 3px 8px rgba(0,0,0,.35), inset 0 0 0 1px rgba(122,98,50,.55), inset 0 0 48px rgba(122,88,40,.28); } .ds-leaf::before { content: \"\"; position: absolute; inset: 9px; border: 1px solid rgba(42,32,22,.28); pointer-events: none; } .ds-leaf p { color: #4f4130; } .ds-leaf__title { margin: 0 0 14px; font: 400 2.6rem/1.02 \"IM Fell English SC\", Georgia, serif; color: #7c2412; } .ds-objectives { list-style: none; margin: 0; padding: 0; } .ds-objectives li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0 5px 22px; position: relative; border-bottom: 1px dotted rgba(42,32,22,.28); } .ds-objectives li::before { content: \"\"; position: absolute; left: 2px; top: .62em; width: 9px; height: 9px; transform: rotate(45deg); border: 1.5px solid #7c2412; } .ds-objectives b { font: 700 1rem ui-monospace, Consolas, monospace; color: #4f4130; } .ds-objectives li.is-done { color: #4f4130; } .ds-objectives li.is-done::before { background: #2f8a5f; border-color: #2f8a5f; } .ds-objectives li.is-done b { color: #2f8a5f; } .ds-objectives li.is-done span { text-decoration: line-through; }"
+    },
+    {
+      "name": "Plate (framed capture)",
+      "kind": "custom",
+      "refersTo": "plate",
+      "description": "A real capture pasted into the codex at native size, with photo corners and its provenance.",
+      "html": "<figure class=\"ds-plate\"><div class=\"ds-plate__inner\"><div class=\"ds-plate__img\">FLC window at native size</div></div><figcaption><span class=\"ds-plate__src\">In-game capture · FLC 0.8.1.1</span><span>The Guides window: routes by zone.</span></figcaption></figure>",
+      "css": ".ds-plate { margin: 0; width: fit-content; max-width: 100%; font-family: \"Alegreya Sans\", system-ui, sans-serif; } .ds-plate__inner { position: relative; padding: 5px; background: #090706; border: 1px solid #7a6232; box-shadow: 0 22px 44px -22px rgba(0,0,0,.85), 0 3px 8px rgba(0,0,0,.35); } .ds-plate__inner::before, .ds-plate__inner::after { content: \"\"; position: absolute; width: 22px; height: 22px; background: linear-gradient(135deg, #cbb789 50%, transparent 50%); filter: drop-shadow(1px 1px 1px rgba(0,0,0,.45)); } .ds-plate__inner::before { top: -1px; left: -1px; } .ds-plate__inner::after { bottom: -1px; right: -1px; transform: rotate(180deg); } .ds-plate__img { width: 320px; height: 180px; display: grid; place-items: center; background: #05070b; color: #4fc3c0; } .ds-plate figcaption { display: grid; gap: 4px; margin-top: 12px; font-size: 1rem; color: #ede4cc; } .ds-plate__src { font-style: italic; font-size: .95rem; color: #cbc1a8; }"
+    },
+    {
+      "name": "Proof Seal",
+      "kind": "chip",
+      "refersTo": "seal-green",
+      "description": "Real test status stated next to a claim: tested (green) or in review (amber).",
+      "html": "<span class=\"ds-seal ds-seal--client\">Tested in client</span> <span class=\"ds-seal ds-seal--review\">In review</span>",
+      "css": ".ds-seal { display: inline-flex; align-items: center; gap: .4em; font: 700 .95rem/1.25 \"Alegreya Sans\", system-ui, sans-serif; } .ds-seal::before { content: \"\"; width: 30px; height: 30px; border-radius: 50%; box-shadow: 0 1px 1px rgba(0,0,0,.5), inset 0 0 0 3px rgba(0,0,0,.18); } .ds-seal--client { color: #93e0b8; } .ds-seal--client::before { background: #2f8a5f; } .ds-seal--review { color: #f2c776; } .ds-seal--review::before { background: #c4862c; }"
+    },
+    {
+      "name": "Install Step Checkbox",
+      "kind": "input",
+      "refersTo": "seal-green",
+      "description": "Diamond checkbox for linkable install steps; turns seal green with a drawn tick.",
+      "html": "<label class=\"ds-step\"><input type=\"checkbox\"><span>Copy the two folders into Interface/AddOns</span></label>",
+      "css": ".ds-step { display: flex; align-items: center; gap: 14px; min-height: 44px; font: 700 1.15rem \"Alegreya Sans\", system-ui, sans-serif; color: #ede4cc; cursor: pointer; } .ds-step input { appearance: none; width: 24px; height: 24px; margin: 10px; border: 1.5px solid #c9a24d; transform: rotate(45deg); background: transparent; display: grid; place-items: center; cursor: pointer; } .ds-step input:checked { background: #2f8a5f; border-color: #2f8a5f; } .ds-step input:checked::after { content: \"\"; width: 7px; height: 12px; border: solid #f6fff9; border-width: 0 2px 2px 0; transform: rotate(-45deg) translate(1px, -1px); } .ds-step input:focus-visible { outline: 2px solid #4fc3c0; outline-offset: 4px; }"
+    },
+    {
+      "name": "Masthead Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky leather masthead; gold underline drawn on hover and current page.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav__brand\">FLC</span><a href=\"#\" aria-current=\"page\">Download</a><a href=\"#\">Reports</a><a href=\"#\">FAQ</a><a href=\"#\">The addon</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 2px; padding: 8px 24px; background: rgba(9,7,6,.95); border-bottom: 1px solid rgba(201,162,77,.17); } .ds-nav__brand { margin-right: auto; font: 400 1.5rem/1 \"IM Fell English SC\", Georgia, serif; letter-spacing: .1em; color: #ede4cc; } .ds-nav a { position: relative; display: flex; align-items: center; min-height: 44px; padding: 8px 12px; color: #cbc1a8; text-decoration: none; font: 500 1.04rem \"Alegreya Sans\", system-ui, sans-serif; } .ds-nav a::after { content: \"\"; position: absolute; left: 12px; right: 12px; bottom: 6px; height: 1px; background: #c9a24d; transform: scaleX(0); transition: transform .25s cubic-bezier(.2,.7,.2,1); } .ds-nav a:hover, .ds-nav a[aria-current] { color: #ede4cc; } .ds-nav a:hover::after, .ds-nav a[aria-current]::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid #4fc3c0; outline-offset: 3px; }"
+    }
   ],
-  "motion": [
-   {
-    "name": "ease",
-    "value": "cubic-bezier(.2,.7,.2,1)",
-    "purpose": "Reveals, menu, route line."
-   }
-  ],
-  "breakpoints": [
-   {
-    "name": "hero-stack",
-    "value": "1080px"
-   },
-   {
-    "name": "menu",
-    "value": "960px"
-   },
-   {
-    "name": "single-column",
-    "value": "860px"
-   },
-   {
-    "name": "phone-hero",
-    "value": "680px"
-   },
-   {
-    "name": "small",
-    "value": "420px"
-   }
-  ]
- },
- "components": [
-  {
-   "name": "Primary Button",
-   "kind": "button",
-   "refersTo": "button-primary",
-   "description": "The one gold action in view.",
-   "html": "<a class=\"ds-btn-primary\" href=\"#\">Download FLC</a>",
-   "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:48px;padding:.7em 1.25em;font:700 1rem/1.1 'Alegreya Sans',sans-serif;color:#1c1408;text-decoration:none;border:1px solid #e3c58a;border-radius:3px;background:linear-gradient(180deg,#e2c27f,#b68d4f 60%,#9d7640);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 18px -8px rgba(212,177,111,.6)}.ds-btn-primary:hover{background:linear-gradient(180deg,#ecd197,#c39a5b 60%,#a87f46)}.ds-btn-primary:focus-visible{outline:2px solid #4fc3c0;outline-offset:3px}"
-  },
-  {
-   "name": "Ghost Button",
-   "kind": "button",
-   "refersTo": "button-ghost",
-   "description": "Secondary actions.",
-   "html": "<a class=\"ds-btn-ghost\" href=\"#\">Explore features</a>",
-   "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:.7em 1.25em;font:700 1rem/1.1 'Alegreya Sans',sans-serif;color:#ece4d0;text-decoration:none;border:1px solid #a9814a;border-radius:3px;background:rgba(18,28,49,.6)}.ds-btn-ghost:hover{background:#1b2742;border-color:#d4b16f}.ds-btn-ghost:focus-visible{outline:2px solid #4fc3c0;outline-offset:3px}"
-  },
-  {
-   "name": "Proof badges",
-   "kind": "chip",
-   "refersTo": "badge-tested",
-   "description": "Tested in client / In review.",
-   "html": "<span class=\"ds-badge ds-ok\">Tested in client</span> <span class=\"ds-badge ds-rev\">In review</span>",
-   "css": ".ds-badge{display:inline-flex;padding:3px 9px;font:700 .8rem/1.3 'Alegreya Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;border-radius:2px;border:1px solid}.ds-ok{color:#8fe3bd;border-color:rgba(63,191,138,.45);background:rgba(63,191,138,.14)}.ds-rev{color:#f2c779;border-color:rgba(228,173,79,.45);background:rgba(228,173,79,.13)}"
-  },
-  {
-   "name": "Parchment note",
-   "kind": "card",
-   "refersTo": "parchment-note",
-   "description": "Honesty notes.",
-   "html": "<aside class=\"ds-parch\"><strong>What \"in review\" means</strong><p>Not confirmed on the live game yet.</p></aside>",
-   "css": ".ds-parch{padding:22px 26px;color:#2b2317;background:#ddd0b0;border-radius:2px;box-shadow:0 18px 40px -18px rgba(0,0,0,.75)}.ds-parch strong{font-family:Cinzel,serif}"
+  "narrative": {
+    "northStar": "The Adventurer's Codex",
+    "overview": "The site is a book an adventurer carries. The ground is a midnight leather binding (a tiled leather texture over near-black brown); the reading surfaces that matter most are parchment leaves written in iron-gall ink; quest titles and the one primary action are rubricated in red, as a scribe would mark the line a reader must not miss; gold-leaf rules divide, frame and underline; proof is pressed as wax seals. FLC's real windows are pasted into the codex as plates with photo corners, at their native size, never redrawn and never stretched.\n\nPages are chapters, not sections. On the home page a dashed gold route runs down the codex margin with a rubric diamond waypoint at every chapter opening, each chapter is a folio (a tooled leather panel, a ruled spread, an inset panel, or loose matter on the binding) and carries a small italic folio number (\"fol. i\") at its foot. The hero is the quest you accept: the real in-game scene fills the first viewport and a parchment quest page sits inside it with its objectives and counts. Density is that of a well-set book: generous measure limits (56 to 66ch), large reading type, and few elements per spread.\n\nThe world refuses the split SaaS hero, rows of icon cards and glossy buttons. Motion is one grammar only: an ink check drawn once when an objective or install step is ticked, and the count stepping. Nothing animates on entry.",
+    "keyCharacteristics": [
+      "Leather ground, parchment leaves, gold-leaf rules, rubric red, wax seals; nothing else carries meaning.",
+      "Captures are plates: native size, gold-lo frame, vellum photo corners, a provenance line under every one.",
+      "FLC's own objective format (diamond marker, mono count \"0/2\") reused as the site's list of things to do.",
+      "IM Fell English SC for titles, Alegreya Sans for reading, a system mono for commands and counts.",
+      "Square, bookbound corners (1 to 2px); depth from paper lift, never from floating cards."
+    ],
+    "rules": [
+      { "name": "The One Red Action Rule", "body": "Each view's content carries at most one rubric-red button, the action the page exists for (Accept: Download on home, the release download on Download). Everything else is ghost, quiet or an arrow link. On phones the masthead Download is the only standing red outside the content, because the download must stay one tap away.", "section": "colors" },
+      { "name": "The Seals Are Proof Rule", "body": "Green and amber appear only where a real test status is being stated (seals, done objectives, checked steps, release entries). Never use them for decoration, success-toned marketing, or emphasis.", "section": "colors" },
+      { "name": "The Gold Is Structure Rule", "body": "Gold leaf draws rules, frames and underlines; it is never a fill for buttons or panels (the only gold fill is the small count pill).", "section": "colors" },
+      { "name": "The No Kicker Rule", "body": "Nothing sits above a heading: no eyebrow, label, tag line or icon row. A title opens its block; status seals and counts follow the text they qualify.", "section": "typography" },
+      { "name": "The Drop Cap Rule", "body": "A chapter's lead paragraph opens with a two-line initial in the display face (`initial-letter: 2`, float fallback), rubric red. Only the lead paragraph of a chapter.", "section": "typography" },
+      { "name": "The One Lift Rule", "body": "There is a single elevation. Do not invent hover lifts, glows or stacked card shadows.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep one rubric-red action per view's content; use ghost buttons and arrow links for everything else.",
+      "Do show FLC's real windows as plates at their native size with the provenance line under each one.",
+      "Do put status in a wax seal next to the claim it proves, in seal green or amber only.",
+      "Do use the diamond for every marker, checkbox and waypoint, and the objective format for any list of things the reader will do.",
+      "Do set titles in IM Fell English SC at weight 400 and reading text in Alegreya Sans at 1.125rem / 1.62.",
+      "Do give phones their own composition (own capture, action first) rather than a shrunk desktop."
+    ],
+    "donts": [
+      "Don't stretch a capture past its native size or redraw FLC's UI.",
+      "Don't put labels, kickers or eyebrows above headings.",
+      "Don't use seal green or amber for anything but proof.",
+      "Don't add a second elevation, hover lifts, glows or rounded cards; leaves stay at 1px, controls at 2px.",
+      "Don't animate on entry; the ink check and the count are the only motion.",
+      "Don't use gold as a fill for buttons or panels."
+    ]
   }
- ],
- "narrative": {
-  "northStar": "The Cartographer's Night Journal",
-  "overview": "A journal opened under lantern light: night-blue paper, aged-bronze rules, parchment notes and faint contour lines; real in-game captures framed like inventory slots. Gold is rare.",
-  "keyCharacteristics": [
-   "Dark night-blue canvas with tonal layers instead of cards on cards.",
-   "Cinzel capitals for headings, Alegreya Sans for reading.",
-   "Captures framed as inventory slots; parchment for the honesty notes.",
-   "Bronze hairlines and nearly square corners (2-3 px).",
-   "Proof badges (green tested, amber in review) beside each feature."
-  ],
-  "rules": [
-   {
-    "name": "The Lantern Rule",
-    "body": "Gold marks the single most important action in view; everything else is bronze or ink.",
-    "section": "colors"
-   },
-   {
-    "name": "The Proof Colour Rule",
-    "body": "Green and amber mean tested and in review only, never decoration.",
-    "section": "colors"
-   },
-   {
-    "name": "The No-Split Rule",
-    "body": "Headings never hyphenate or break words; they balance their lines instead.",
-    "section": "typography"
-   }
-  ],
-  "dos": [
-   "Do show a real capture next to every feature claim, with its provenance.",
-   "Do keep gold for one action per view (The Lantern Rule).",
-   "Do keep corners at 2-3 px and rules as bronze hairlines."
-  ],
-  "donts": [
-   "Don't use green or amber for anything but proof states.",
-   "Don't stretch, rotate or upscale addon captures.",
-   "Don't hyphenate or split words in headings."
-  ]
- }
 }

@@ -4,9 +4,9 @@
   <circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
   <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="1.2 2.6" opacity=".55"/>
   <path d="M24 1.5v5M24 41.5v5M1.5 24h5M41.5 24h5" stroke="currentColor" stroke-width="1.4"/>
-  <path d="M24 9 39 24 24 39 9 24Z" fill="#0d1526" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M24 9 39 24 24 39 9 24Z" fill="#100d0b" stroke="currentColor" stroke-width="1.5"/>
   <path d="M18.5 30.5 29 20m0 0h-7m7 0v7" fill="none" stroke="#efe4c8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="24" cy="24" r="1.6" fill="#3fbf8a"/>
+  <circle cx="24" cy="24" r="1.6" fill="#8f2a17"/>
 </svg>
 {%- endmacro %}
 
@@ -43,10 +43,6 @@
   {% else %}<a class="lang__item" href="{{ alternates[lg] if alternates else root ~ '/' }}" hreflang="{{ lg }}" lang="{{ lg }}" data-set-lang="{{ lg }}">{{ lg|upper }}</a>{% endif %}
   {% endfor %}
 </div>
-{%- endmacro %}
-
-{% macro kicker(text, ic='compass') -%}
-<p class="kicker">{{ icon(ic) }}<span>{{ text }}</span></p>
 {%- endmacro %}
 
 {% macro badge(status, short=false) -%}
