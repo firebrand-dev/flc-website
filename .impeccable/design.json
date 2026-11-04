@@ -1,0 +1,160 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-04T17:18:21.769295+00:00",
+ "title": "Design System: Forever Leveling Companion",
+ "extensions": {
+  "colorMeta": {
+   "burnished-gold": {
+    "role": "primary",
+    "displayName": "Burnished Gold"
+   },
+   "aged-bronze": {
+    "role": "primary",
+    "displayName": "Aged Bronze"
+   },
+   "verdant-proof": {
+    "role": "secondary",
+    "displayName": "Verdant Proof"
+   },
+   "lantern-amber": {
+    "role": "secondary",
+    "displayName": "Lantern Amber"
+   },
+   "waypoint-teal": {
+    "role": "tertiary",
+    "displayName": "Waypoint Teal"
+   },
+   "night-paper": {
+    "role": "neutral",
+    "displayName": "Night Paper",
+    "tonalRamp": [
+     "#060a12",
+     "#0b1220",
+     "#0e1728",
+     "#121c31",
+     "#1b2742",
+     "#273556",
+     "#3a4a6e",
+     "#5a6a8e"
+    ]
+   },
+   "parchment": {
+    "role": "neutral",
+    "displayName": "Parchment"
+   }
+  },
+  "shadows": [
+   {
+    "name": "pinned-object",
+    "value": "0 18px 40px -18px rgba(0,0,0,.75), 0 2px 6px rgba(0,0,0,.35)",
+    "purpose": "Framed captures and parchment notes."
+   },
+   {
+    "name": "gold-lift",
+    "value": "inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px -8px rgba(212,177,111,.6)",
+    "purpose": "Primary button."
+   }
+  ],
+  "motion": [
+   {
+    "name": "ease",
+    "value": "cubic-bezier(.2,.7,.2,1)",
+    "purpose": "Reveals, menu, route line."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "hero-stack",
+    "value": "1080px"
+   },
+   {
+    "name": "menu",
+    "value": "960px"
+   },
+   {
+    "name": "single-column",
+    "value": "860px"
+   },
+   {
+    "name": "phone-hero",
+    "value": "680px"
+   },
+   {
+    "name": "small",
+    "value": "420px"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "The one gold action in view.",
+   "html": "<a class=\"ds-btn-primary\" href=\"#\">Download FLC</a>",
+   "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:48px;padding:.7em 1.25em;font:700 1rem/1.1 'Alegreya Sans',sans-serif;color:#1c1408;text-decoration:none;border:1px solid #e3c58a;border-radius:3px;background:linear-gradient(180deg,#e2c27f,#b68d4f 60%,#9d7640);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 18px -8px rgba(212,177,111,.6)}.ds-btn-primary:hover{background:linear-gradient(180deg,#ecd197,#c39a5b 60%,#a87f46)}.ds-btn-primary:focus-visible{outline:2px solid #4fc3c0;outline-offset:3px}"
+  },
+  {
+   "name": "Ghost Button",
+   "kind": "button",
+   "refersTo": "button-ghost",
+   "description": "Secondary actions.",
+   "html": "<a class=\"ds-btn-ghost\" href=\"#\">Explore features</a>",
+   "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:.7em 1.25em;font:700 1rem/1.1 'Alegreya Sans',sans-serif;color:#ece4d0;text-decoration:none;border:1px solid #a9814a;border-radius:3px;background:rgba(18,28,49,.6)}.ds-btn-ghost:hover{background:#1b2742;border-color:#d4b16f}.ds-btn-ghost:focus-visible{outline:2px solid #4fc3c0;outline-offset:3px}"
+  },
+  {
+   "name": "Proof badges",
+   "kind": "chip",
+   "refersTo": "badge-tested",
+   "description": "Tested in client / In review.",
+   "html": "<span class=\"ds-badge ds-ok\">Tested in client</span> <span class=\"ds-badge ds-rev\">In review</span>",
+   "css": ".ds-badge{display:inline-flex;padding:3px 9px;font:700 .8rem/1.3 'Alegreya Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;border-radius:2px;border:1px solid}.ds-ok{color:#8fe3bd;border-color:rgba(63,191,138,.45);background:rgba(63,191,138,.14)}.ds-rev{color:#f2c779;border-color:rgba(228,173,79,.45);background:rgba(228,173,79,.13)}"
+  },
+  {
+   "name": "Parchment note",
+   "kind": "card",
+   "refersTo": "parchment-note",
+   "description": "Honesty notes.",
+   "html": "<aside class=\"ds-parch\"><strong>What \"in review\" means</strong><p>Not confirmed on the live game yet.</p></aside>",
+   "css": ".ds-parch{padding:22px 26px;color:#2b2317;background:#ddd0b0;border-radius:2px;box-shadow:0 18px 40px -18px rgba(0,0,0,.75)}.ds-parch strong{font-family:Cinzel,serif}"
+  }
+ ],
+ "narrative": {
+  "northStar": "The Cartographer's Night Journal",
+  "overview": "A journal opened under lantern light: night-blue paper, aged-bronze rules, parchment notes and faint contour lines; real in-game captures framed like inventory slots. Gold is rare.",
+  "keyCharacteristics": [
+   "Dark night-blue canvas with tonal layers instead of cards on cards.",
+   "Cinzel capitals for headings, Alegreya Sans for reading.",
+   "Captures framed as inventory slots; parchment for the honesty notes.",
+   "Bronze hairlines and nearly square corners (2-3 px).",
+   "Proof badges (green tested, amber in review) beside each feature."
+  ],
+  "rules": [
+   {
+    "name": "The Lantern Rule",
+    "body": "Gold marks the single most important action in view; everything else is bronze or ink.",
+    "section": "colors"
+   },
+   {
+    "name": "The Proof Colour Rule",
+    "body": "Green and amber mean tested and in review only, never decoration.",
+    "section": "colors"
+   },
+   {
+    "name": "The No-Split Rule",
+    "body": "Headings never hyphenate or break words; they balance their lines instead.",
+    "section": "typography"
+   }
+  ],
+  "dos": [
+   "Do show a real capture next to every feature claim, with its provenance.",
+   "Do keep gold for one action per view (The Lantern Rule).",
+   "Do keep corners at 2-3 px and rules as bronze hairlines."
+  ],
+  "donts": [
+   "Don't use green or amber for anything but proof states.",
+   "Don't stretch, rotate or upscale addon captures.",
+   "Don't hyphenate or split words in headings."
+  ]
+ }
+}
