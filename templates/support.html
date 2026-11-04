@@ -31,7 +31,7 @@
       <li class="board__row{% if not p.url %} is-soon{% endif %}">
         <span class="board__name">{{ t('support.' ~ p.id ~ '_t') }}</span>
         <span class="board__how">{{ t('support.' ~ p.id ~ '_d') }}</span>
-        {% if p.url %}<a class="btn btn--primary" href="{{ p.url }}" rel="noopener" target="_blank">{{ t('support.go', name=p.name) }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+        {% if p.url %}<a class="btn btn--ghost" href="{{ p.url }}" rel="noopener" target="_blank">{{ t('support.go', name=p.name) }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
         {% else %}<span class="board__soon">{{ t('common.coming_soon') }}</span>{% endif %}
       </li>
       {% endfor %}

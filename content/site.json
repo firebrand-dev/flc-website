@@ -80,14 +80,14 @@
       {
         "id": "kofi",
         "name": "Ko-fi",
-        "url": "",
+        "url": "https://ko-fi.com/firebrandsoftware",
         "currency": "USD",
         "region": "international"
       },
       {
         "id": "cafecito",
         "name": "Cafecito",
-        "url": "",
+        "url": "https://cafecito.app/firebrand",
         "currency": "ARS",
         "region": "argentina"
       }
