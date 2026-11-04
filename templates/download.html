@@ -1,73 +1,87 @@
 {% extends "base.html" %}
 {% block main %}{% import "macros.html" as m with context %}
 {% set dl = site.download %}
-{{ m.pagehead('download', 'download', 'nointro') }}
+<header class="pagehead pagehead--download">
+  <div class="wrap">
+    <h1 class="pagehead__title">{{ t('download.h1') }}</h1>
+    <p class="pagehead__intro">{{ t('download.intro') }}</p>
+  </div>
+</header>
 <div class="wrap">
   {% if dl.enabled %}
-  <section class="release" aria-labelledby="rel-title">
-    <div class="release__main">
-      <p class="kicker">{{ m.icon('check') }}<span>{{ t('download.ready_date', date=fmt_date(dl.date)) }}</span></p>
-      <h2 id="rel-title">{{ t('download.ready_t', v=dl.version) }}</h2>
-      <a class="btn btn--primary btn--big" href="{{ dl.url }}" rel="noopener">{{ m.icon('download') }}<span>{{ t('download.ready_btn', file=dl.file) }}</span>{% if dl.size_bytes %}<small>{{ human_size(dl.size_bytes) }}</small>{% endif %}</a>
-      <p class="release__facts">{{ t('download.ready_files') }} {{ t('download.ready_build', build=site.status.build) }}</p>
-      <p class="release__links">
-        <a class="link-arrow" href="{{ url('changelog') }}#v{{ dl.version|replace('.', '-') }}">{{ t('download.ready_changes', v=dl.version) }}{{ m.icon('arrow') }}</a>
-        {% if dl.release_page %}<a class="link-arrow" href="{{ dl.release_page }}" rel="noopener" target="_blank">{{ t('download.ready_page') }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>{% endif %}
-      </p>
-    </div>
-    <div class="release__sha">
-      <h3>{{ t('download.sha_t') }}</h3>
+  <section class="leaf release" aria-labelledby="rel-title">
+    <h2 class="release__title" id="rel-title">{{ t('download.ready_t', v=dl.version) }}</h2>
+    <p class="release__facts">{{ t('download.ready_date', date=fmt_date(dl.date)) }} · {{ human_size(dl.size_bytes) }} · {{ t('download.ready_files') }}</p>
+    <a class="btn btn--primary btn--big" href="{{ dl.url }}" rel="noopener" data-accept>{{ m.icon('download') }}<span>{{ t('download.ready_btn_short') }}</span><small>{{ dl.file }}</small></a>
+    <p class="release__build">{{ t('download.ready_build', build=site.status.build) }}</p>
+    <p class="release__links">
+      <a class="link-arrow" href="{{ url('changelog') }}#v{{ dl.version|replace('.', '-') }}">{{ t('download.ready_changes', v=dl.version) }}{{ m.icon('arrow') }}</a>
+      {% if dl.release_page %}<a class="link-arrow" href="{{ dl.release_page }}" rel="noopener" target="_blank">{{ t('download.ready_page') }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>{% endif %}
+    </p>
+    <details class="verify">
+      <summary>{{ t('download.verify_t') }}</summary>
       <p>{{ t('download.sha_d') }}</p>
       <div class="copyline"><code>Get-FileHash .\{{ dl.file }} -Algorithm SHA256</code><button type="button" class="copy" data-copy="Get-FileHash .\{{ dl.file }} -Algorithm SHA256" data-copied="{{ t('download.copied') }}">{{ m.icon('copy') }}<span>{{ t('download.copy') }}</span></button></div>
       <p>{{ t('download.sha_d2') }}</p>
       <div class="copyline copyline--hash"><code>{{ dl.sha256|upper }}</code><button type="button" class="copy" data-copy="{{ dl.sha256|upper }}" data-copied="{{ t('download.copied') }}">{{ m.icon('copy') }}<span>{{ t('download.copy') }}</span></button></div>
-    </div>
+    </details>
   </section>
   {% else %}
-  <section class="sealed" aria-labelledby="soon-title">
-    <div class="sealed__seal" aria-hidden="true">{{ m.emblem() }}</div>
-    <div>
-      <h2 id="soon-title">{{ t('download.soon_t') }}</h2>
-      <p>{{ t('download.soon_d') }}</p>
-      <button class="btn btn--pending" type="button" disabled>{{ m.icon('download') }}<span>{{ t('common.not_published') }}</span></button>
-    </div>
+  <section class="leaf release" aria-labelledby="soon-title">
+    <h2 class="release__title" id="soon-title">{{ t('download.soon_t') }}</h2>
+    <p>{{ t('download.soon_d') }}</p>
+    <button class="btn btn--pending" type="button" disabled>{{ m.icon('download') }}<span>{{ t('common.not_published') }}</span></button>
   </section>
   {% endif %}
 
-  <section class="install" id="install" aria-labelledby="install-title">
-    <header class="sechead">
-      {{ m.kicker(t('download.install_kicker'), 'folder') }}
+  <section class="install" id="install" aria-labelledby="install-title" data-install>
+    <header class="install__head">
       <h2 id="install-title">{{ t('download.install_t') }}</h2>
       <p>{{ t('download.install_d') }}</p>
+      <p class="install__progress" aria-live="polite"><span data-install-count>0</span>/<span data-install-total>8</span> {{ t('download.progress') }} <button type="button" class="btn btn--quiet install__reset" data-install-reset>{{ t('download.reset') }}</button></p>
     </header>
-    <ol class="steps">
-      <li class="step"><h3>{{ t('download.i1_t') }}</h3><p>{{ t('download.i1_d', file=dl.file or 'FLC.zip') }}</p></li>
-      <li class="step"><h3>{{ t('download.i2_t') }}</h3><p>{{ t('download.i2_d') }}</p></li>
-      <li class="step"><h3>{{ t('download.i3_t') }}</h3><p>{{ t('download.i3_d') }}</p></li>
-      <li class="step"><h3>{{ t('download.i4_t') }}</h3><p>{{ t('download.i4_d') }}</p></li>
-      <li class="step step--wide">
-        <h3>{{ t('download.i5_t') }}</h3><p>{{ t('download.i5_d') }}</p>
-        <div class="trees">
-          <figure class="tree tree--ok">
-            <figcaption>{{ m.icon('check') }}{{ t('download.tree_ok') }}</figcaption>
-            <ul><li>{{ m.icon('folder') }}_forever_<ul><li>{{ m.icon('folder') }}Interface<ul><li>{{ m.icon('folder') }}AddOns<ul>
-              <li class="hl">{{ m.icon('folder') }}FLC_Guides_Catalog</li>
-              <li class="hl">{{ m.icon('folder') }}ForeverLevelingCompanion</li>
-            </ul></li></ul></li></ul></li></ul>
-          </figure>
-          <figure class="tree tree--bad">
-            <figcaption>×&nbsp;{{ t('download.tree_bad') }}</figcaption>
-            <ul><li>{{ m.icon('folder') }}AddOns<ul><li>{{ m.icon('folder') }}FLC-{{ dl.version or '0.8' }}<ul>
-              <li class="bad">{{ m.icon('folder') }}ForeverLevelingCompanion</li>
-              <li class="bad">{{ m.icon('folder') }}FLC_Guides_Catalog</li>
-            </ul></li></ul></li></ul>
-          </figure>
-        </div>
-      </li>
-      <li class="step"><h3>{{ t('download.i6_t') }}</h3><p>{{ t('download.i6_d') }}</p></li>
-      <li class="step"><h3>{{ t('download.i7_t') }}</h3><p>{{ t('download.i7_d') }}</p></li>
-      <li class="step step--wide"><h3>{{ t('download.i8_t') }}</h3><p>{{ t('download.i8_d') }}</p></li>
-    </ol>
+    {% set moves = [
+      ('move1', [('i1', {'file': dl.file or 'FLC.zip'}), ('i2', {})]),
+      ('move2', [('i3', {}), ('i4', {}), ('i5', {})]),
+      ('move3', [('i6', {}), ('i7', {}), ('i8', {})])] %}
+    {% set n = namespace(i=0) %}
+    {% for move, steps in moves %}
+    <section class="move" aria-labelledby="{{ move }}-title">
+      <h3 class="move__title" id="{{ move }}-title">{{ t('download.' ~ move ~ '_t') }}</h3>
+      <ol class="objectives objectives--install">
+        {% for key, args in steps %}
+        {% set n.i = n.i + 1 %}
+        <li class="step" id="step-{{ n.i }}">
+          <label class="step__check"><input type="checkbox" data-step="{{ n.i }}"><span class="sr">{{ t('download.mark_done') }}</span></label>
+          <div class="step__body">
+            <h4 class="step__title">{{ t('download.' ~ key ~ '_t') }} <a class="step__anchor" href="#step-{{ n.i }}" aria-label="{{ t('download.step_link') }}">#</a></h4>
+            <p>{{ t('download.' ~ key ~ '_d', **args) }}</p>
+            {% if key == 'i3' %}<p class="step__hint">{{ t('download.where_hint') }}</p>{% endif %}
+            {% if key == 'i5' %}
+            <div class="trees">
+              <figure class="tree tree--ok">
+                <figcaption>{{ m.icon('check') }}{{ t('download.tree_ok') }}</figcaption>
+                <ul><li>{{ m.icon('folder') }}_forever_<ul><li>{{ m.icon('folder') }}Interface<ul><li>{{ m.icon('folder') }}AddOns<ul>
+                  <li class="hl">{{ m.icon('folder') }}FLC_Guides_Catalog</li>
+                  <li class="hl">{{ m.icon('folder') }}ForeverLevelingCompanion</li>
+                </ul></li></ul></li></ul></li></ul>
+              </figure>
+              <figure class="tree tree--bad">
+                <figcaption>{{ m.icon('cross') }}{{ t('download.tree_bad') }}</figcaption>
+                <ul><li>{{ m.icon('folder') }}AddOns<ul><li>{{ m.icon('folder') }}FLC-{{ dl.version or '0.8' }}<ul>
+                  <li class="bad">{{ m.icon('folder') }}ForeverLevelingCompanion</li>
+                  <li class="bad">{{ m.icon('folder') }}FLC_Guides_Catalog</li>
+                </ul></li></ul></li></ul>
+              </figure>
+            </div>
+            {% endif %}
+            {% if key == 'i8' %}{{ m.shot('welcome-setup', t('download.done_cap'), sizes='460px') }}{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
     <div class="callout">
       <h3>{{ t('download.update_t') }}</h3>
       <p>{{ t('download.update_d') }}</p>
@@ -86,6 +100,12 @@
     </div>
   </section>
 
+  <section class="known" id="known" aria-labelledby="known-title">
+    <h2 id="known-title">{{ t('download.known_t') }}</h2>
+    <ul class="bullets">{% for k in t('download.known') %}<li>{{ k }}</li>{% endfor %}</ul>
+    <p>{{ t('download.known_more') }} <a class="nowrap" href="{{ site.reports.issues }}" rel="noopener" target="_blank">{{ t('download.links_issues') }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external', 'i-ext') }}</a></p>
+  </section>
+
   <div class="split">
     <section aria-labelledby="req-title">
       <h2 id="req-title">{{ t('download.req_t') }}</h2>
@@ -94,27 +114,21 @@
     <section aria-labelledby="builds-title">
       <h2 id="builds-title">{{ t('download.builds_t') }}</h2>
       <p>{{ t('download.builds_d') }}</p>
-      <div class="table-wrap">
-      <table class="builds">
-        <thead><tr><th scope="col">{{ t('download.build_client') }}</th><th scope="col">{{ t('download.build_status') }}</th></tr></thead>
-        <tbody>
+      <ul class="builds">
         {% for b in site.builds.list %}
-          <tr>
-            <td>{% if b.client == 'realm' %}{{ t('download.build_realm') }}{% else %}<code>{{ b.client }}</code>{% endif %}</td>
-            <td>{% if b.status == 'tested' %}{{ m.badge('client', true) }}{% else %}<span class="badge badge--pending">{{ t('download.build_untested') }}</span>{% endif %}<span class="cell-note">{{ t('download.build_note_' ~ b.note) }}</span></td>
-          </tr>
+        <li class="builds__row">
+          <span class="builds__client">{% if b.client == 'realm' %}{{ t('download.build_realm') }}{% else %}<code>{{ b.client }}</code>{% endif %}</span>
+          <span class="builds__state">{% if b.status == 'tested' %}{{ m.badge('client', true) }}{% else %}<span class="badge badge--pending">{{ t('download.build_untested') }}</span>{% endif %}</span>
+          <span class="builds__note">{{ t('download.build_note_' ~ b.note) }}</span>
+        </li>
         {% endfor %}
-        </tbody>
-      </table>
-      </div>
+      </ul>
     </section>
   </div>
 
-  <section class="known" id="known" aria-labelledby="known-title">
-    <h2 id="known-title">{{ t('download.known_t') }}</h2>
-    <ul class="bullets">{% for k in t('download.known') %}<li>{{ k }}</li>{% endfor %}</ul>
-    <p>{{ t('download.known_more') }} <a class="nowrap" href="{{ site.reports.issues }}" rel="noopener" target="_blank">{{ t('download.links_issues') }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external', 'i-ext') }}</a></p>
-    <p class="actions"><a class="btn btn--ghost" href="{{ url('changelog') }}">{{ m.icon('scroll') }}<span>{{ t('download.links_changelog') }}</span></a> <a class="btn btn--ghost" href="{{ url('report') }}">{{ m.icon('bug') }}<span>{{ t('download.links_report') }}</span></a></p>
+  <section class="endnote" aria-labelledby="end-title">
+    <h2 id="end-title">{{ t('download.end_t') }}</h2>
+    <p class="actions"><a class="btn btn--ghost" href="{{ url('report') }}">{{ m.icon('bug') }}<span>{{ t('download.links_report') }}</span></a> <a class="btn btn--ghost" href="{{ url('changelog') }}">{{ m.icon('scroll') }}<span>{{ t('download.links_changelog') }}</span></a></p>
   </section>
 </div>
 {% endblock %}

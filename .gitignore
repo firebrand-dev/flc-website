@@ -2,3 +2,9 @@ dist/
 build/
 __pycache__/
 .claude/
+
+# Impeccable ephemeral files
+.impeccable/review/
+.impeccable/build/
+.impeccable/mocks/
+.claude/skills/impeccable/scripts/bin/

@@ -145,7 +145,9 @@ async function main() {
       let shot;
       if (flag('menu')) { await cdp.send('Runtime.evaluate', { expression: "document.querySelector('[data-menu-btn]').click()" }); await sleep(700); }
       if (FULL) {
-        await cdp.send('Emulation.setDeviceMetricsOverride', { width: v.width, height: res.height, deviceScaleFactor: v.dpr, mobile: v.mobile });
+        // a capture taller than ~16k device pixels repeats from the top: lower the density for long pages
+        const fullDpr = Math.max(1, Math.min(v.dpr, Math.floor(16000 / res.height)));
+        await cdp.send('Emulation.setDeviceMetricsOverride', { width: v.width, height: res.height, deviceScaleFactor: fullDpr, mobile: v.mobile });
         await sleep(1200);
         shot = await cdp.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true });
         await cdp.send('Emulation.setDeviceMetricsOverride', { width: v.width, height: v.height, deviceScaleFactor: v.dpr, mobile: v.mobile });

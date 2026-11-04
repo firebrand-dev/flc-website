@@ -249,6 +249,9 @@ def build(serve=False, base_override=None):
                 """A capture as a lightbox link. small: another shot shown instead under small_media (art direction:
                 a different real capture framed for phones, not the same one cropped by CSS)."""
                 s = shots[shot_id]
+                if s["meta"].get("kind", "ui") == "ui":
+                    # an addon window never renders wider than its native pixels, whatever the layout asks for
+                    sizes = f"(max-width: {s['w']}px) 100vw, {s['w']}px"
                 srcset = ", ".join(f"{root}/media/{f} {w}w" for w, f in s["files"])
                 fallback = f"{root}/media/" + s["files"][min(1, len(s["files"]) - 1)][1]
                 largest = f"{root}/media/" + s["files"][-1][1]
@@ -259,7 +262,8 @@ def build(serve=False, base_override=None):
                 if small:
                     sm = shots[small]
                     sm_set = ", ".join(f"{root}/media/{f} {w}w" for w, f in sm["files"])
-                    img = (f'<picture><source media="{small_media}" srcset="{sm_set}" sizes="100vw" '
+                    sm_sizes = f"(max-width: {sm['w']}px) 100vw, {sm['w']}px" if sm["meta"].get("kind", "ui") == "ui" else "100vw"
+                    img = (f'<picture><source media="{small_media}" srcset="{sm_set}" sizes="{sm_sizes}" '
                            f'width="{sm["w"]}" height="{sm["h"]}">{img}</picture>')
                     extra = f' data-small="{root}/media/{sm["files"][-1][1]}" data-small-media="{small_media}"'
                 kind = " shot--ui" if s["meta"].get("kind", "ui") == "ui" else ""

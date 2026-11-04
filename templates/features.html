@@ -9,35 +9,27 @@
       <div><dt>{{ m.badge('review') }}</dt><dd>{{ t('features.legend_review') }}</dd></div>
       <div><dt>{{ m.badge('offline') }}</dt><dd>{{ t('features.legend_offline') }}</dd></div>
     </dl>
+    <p class="facts">{{ t('features.facts', suites=site.status.suites.split('/')[0], build=site.status.build, errors=site.status.lua_errors, dungeons=dungeons.dungeons|length, raids=dungeons.raids_total) }}</p>
   </section>
 
-  <section class="tally" aria-labelledby="tally-title">
-    <h2 class="tally__h" id="tally-title">{{ t('features.numbers_t') }}</h2>
-    <ul class="tally__list">
-      <li><strong>{{ site.status.build.split('.')[-1] }}</strong><span>{{ t('features.n_build', suites=site.status.suites.split('/')[0]) }} ({{ site.status.build }})</span></li>
-      <li><strong>{{ site.status.lua_errors }}</strong><span>{{ t('features.n_errors') }}</span></li>
-      <li><strong>{{ dungeons.dungeons|length }}</strong><span>{{ t('features.n_dungeons') }}</span></li>
-      <li class="tally__zero"><strong>0</strong><span>{{ t('features.n_live') }}</span></li>
-    </ul>
-  </section>
-
+  {% set plates = {'leveling': 'guides-window', 'party': 'party-help-0811', 'dungeons': 'boss-card', 'loot': 'atlas-forme', 'custom': 'skin2-elvuilike', 'community': 'review-report'} %}
   {% for g in features.groups %}
-  <section class="questlog" aria-labelledby="g-{{ g.id }}">
-    <div class="questlog__head">
-      <h2 id="g-{{ g.id }}">{{ t('features.group_' ~ g.id) }}</h2>
-      <a class="link-arrow" href="{{ url(g.page ~ ('#' ~ g.anchor if g.get('anchor') else '')) }}">{{ t('features.go') }}<span class="sr">: {{ t('features.group_' ~ g.id) }}</span>{{ m.icon('arrow') }}</a>
-    </div>
-    <ul class="questlog__list">
-      {% for f in g['items'] %}
-      <li class="quest quest--{{ f.status }}">
-        <div class="quest__main">
-          <h3>{{ t('feat.' ~ f.id ~ '.t') }}</h3>
+  <section class="questlog{% if loop.index is even %} questlog--flip{% endif %}" aria-labelledby="g-{{ g.id }}">
+    <div class="questlog__plate">{{ m.shot(plates[g.id], t('features.cap_' ~ g.id), sizes='(min-width: 1100px) 560px, 100vw') }}</div>
+    <div class="questlog__page">
+      <div class="questlog__head">
+        <h2 id="g-{{ g.id }}">{{ t('features.group_' ~ g.id) }}</h2>
+        <a class="link-arrow" href="{{ url(g.page ~ ('#' ~ g.anchor if g.get('anchor') else '')) }}">{{ t('features.go') }}<span class="sr">: {{ t('features.group_' ~ g.id) }}</span>{{ m.icon('arrow') }}</a>
+      </div>
+      <ul class="questlog__list">
+        {% for f in g['items'] %}
+        <li class="quest quest--{{ f.status }}">
+          <h3>{{ t('feat.' ~ f.id ~ '.t') }} {{ m.badge(f.status, true) }}</h3>
           <p>{{ t('feat.' ~ f.id ~ '.d') }}</p>
-        </div>
-        <div class="quest__status">{{ m.badge(f.status) }}</div>
-      </li>
-      {% endfor %}
-    </ul>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
   {% endfor %}
 

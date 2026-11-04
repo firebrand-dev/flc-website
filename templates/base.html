@@ -28,7 +28,7 @@
 {% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{{ root }}/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="{{ root }}/assets/fonts/cinzel-latin-normal-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}/assets/fonts/im-fell-english-sc-latin-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ root }}/assets/fonts/alegreya-sans-latin-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ root }}/assets/fonts/alegreya-sans-latin-normal-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ root }}/assets/css/fonts.css">
@@ -54,7 +54,6 @@
 </head>
 <body class="page-{{ page_key }}">
 <a class="skip" href="#main">{{ t('meta.skip') }}</a>
-<div class="topo" aria-hidden="true"></div>
 
 <header class="masthead" data-masthead>
   <div class="masthead__inner">
@@ -84,9 +83,12 @@
           </div>
         </li>
       </ul>
-      <div class="nav__extra">{{ m.langswitch() }}</div>
+      <div class="nav__extra">
+        <a class="nav__support" href="{{ url('support') }}"{% if slug == 'support' %} aria-current="page"{% endif %}>{{ m.icon('flame') }}<span>{{ t('nav.support') }}</span></a>
+        {{ m.langswitch() }}
+      </div>
     </nav>
-    <a class="nav__support" href="{{ url('support') }}"{% if slug == 'support' %} aria-current="page"{% endif %}>{{ m.icon('flame') }}<span>{{ t('nav.support') }}</span></a>
+    <a class="masthead__dl" href="{{ url('download') }}"{% if slug == 'download' %} aria-current="page"{% endif %}>{{ m.icon('download') }}<span>{{ t('nav.download') }}</span></a>
     <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-btn>
       <span class="menu-btn__bars" aria-hidden="true"></span><span class="menu-btn__label">{{ t('meta.menu') }}</span>
     </button>

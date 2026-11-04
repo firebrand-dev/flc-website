@@ -121,7 +121,27 @@
     "stop6_cap": "Right click on FLC's minimap button: the quick menu.",
     "stop6_link": "Download and install",
     "next_t": "In development: 0.8.2",
-    "next_note": "Not part of the current download."
+    "next_note": "Not part of the current download.",
+    "objectives": "Objectives",
+    "obj1": "Download FLC {v}",
+    "obj2": "Copy its two folders into AddOns",
+    "obj3": "Start the game and type",
+    "reward": "Reward:",
+    "accept": "Accept: Download FLC",
+    "install_link": "How to install",
+    "hero_meta": "{size} · {date} · tested with game client {build}",
+    "share_pc": "On your phone? Send the link to your PC.",
+    "share_btn": "Send link",
+    "share_done": "Link copied",
+    "party_req": "Everyone in the group needs FLC and agrees to share quest progress with /flc share yes.",
+    "demo_label": "Party Mode, before and after",
+    "demo_help": "Helping a friend",
+    "demo_back": "Back on your guide",
+    "demo_back_cap": "When you are done: back on your own guide, at the step where you left it.",
+    "compare_label": "Slide between the Blizzlike and ElvUI-like skins",
+    "compare_cap": "The same guide and Quests windows at the same moment: Blizzlike under, ElvUI-like over. Drag to compare.",
+    "camp_alt": "A brazier between the tents of the Valley of Trials camp, in World of Warcraft Forever.",
+    "pin_scene_alt": "FLC's guide window: Loot the object: Abandoned Training Weapon, 0 of 6, in the area; also here, two quests to accept from Gornek."
   },
   "features": {
     "title": "Feature status",
@@ -144,7 +164,14 @@
     "group_community": "Reports",
     "go": "Details",
     "n_build": "game client build where all {suites} launch test suites passed with 0.8.1.1",
-    "n_errors": "Lua errors from FLC in those runs"
+    "n_errors": "Lua errors from FLC in those runs",
+    "facts": "From the launch report: all {suites} launch test suites passed with 0.8.1.1 on game client {build}, with {errors} Lua errors from FLC. {dungeons} dungeon guides and {raids} raid guides. Nothing has been checked on the official realms yet.",
+    "cap_leveling": "The Guides window: routes by zone, the one suggested for your level, and your progress.",
+    "cap_party": "Party Mode: helping a party member while your own progress is saved.",
+    "cap_dungeons": "The boss card in Wailing Caverns. Abilities marked (?) are still in review.",
+    "cap_loot": "Loot Atlas, \"For me\": items rated for a warrior, slot by slot.",
+    "cap_custom": "The guide and Quests windows in the ElvUI-like skin.",
+    "cap_community": "/flc review: the text to copy into a report."
   },
   "feat": {
     "guide": {
@@ -511,7 +538,20 @@
       }
     ],
     "links_issues": "Open reports",
-    "install_kicker": "Step by step"
+    "install_kicker": "Step by step",
+    "intro": "One zip from the official GitHub release, two folders, two minutes.",
+    "ready_btn_short": "Download FLC",
+    "verify_t": "Verify the file (optional)",
+    "progress": "steps done, saved on this device",
+    "reset": "Start over",
+    "move1_t": "Get the zip",
+    "move2_t": "Copy two folders",
+    "move3_t": "Turn it on in the game",
+    "mark_done": "Mark this step as done",
+    "step_link": "Link to this step",
+    "where_hint": "Inside the folder where World of Warcraft is installed, open _forever_, then Interface, then AddOns.",
+    "done_cap": "You are done when you see this: the welcome setup, the first time FLC starts.",
+    "end_t": "Stuck, or curious what changed?"
   },
   "support": {
     "title": "Support Development",
@@ -547,7 +587,8 @@
     ],
     "campaign_t": "Development goal",
     "campaign_raised": "{raised} raised of {goal}",
-    "campaign_source": "Source and date"
+    "campaign_source": "Source and date",
+    "board_t": "Two ways to support"
   },
   "changelog": {
     "title": "Changelog",
@@ -659,7 +700,7 @@
     "tools_t": "Optional integrations",
     "tools_d": "TomTom is called only at runtime if you have it installed; it is never bundled.",
     "site_t": "This website",
-    "site_fonts": "Typefaces: <strong>Cinzel</strong> (The Cinzel Project Authors) and <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), both under the SIL Open Font License 1.1, served from this site.",
+    "site_fonts": "Typefaces: <strong>IM Fell English SC</strong> (Igino Marini) and <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), both under the SIL Open Font License 1.1, served from this site.",
     "site_shots": "Screenshots were taken by the FLC team in the WoW Forever game client, with FLC on screen. Game imagery belongs to Blizzard Entertainment.",
     "site_art": "Logo, maps, compass and ornaments on this site are original artwork made for FLC.",
     "trademark_t": "Trademarks",

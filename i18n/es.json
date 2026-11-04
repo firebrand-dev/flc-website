@@ -121,7 +121,27 @@
     "stop6_cap": "Clic derecho en el botón de FLC del minimapa: el menú rápido (interfaz en inglés).",
     "stop6_link": "Descargar e instalar",
     "next_t": "En desarrollo: 0.8.2",
-    "next_note": "No está en la descarga actual."
+    "next_note": "No está en la descarga actual.",
+    "objectives": "Objetivos",
+    "obj1": "Descargá FLC {v}",
+    "obj2": "Copiá sus dos carpetas a AddOns",
+    "obj3": "Abrí el juego y escribí",
+    "reward": "Recompensa:",
+    "accept": "Aceptar: Descargar FLC",
+    "install_link": "Cómo instalarlo",
+    "hero_meta": "{size} · {date} · probada con el cliente {build}",
+    "share_pc": "¿Estás en el celular? Mandate el link a la PC.",
+    "share_btn": "Mandar link",
+    "share_done": "Link copiado",
+    "party_req": "Todos en el grupo necesitan FLC y aceptar compartir el progreso de misiones con /flc share yes.",
+    "demo_label": "Modo Grupo, antes y después",
+    "demo_help": "Ayudando a un amigo",
+    "demo_back": "De vuelta en tu guía",
+    "demo_back_cap": "Cuando terminás: de vuelta en tu propia guía, en el paso donde la dejaste (interfaz en inglés).",
+    "compare_label": "Deslizá entre los aspectos Blizzlike y estilo ElvUI",
+    "compare_cap": "Las mismas ventanas de guía y de misiones en el mismo momento: Blizzlike debajo, estilo ElvUI encima. Arrastrá para comparar (interfaz en inglés).",
+    "camp_alt": "Un brasero entre las carpas del campamento del Valle de las Pruebas, en World of Warcraft Forever.",
+    "pin_scene_alt": "Ventana de la guía de FLC (interfaz en inglés): saquear el objeto Abandoned Training Weapon, 0 de 6, ya en la zona; además, dos misiones para aceptar de Gornek."
   },
   "features": {
     "title": "Estado de las funciones",
@@ -144,7 +164,14 @@
     "group_community": "Reportes",
     "go": "Detalles",
     "n_build": "versión del cliente en la que pasaron las {suites} baterías de prueba del lanzamiento con 0.8.1.1",
-    "n_errors": "errores de Lua de FLC en esas pruebas"
+    "n_errors": "errores de Lua de FLC en esas pruebas",
+    "facts": "Según el informe de lanzamiento: pasaron las {suites} baterías de prueba con 0.8.1.1 en el cliente {build}, con {errors} errores de Lua de FLC. {dungeons} guías de mazmorra y {raids} de banda. Todavía no se comprobó nada en los reinos oficiales.",
+    "cap_leveling": "La ventana de guías: rutas por zona, la sugerida para tu nivel y tu progreso (interfaz en inglés).",
+    "cap_party": "Modo Grupo: ayudando a alguien del grupo mientras tu progreso queda guardado (interfaz en inglés).",
+    "cap_dungeons": "La ficha del jefe en las Cuevas de los Lamentos. Las habilidades con (?) siguen en revisión.",
+    "cap_loot": "Atlas de botín, \"Para mí\": objetos evaluados para un guerrero, ranura por ranura.",
+    "cap_custom": "Las ventanas de guía y de misiones con el aspecto estilo ElvUI.",
+    "cap_community": "/flc review: el texto para copiar en un reporte."
   },
   "feat": {
     "guide": {
@@ -511,7 +538,20 @@
       }
     ],
     "links_issues": "Reportes abiertos",
-    "install_kicker": "Paso a paso"
+    "install_kicker": "Paso a paso",
+    "intro": "Un zip del lanzamiento oficial en GitHub, dos carpetas, dos minutos.",
+    "ready_btn_short": "Descargar FLC",
+    "verify_t": "Verificar el archivo (opcional)",
+    "progress": "pasos hechos, guardado en este dispositivo",
+    "reset": "Empezar de nuevo",
+    "move1_t": "Conseguí el zip",
+    "move2_t": "Copiá dos carpetas",
+    "move3_t": "Activalo en el juego",
+    "mark_done": "Marcar este paso como hecho",
+    "step_link": "Enlace a este paso",
+    "where_hint": "Dentro de la carpeta donde está instalado World of Warcraft, abrí _forever_, después Interface y después AddOns.",
+    "done_cap": "Terminaste cuando ves esto: la configuración inicial, la primera vez que arranca FLC (interfaz en inglés).",
+    "end_t": "¿Te trabaste o querés ver qué cambió?"
   },
   "support": {
     "title": "Apoyar el desarrollo",
@@ -547,7 +587,8 @@
     ],
     "campaign_t": "Objetivo de desarrollo",
     "campaign_raised": "{raised} recaudados de {goal}",
-    "campaign_source": "Fuente y fecha"
+    "campaign_source": "Fuente y fecha",
+    "board_t": "Dos formas de apoyar"
   },
   "changelog": {
     "title": "Novedades",
@@ -659,7 +700,7 @@
     "tools_t": "Integraciones opcionales",
     "tools_d": "TomTom se usa solo mientras jugás, si lo tenés instalado; nunca se incluye.",
     "site_t": "Este sitio",
-    "site_fonts": "Tipografías: <strong>Cinzel</strong> (The Cinzel Project Authors) y <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), ambas bajo la SIL Open Font License 1.1, servidas desde este sitio.",
+    "site_fonts": "Tipografías: <strong>IM Fell English SC</strong> (Igino Marini) y <strong>Alegreya Sans</strong> (The Alegreya Sans Project Authors), ambas bajo la SIL Open Font License 1.1, servidas desde este sitio.",
     "site_shots": "Las capturas las tomó el equipo de FLC en el cliente de WoW Forever, con FLC en pantalla. Las imágenes del juego pertenecen a Blizzard Entertainment.",
     "site_art": "El logo, los mapas, la brújula y los ornamentos de este sitio son ilustraciones originales hechas para FLC.",
     "trademark_t": "Marcas",

@@ -350,7 +350,7 @@
         1832,
         462,
         2212,
-        622
+        640
       ],
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
@@ -384,6 +384,76 @@
       "date": "2026-11-04",
       "kind": "ui",
       "what": "Guide and Quests windows, ElvUI-like skin, same moment. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+    },
+    {
+      "id": "party-back-0811",
+      "src": "rc3:20261104-012705-scenario-party/11-A-back-to-own-guide.png",
+      "box": [
+        1832,
+        462,
+        2212,
+        640
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Back on your own guide where you left it, after helping a party member (two clients). Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+    },
+    {
+      "id": "camp-brazier",
+      "src": "rc3:20261104-012321-scenario-appearance/03-A-skin-blizzlike.png",
+      "box": [
+        1490,
+        320,
+        1790,
+        600
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "scene",
+      "what": "Valley of Trials camp: a brazier between the tents (ambient image for the support section). Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+    },
+    {
+      "id": "welcome-setup",
+      "src": "rc3:20261104-000943-scenario-setup-first/06-A-welcome.png",
+      "box": [
+        1060,
+        500,
+        1520,
+        780
+      ],
+      "flc": "0.8.1.1-rc1",
+      "date": "2026-11-04",
+      "kind": "ui",
+      "what": "Welcome setup on the first start: Adapt to my interface, Configure it myself, Skip for now. Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+    },
+    {
+      "id": "hero-scene",
+      "src": "rc3:20261101-011150-scenario-minimap/02-A-in-world.png",
+      "box": [
+        200,
+        0,
+        2560,
+        800
+      ],
+      "flc": "0.8.1-rc1",
+      "date": "2026-11-01",
+      "kind": "scene",
+      "what": "Valley of Trials for the desktop hero: FLC's arrow 'In the area', the guide window with its step and 'Also here' line, and the minimap button. Client 1.60.1.70532, development server. Cropped above the point where 0.8.1-rc1's Quests window overlapped the guide window (fixed in 0.8.1.1) and above the test character's unit frame and the chat tabs; the arrow stays right of the quest page from 1280 to 2560 px."
+    },
+    {
+      "id": "guide-scene",
+      "src": "rc3:20261101-011150-scenario-minimap/02-A-in-world.png",
+      "box": [
+        1466,
+        690,
+        2036,
+        862
+      ],
+      "flc": "0.8.1-rc1",
+      "date": "2026-11-01",
+      "kind": "ui",
+      "what": "The guide window of the desktop hero scene, at its native size: step, count, 'In the area' and the 'Also here' line. Same frame as hero-scene; cropped above 0.8.1-rc1's overlapping Quests window."
     }
   ]
 }

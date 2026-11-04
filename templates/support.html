@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 {% block main %}{% import "macros.html" as m with context %}
 {% set don = site.donations %}
-<header class="pagehead pagehead--campfire">
-  <div class="wrap">
-    {{ m.kicker(t('support.kicker'), 'flame') }}
-    <h1 class="pagehead__title">{{ t('support.h1') }}</h1>
-    <p class="pagehead__intro">{{ t('support.intro') }}</p>
+{% set any_open = don.platforms|selectattr('url')|list|length > 0 %}
+<section class="campfire" aria-labelledby="support-title">
+  <div class="wrap campfire__grid">
+    <figure class="campfire__fire">
+      {{ picture('camp-brazier', t('home.camp_alt'), sizes='380px', eager=true) }}
+      <figcaption>{{ m.icon('eye') }}{{ t('common.captured_flc', v=shots['camp-brazier'].meta.flc) }}</figcaption>
+    </figure>
+    <div class="campfire__text">
+      <h1 class="pagehead__title" id="support-title">{{ t('support.h1') }}</h1>
+      <p class="pagehead__intro">{{ t('support.intro') }}</p>
+    </div>
   </div>
-</header>
+</section>
 <div class="wrap">
   {% if don.campaign.enabled and don.campaign.source_url %}
   <section class="campaign" aria-labelledby="camp-title">
@@ -18,33 +24,31 @@
   </section>
   {% endif %}
 
-  <section class="tokens" aria-label="{{ t('nav.support_long') }}">
-    {% for p in don.platforms %}
-    <article class="token token--{{ p.id }}{% if not p.url %} is-soon{% endif %}">
-      <div class="token__coin" aria-hidden="true">{% if p.id == 'kofi' %}<span>$</span>{% else %}<span>$</span>{% endif %}<small>{{ p.currency }}</small></div>
-      <h2>{{ t('support.' ~ p.id ~ '_t') }}</h2>
-      <p>{{ t('support.' ~ p.id ~ '_d') }}</p>
-      {% if p.url %}
-      <a class="btn btn--primary" href="{{ p.url }}" rel="noopener" target="_blank">{{ t('support.go', name=p.name) }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
-      {% else %}
-      <p class="token__soon"><strong>{{ t('support.soon') }}</strong> {{ t('support.soon_d') }}</p>
-      {% endif %}
-    </article>
-    {% endfor %}
+  <section class="leaf board" aria-labelledby="board-title">
+    <h2 id="board-title">{{ t('support.board_t') }}</h2>
+    <ul class="board__list">
+      {% for p in don.platforms %}
+      <li class="board__row{% if not p.url %} is-soon{% endif %}">
+        <span class="board__name">{{ t('support.' ~ p.id ~ '_t') }}</span>
+        <span class="board__how">{{ t('support.' ~ p.id ~ '_d') }}</span>
+        {% if p.url %}<a class="btn btn--primary" href="{{ p.url }}" rel="noopener" target="_blank">{{ t('support.go', name=p.name) }}<span class="sr">{{ t('common.new_tab') }}</span>{{ m.icon('external') }}</a>
+        {% else %}<span class="board__soon">{{ t('common.coming_soon') }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% if not any_open %}<p class="board__note">{{ t('support.soon_d') }}</p>{% endif %}
   </section>
 
-  {{ m.divider() }}
-
   <div class="split split--three">
-    <section class="reveal">
-      <h2>{{ t('support.use_t') }}</h2>
-      <ul class="bullets">{% for u in t('support.use') %}<li>{{ u }}</li>{% endfor %}</ul>
-    </section>
-    <section class="reveal">
+    <section>
       <h2>{{ t('support.rules_t') }}</h2>
       <ul class="bullets bullets--check">{% for u in t('support.rules') %}<li>{{ u }}</li>{% endfor %}</ul>
     </section>
-    <section class="reveal">
+    <section>
+      <h2>{{ t('support.use_t') }}</h2>
+      <ul class="bullets">{% for u in t('support.use') %}<li>{{ u }}</li>{% endfor %}</ul>
+    </section>
+    <section>
       <h2>{{ t('support.other_t') }}</h2>
       <ul class="bullets">{% for u in t('support.other') %}<li>{{ u }}</li>{% endfor %}</ul>
       <a class="link-arrow" href="{{ url('report') }}">{{ t('nav.report') }}{{ m.icon('arrow') }}</a>
