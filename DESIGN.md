@@ -217,9 +217,9 @@ A warm, low-light palette: brown-black leather, cream ink, aged gold, one rubric
 
 A centred column of 1240px (`wrap`, masthead 1360px, prose 860px) with fluid gutters `clamp(16px, 4vw, 48px)`. Chapters stack vertically; inside them two-column grids use book proportions (5fr/7fr text/plates, flipped 7/5; 5/6 for features and quest logs; 4/8 for rules; 3/9 for install moves). All grids collapse to one column at 860px. Folio padding `clamp(28px, 4vw, 56px)`; major sections `clamp(48px, 7vw, 96px)` vertically.
 
-The home hero is a full-bleed scene with the quest page (40rem column) overlapping its lower part (negative top margin of 35.8vw); at 1600px and up a vellum ink note points at the guide window in the scene instead of a second plate. Under 680px phones get their own composition: a different, real mobile capture, the guide plate riding on its lower edge at full width, then the quest page with the action reordered first. The route line and waypoints disappear on phones.
+The home hero is a full-bleed scene with the quest page (40rem column) overlapping its lower part (negative top margin of 35.8vw); at 1600px and up the scene becomes an inset frontispiece plate (gutters on both sides, gilt hairline, lift shadow) and a one-line vellum ink note points at the guide window in the scene instead of a second plate. Under 680px phones get their own composition: a different, real mobile capture, the guide plate riding on its lower edge at full width, then the quest page with the action reordered first. The route line and waypoints disappear on phones.
 
-Breakpoints: 1600 (hero note), 1080 (footer, camp), 960 (masthead becomes menu button plus red Download), 860 (single column), 680 (phone compositions), 420 (brand name hidden, body 1.0625rem). Every interactive target is at least 44px.
+Breakpoints: 1600 (hero frontispiece and note), 1080 (footer, camp), 960 (masthead becomes menu button plus red Download), 860 (single column), 680 (phone compositions), 420 (brand name hidden, body 1.0625rem). Every interactive target is at least 44px.
 
 ## Elevation & Depth
 
