@@ -61,3 +61,17 @@ retiros, comisiones); more.ko-fi.com/terms (actualizado 2026-07-13); paypal.com/
 paypal.com/ar/webapps/mpp/paypal-fees (actualizadas 2026-10-28).
 Sin verificar: help.ko-fi.com (403), notas de prensa sobre la comisión de Cafecito (iProfesional, El Cronista),
 zverok.space (Buy Me a Coffee, 2024).
+
+## Portadas de Ko-fi y Cafecito
+
+Arte original en el mundo del sitio (sin capturas del juego). Fuentes: `tools/kofi-cover.html` (inglés, 4:1) y
+`tools/cafecito-cover.html` (español, 5:1). Para regenerarlas, desde la raíz del proyecto (Git Bash):
+
+```
+E="/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+P=$(cygpath -w "$PWD/tools/kofi-cover.html"); O=$(cygpath -w "$PWD/build/brand/kofi-portada.png")
+"$E" --headless=new --allow-file-access-from-files --hide-scrollbars --window-size=1200,300 --force-device-scale-factor=2 --virtual-time-budget=4000 --screenshot="$O" "file:///${P//\//}"
+```
+
+(Cafecito: `cafecito-cover.html`, `--window-size=1000,200`.) Cuentas en uso desde el 2026-11-04:
+`https://ko-fi.com/firebrandsoftware` y `https://cafecito.app/firebrand`.
