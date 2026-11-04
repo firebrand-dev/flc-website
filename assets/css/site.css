@@ -716,6 +716,8 @@ td { color: var(--text-2); }
   .folio { padding: 24px 18px 40px; }
   .folio--spread.pair { background: none; }
   .folio--loose { padding-inline: 0; }
+  .release .btn--big { flex-wrap: wrap; width: 100%; gap: 2px 10px; }
+  .release .btn--big small { flex-basis: 100%; }
   .partydemo__tabs { display: flex; width: 100%; }
   .partydemo__tabs button { flex: 1; }
   .trees { grid-template-columns: minmax(0, 1fr); }
