@@ -2,6 +2,52 @@
   "_comment": "Player-facing changelog, newest first. Curated from the addon's docs/release/RELEASE_NOTES_*.md. kind: release (published on GitHub), rc (release candidate, never published), dev (development build). 'next': what is in development, shown as such, never as part of the download.",
   "entries": [
     {
+      "version": "0.8.1.3",
+      "label": "0.8.1.3",
+      "date": "2026-11-10",
+      "kind": "release",
+      "en": [
+        "A maintenance release: the guide takes you from quest to quest better, plus the navigation line, the offer to help your party and the reward window marks.",
+        "The guide: quests in any order without losing the ones you skipped, < and > arrows to look at other steps (Current takes you back to yours), nearest first in your area, Sync with your quest log, and quests on your way.",
+        "Which quests it shows: no more quests your race, class or faction can never have; profession quests wait until you have the profession; group quests are optional when you play alone (/flc style).",
+        "Reward window: a green \"Best\", orange \"Sell\" or grey \"Swap\" mark says why, and weapons are compared as a whole set: a change of setup is never shown as a direct upgrade.",
+        "Navigation line on the world map and on the minimap (each one can be turned off in Options), the Loot Atlas with each dungeon's and raid's levels, and dungeon names in your client's language.",
+        "Party Mode offers to help a party member with quests you already passed. FLC tells you about a new version through your guild and reminds you when yours is more than three weeks old.",
+        "Known limitations, in review: the leveling path ends at level 58, some routes have detours or extra sea crossings, and some class quests are not on the path (check /flc advisor).",
+        "The Spanish texts are in review: if you see one cut off or in English, tell us with /flc review.",
+        "Tested with game client 1.60.1.70755."
+      ],
+      "es": [
+        "Una versión de mantenimiento: la guía te lleva mejor de misión en misión, y suma la línea de navegación, el aviso para ayudar a tu grupo y las marcas de la ventana de recompensas.",
+        "La guía: misiones en cualquier orden sin perder las que saltaste, flechas < y > para mirar otros pasos (Actual te devuelve al tuyo), lo más cercano primero en tu zona, Sinc. con tu registro de misiones y misiones en el camino.",
+        "Qué misiones te muestra: ya no aparecen las que tu raza, clase o facción nunca puede tener; las de profesión esperan a que la tengas; las de grupo son opcionales si jugás solo (/flc style).",
+        "Ventana de recompensas: una marca verde \"Mejora\", naranja \"Venta\" o gris \"Cambio\" dice por qué, y las armas se comparan como conjunto completo: cambiar de configuración nunca se muestra como mejora directa.",
+        "Línea de navegación en el mapa del mundo y en el minimapa (cada una se apaga en Opciones), el Atlas de botín con los niveles de cada mazmorra y banda, y nombres de mazmorras en el idioma de tu cliente.",
+        "El Modo Grupo te ofrece ayudar a alguien de tu grupo con misiones que vos ya pasaste. FLC te avisa de una versión nueva por la hermandad y te lo recuerda si la tuya tiene más de tres semanas.",
+        "Limitaciones conocidas, en revisión: el camino de niveles termina en el nivel 58, algunas rutas tienen vueltas de más o cruces de mar, y algunas misiones de clase no están en el camino (revisá /flc advisor).",
+        "Los textos en español están en revisión: si ves uno cortado o en inglés, avisanos con /flc review.",
+        "Probada con el cliente 1.60.1.70755."
+      ]
+    },
+    {
+      "version": "0.8.1.2",
+      "label": "0.8.1.2",
+      "date": "2026-11-04",
+      "kind": "release",
+      "en": [
+        "Two fixes on top of 0.8.1.1, from the first games on the official realms. No new features.",
+        "A quest its NPC does not offer you yet (it asks for a level or an earlier quest our data does not have): FLC now tells you in chat and goes on with the guide, and tries again after a level up or when the NPC offers it. /flc review shows it so you can report it.",
+        "After a fight, FLC hides the game's quest tracker again if the game showed it over FLC's \"Quests\" window.",
+        "Tested with game client 1.60.1.70755."
+      ],
+      "es": [
+        "Dos arreglos sobre 0.8.1.1, a partir de las primeras partidas en los reinos oficiales. Sin funciones nuevas.",
+        "Una misión que el PNJ todavía no te ofrece (pide un nivel o una misión anterior que nuestros datos no tienen): FLC ahora te avisa en el chat y sigue con la guía, y vuelve a probar cuando subís de nivel o cuando el PNJ te la ofrece. /flc review la muestra para que nos la reportes.",
+        "Después de una pelea, FLC vuelve a ocultar el rastreador de misiones del juego si el juego lo mostró encima de la ventana \"Misiones\" de FLC.",
+        "Probada con el cliente 1.60.1.70755."
+      ]
+    },
+    {
       "version": "0.8.1.1",
       "label": "0.8.1.1",
       "date": "2026-11-04",
