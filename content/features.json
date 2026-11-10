@@ -1,5 +1,5 @@
 {
-  "_comment": "Feature ledger shown on /features/ and in each section. status: client = passed real game-client test runs (our development server); review = works, but its data or part of it is still being confirmed ('in review'); offline = automated tests only; planned. Texts: i18n feat.<id>. Evidence: the addon's docs/STATUS.md, docs/ADAPTIVE_UI.md, docs/release/WEB_HANDOFF_LAUNCH.md and LAUNCH_REPORT_2026-11-04.md (FLC 0.8.1.1, client 1.60.1.70755).",
+  "_comment": "Feature ledger shown on /features/ and in each section. status: client = passed real game-client test runs; review = works, but its data or part of it is still being confirmed ('in review'); offline = automated tests only; planned. Texts: i18n feat.<id>. Evidence: the addon's docs/STATUS.md, docs/ADAPTIVE_UI.md, docs/release/WEB_HANDOFF_LAUNCH.md and LAUNCH_REPORT_2026-11-04.md (FLC 0.8.1.1, client 1.60.1.70755).",
   "groups": [
     {
       "id": "leveling",

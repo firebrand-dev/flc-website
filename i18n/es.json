@@ -150,9 +150,9 @@
     "meta": "Todas las funciones de Forever Leveling Companion y cómo se probaron: en el cliente de WoW Forever, en revisión o solo con pruebas automáticas.",
     "kicker": "Registro de misiones",
     "h1": "Qué hace FLC y qué está comprobado",
-    "intro": "Cada función muestra el nivel de prueba más alto que alcanzó, según los informes de prueba. \"Probado en el cliente\" quiere decir pruebas automáticas en el cliente real de WoW Forever, en nuestro propio servidor de desarrollo, con la versión que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales.",
+    "intro": "Cada función muestra el nivel de prueba más alto que alcanzó, según los informes de prueba. \"Probado en el cliente\" quiere decir pruebas automáticas en el cliente real de WoW Forever, con la versión que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales.",
     "legend": "Referencias",
-    "legend_client": "Pasó pruebas automáticas en el cliente real de WoW Forever, en nuestro servidor de desarrollo, con capturas.",
+    "legend_client": "Pasó pruebas automáticas en el cliente real de WoW Forever, con capturas.",
     "legend_review": "Funciona en el cliente, pero sus datos, o una parte, todavía no están confirmados contra el juego en vivo.",
     "legend_offline": "Cubierto solo por pruebas automáticas fuera del juego.",
     "numbers_t": "En números, según los informes de prueba",
@@ -461,7 +461,7 @@
       "Una cuenta gratuita de GitHub, solo si querés mandar reportes."
     ],
     "builds_t": "Versiones del juego",
-    "builds_d": "Qué probamos y dónde. Todas las pruebas fueron en nuestro propio servidor de desarrollo.",
+    "builds_d": "Qué probamos en cada versión del cliente del juego.",
     "build_client": "Cliente del juego",
     "build_status": "Estado",
     "install_t": "Instalación en Windows",
@@ -483,7 +483,7 @@
     "known_t": "Problemas conocidos",
     "known": [
       "Camino de niveles (1-60), en revisión: termina en el nivel 58, algunas rutas tienen vueltas de más o cruces de mar, y algunas misiones de clase no están en el camino (revisá /flc advisor).",
-      "Los datos de misiones salen de nuestro servidor de prueba: niveles, quién da cada misión y lugares pueden cambiar en los reinos oficiales. Lo que no está confirmado dice \"en revisión\" o \"(?)\": reportalo con /flc review.",
+      "Algunos datos de misiones (niveles, quién da cada misión, lugares) todavía no están confirmados en los reinos oficiales: dicen \"en revisión\" o \"(?)\". Reportá lo que no coincida con /flc review.",
       "Algunas habilidades de jefes siguen en revisión.",
       "Memoria: unos 18 MB al entrar, con el catálogo, y hasta unos 20 MB después de abrir el Atlas de botín y generar una ruta.",
       "Los minimapas cuadrados y los lanzadores de LibDataBroker (los datatexts de ElvUI, Titan Panel) todavía no se probaron en el cliente.",
@@ -493,7 +493,7 @@
     "known_more": "¿Algo más? Puede que alguien ya lo haya reportado:",
     "links_changelog": "Novedades",
     "links_report": "Reportar un problema",
-    "ready_build": "Probada con el cliente {build} en nuestro propio servidor de desarrollo, todavía no en los reinos oficiales.",
+    "ready_build": "Probada con el cliente {build}, todavía no en los reinos oficiales.",
     "ready_files": "Un zip con dos carpetas: el addon y su catálogo de misiones.",
     "ready_changes": "Novedades de {v}",
     "build_note_current": "La versión que instala Battle.net hoy: pasaron todas las pruebas del lanzamiento con 0.8.1.1; 0.8.1.2 y 0.8.1.3 también se probaron en ella",
@@ -653,7 +653,7 @@
       },
       {
         "q": "¿Funciona en los reinos oficiales?",
-        "a": "FLC {v} se probó con el cliente 1.60.1.70755, el que instala Battle.net hoy, en nuestro propio servidor de desarrollo. Todavía no se comprobó nada en los reinos oficiales, así que los datos de misiones que no están confirmados dicen \"en revisión\". Si el juego muestra otra cosa, reportalo con /flc review."
+        "a": "FLC {v} se probó con el cliente 1.60.1.70755, el que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales, así que los datos de misiones que no están confirmados dicen \"en revisión\". Si el juego muestra otra cosa, reportalo con /flc review."
       },
       {
         "q": "¿Qué significa \"en revisión\" o (?)?",

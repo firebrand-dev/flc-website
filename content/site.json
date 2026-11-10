@@ -14,7 +14,7 @@
     "updated": "2026-11-10"
   },
   "status": {
-    "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with (our development server, never the official realms). suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
+    "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with (not the official realms). suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
     "stage": "released",
     "build": "1.60.1.70755",
     "suites": "10/10",
@@ -33,7 +33,7 @@
     "checksums_url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.3/SHA256SUMS.txt"
   },
   "builds": {
-    "_comment": "Game client builds and what was checked on each, newest first. status: tested | untested. note: an i18n key under download.build_note_*. Every run was on our development server.",
+    "_comment": "Game client builds and what was checked on each, newest first. status: tested | untested. note: an i18n key under download.build_note_*.",
     "list": [
       {
         "client": "1.60.1.70755",

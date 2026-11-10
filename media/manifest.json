@@ -32,7 +32,7 @@
       ],
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
-      "what": "Valley of Trials (hero panorama and social preview): the arrow 'In the area', FLC's minimap button, the guide window and FLC's Quests window under the minimap. Client 1.60.1.70755, development server; the welcome setup at the bottom left is covered by the hero's guide-window pin.",
+      "what": "Valley of Trials (hero panorama and social preview): the arrow 'In the area', FLC's minimap button, the guide window and FLC's Quests window under the minimap. Client 1.60.1.70755; the welcome setup at the bottom left is covered by the hero's guide-window pin.",
       "kind": "scene"
     },
     {
@@ -313,7 +313,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Guides window (/flc guides): routes by zone, the one suggested for the level, progress in each. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Guides window (/flc guides): routes by zone, the one suggested for the level, progress in each. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "reward-mark",
@@ -327,7 +327,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Quest turn-in: FLC marks the reward that is an upgrade and leaves the choice to the player. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Quest turn-in: FLC marks the reward that is an upgrade and leaves the choice to the player. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "minimap-menu",
@@ -341,7 +341,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Minimap button, right click: Guides, Loot Atlas, Party Mode, Appearance, Options, Report a bug. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Minimap button, right click: Guides, Loot Atlas, Party Mode, Appearance, Options, Report a bug. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "party-help-0811",
@@ -355,7 +355,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Helping a party member (two clients): 'your progress is saved'. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Helping a party member (two clients): 'your progress is saved'. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "skin2-blizzlike",
@@ -369,7 +369,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Guide and Quests windows, Blizzlike skin. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Guide and Quests windows, Blizzlike skin. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "skin2-elvuilike",
@@ -383,7 +383,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Guide and Quests windows, ElvUI-like skin, same moment. Client 1.60.1.70755, development server; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
+      "what": "Guide and Quests windows, ElvUI-like skin, same moment. Client 1.60.1.70755; 0.8.1.1-rc1 has the same code as 0.8.1.1 (version string only)."
     },
     {
       "id": "party-back-0811",
@@ -397,7 +397,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Back on your own guide where you left it, after helping a party member (two clients). Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+      "what": "Back on your own guide where you left it, after helping a party member (two clients). Client 1.60.1.70755 (70707 for the welcome setup); 0.8.1.1-rc1 has the same code as 0.8.1.1."
     },
     {
       "id": "camp-brazier",
@@ -411,7 +411,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "scene",
-      "what": "Valley of Trials camp: a brazier between the tents (ambient image for the support section). Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+      "what": "Valley of Trials camp: a brazier between the tents (ambient image for the support section). Client 1.60.1.70755 (70707 for the welcome setup); 0.8.1.1-rc1 has the same code as 0.8.1.1."
     },
     {
       "id": "welcome-setup",
@@ -425,7 +425,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "ui",
-      "what": "Welcome setup on the first start: Adapt to my interface, Configure it myself, Skip for now. Client 1.60.1.70755 (70707 for the welcome setup), development server; 0.8.1.1-rc1 has the same code as 0.8.1.1."
+      "what": "Welcome setup on the first start: Adapt to my interface, Configure it myself, Skip for now. Client 1.60.1.70755 (70707 for the welcome setup); 0.8.1.1-rc1 has the same code as 0.8.1.1."
     },
     {
       "id": "hero-scene",
@@ -439,7 +439,7 @@
       "flc": "0.8.1.1-rc1",
       "date": "2026-11-04",
       "kind": "scene",
-      "what": "Valley of Trials for the desktop hero: FLC's arrow 'In the area', the guide window and FLC's Quests window in the game tracker's place (the 0.8.1.1 fix), the minimap, a Mottled Boar. Client 1.60.1.70755, development server. The welcome setup dialog in this frame sits under the quest page at desktop widths; cropped above the unit frame and chat. 0.8.1.1-rc1 has the same code as 0.8.1.1."
+      "what": "Valley of Trials for the desktop hero: FLC's arrow 'In the area', the guide window and FLC's Quests window in the game tracker's place (the 0.8.1.1 fix), the minimap, a Mottled Boar. Client 1.60.1.70755. The welcome setup dialog in this frame sits under the quest page at desktop widths; cropped above the unit frame and chat. 0.8.1.1-rc1 has the same code as 0.8.1.1."
     },
     {
       "id": "guide-scene",

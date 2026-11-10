@@ -41,9 +41,9 @@ Confirmed by the owner (2026-11-04), all four together:
 ## Operating Context
 
 - Distribution: GitHub Releases of `firebrand-dev/ForeverLevelingCompanion` (public, release files only). Current:
-  **0.8.1.1**, published 2026-11-04, `FLC-0.8.1.1.zip`, 1,004,876 bytes, SHA-256
-  `756879fd789f9d6506d4e0a8b6bc30db83d5a1b3a3e0684a7228973d4cb63761`. Tested on client 1.60.1.70755 on the team's own
-  development server, not on the official realms. Source of truth:
+  **0.8.1.3**, published 2026-11-10, `FLC-0.8.1.3.zip`, 1,097,257 bytes, SHA-256
+  `09cbe0b49f2a992f2138ec149b976630858db1f05503aafa118fd7831b838102`. Tested on client 1.60.1.70755, not on the
+  official realms. Source of truth:
   `E:\Firebrand\FoLeCom-0811\docs\release\WEB_HANDOFF_LAUNCH.md`.
 - Install: two folders (`ForeverLevelingCompanion`, `FLC_Guides_Catalog`) into
   `World of Warcraft\_forever_\Interface\AddOns`; welcome setup on first start.

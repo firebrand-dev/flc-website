@@ -150,9 +150,9 @@
     "meta": "Every Forever Leveling Companion feature and how it was tested: in the WoW Forever game client, in review, or automated tests only.",
     "kicker": "Quest log",
     "h1": "What FLC does, and what is proven",
-    "intro": "Each feature carries the highest level of proof it reached, taken from the test reports. \"Tested in the client\" means automated runs in the real WoW Forever client on our own development server, with the build Battle.net installs today. Nothing has been checked on the official realms yet.",
+    "intro": "Each feature carries the highest level of proof it reached, taken from the test reports. \"Tested in the client\" means automated runs in the real WoW Forever client, with the build Battle.net installs today. Nothing has been checked on the official realms yet.",
     "legend": "Legend",
-    "legend_client": "Passed automated runs in the real WoW Forever client, on our development server, with screenshots.",
+    "legend_client": "Passed automated runs in the real WoW Forever client, with screenshots.",
     "legend_review": "Works in the client, but its data, or part of it, is not confirmed against the live game yet.",
     "legend_offline": "Covered by automated tests outside the game only.",
     "numbers_t": "In numbers, from the test reports",
@@ -461,7 +461,7 @@
       "A free GitHub account, only if you want to send reports."
     ],
     "builds_t": "Game builds",
-    "builds_d": "What we tested, and where. Every run was on our own development server.",
+    "builds_d": "What we tested on each game client build.",
     "build_client": "Game client",
     "build_status": "Status",
     "install_t": "Install on Windows",
@@ -483,7 +483,7 @@
     "known_t": "Known issues",
     "known": [
       "Leveling path (1-60), in review: it ends at level 58, some routes have detours or extra sea crossings, and some class quests are not on it (check /flc advisor).",
-      "Quest data comes from our test server: levels, quest givers and places may differ on the official realms. What is not confirmed says \"in review\" or \"(?)\": report it with /flc review.",
+      "Some quest data (levels, quest givers, places) is not confirmed on the official realms yet: it says \"in review\" or \"(?)\". Report what differs with /flc review.",
       "Some boss abilities are still in review.",
       "Memory: about 18 MB at login with the catalog, up to about 20 MB after opening the Loot Atlas and generating a route.",
       "Square minimaps and LibDataBroker launchers (ElvUI datatexts, Titan Panel) are not tested in the client yet.",
@@ -493,7 +493,7 @@
     "known_more": "Something else? Maybe someone already reported it:",
     "links_changelog": "Changelog",
     "links_report": "Report a problem",
-    "ready_build": "Tested with game client {build} on our own development server, not yet on the official realms.",
+    "ready_build": "Tested with game client {build}, not yet on the official realms.",
     "ready_files": "One zip with two folders: the addon and its quest catalog.",
     "ready_changes": "What's new in {v}",
     "build_note_current": "The build Battle.net installs today: every launch test passed with 0.8.1.1; 0.8.1.2 and 0.8.1.3 were tested on it too",
@@ -653,7 +653,7 @@
       },
       {
         "q": "Does it work on the official realms?",
-        "a": "FLC {v} was tested with game client 1.60.1.70755, the one Battle.net installs today, on our own development server. Nothing has been checked on the official realms yet, so quest data that is not confirmed says \"in review\". If the game shows something else, report it with /flc review."
+        "a": "FLC {v} was tested with game client 1.60.1.70755, the one Battle.net installs today. Nothing has been checked on the official realms yet, so quest data that is not confirmed says \"in review\". If the game shows something else, report it with /flc review."
       },
       {
         "q": "What does \"in review\" or (?) mean?",

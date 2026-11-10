@@ -18,7 +18,7 @@
 - Nitidez: las ventanas del addon (`kind: "ui"` en el manifiesto) se publican en un solo WebP a su ancho original,
   calidad 95, y el CSS nunca las estira ni las rota (estirar, rotar o comprimir fuerte era lo que borroneaba el
   texto). Las escenas (`kind: "scene"`) van en varios anchos, calidad 88.
-- Se evitaron recortes con textos viejos del addon que hablaban de "test server" (la regla nueva del addon es decir
+- Se evitaron recortes con textos viejos del addon que ya no corresponden (la regla nueva del addon es decir
   "en revisión"). Las capturas de 0.4/0.5 que quedan no tienen ese texto, salvo la panorámica de la Isla de Zephras,
   que no incluye ninguna ventana del addon.
 - Las capturas tienen la interfaz del addon en inglés (el cliente de pruebas es enUS). Las leyendas en español lo
