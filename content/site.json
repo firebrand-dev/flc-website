@@ -14,7 +14,7 @@
     "updated": "2026-11-10"
   },
   "status": {
-    "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with (not the official realms). suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
+    "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with. suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
     "stage": "released",
     "build": "1.60.1.70755",
     "suites": "10/10",
@@ -54,11 +54,6 @@
         "client": "1.60.1.70658 · 70685",
         "status": "untested",
         "note": "superseded"
-      },
-      {
-        "client": "realm",
-        "status": "untested",
-        "note": "realm"
       }
     ]
   },

@@ -35,13 +35,13 @@
       "date": "2026-11-04",
       "kind": "release",
       "en": [
-        "Two fixes on top of 0.8.1.1, from the first games on the official realms. No new features.",
+        "Two fixes on top of 0.8.1.1, from the first players' reports. No new features.",
         "A quest its NPC does not offer you yet (it asks for a level or an earlier quest our data does not have): FLC now tells you in chat and goes on with the guide, and tries again after a level up or when the NPC offers it. /flc review shows it so you can report it.",
         "After a fight, FLC hides the game's quest tracker again if the game showed it over FLC's \"Quests\" window.",
         "Tested with game client 1.60.1.70755."
       ],
       "es": [
-        "Dos arreglos sobre 0.8.1.1, a partir de las primeras partidas en los reinos oficiales. Sin funciones nuevas.",
+        "Dos arreglos sobre 0.8.1.1, a partir de los primeros reportes de jugadores. Sin funciones nuevas.",
         "Una misión que el PNJ todavía no te ofrece (pide un nivel o una misión anterior que nuestros datos no tienen): FLC ahora te avisa en el chat y sigue con la guía, y vuelve a probar cuando subís de nivel o cuando el PNJ te la ofrece. /flc review la muestra para que nos la reportes.",
         "Después de una pelea, FLC vuelve a ocultar el rastreador de misiones del juego si el juego lo mostró encima de la ventana \"Misiones\" de FLC.",
         "Probada con el cliente 1.60.1.70755."

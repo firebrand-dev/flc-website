@@ -54,7 +54,7 @@
     "back_top": "Back to top",
     "new_tab": "(opens GitHub in a new tab)",
     "honesty_title": "What \"in review\" means",
-    "honesty_body": "FLC's routes and boss data were built and tested during development, before the game's launch. Anything not yet confirmed against the live game carries an <em>in review</em> label, or <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a>: that is how the guides get better."
+    "honesty_body": "Anything in FLC's routes and boss data that is not confirmed yet carries an <em>in review</em> label, or <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a>: that is how the guides get better."
   },
   "footer": {
     "tagline": "Forever Leveling Companion is made by players, for players, in their free time.",
@@ -93,7 +93,7 @@
     "v1_t": "It never plays for you",
     "v1_d": "FLC shows the way and what to do. You walk, fight and choose: it never moves your character or clicks for you.",
     "v2_t": "Honest labels",
-    "v2_d": "Anything not confirmed against the live game yet says <em>in review</em>, or shows <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a> and the guides get better.",
+    "v2_d": "Anything not confirmed yet says <em>in review</em>, or shows <span class=\"q\">(?)</span> next to a boss ability. If the game shows something else, <a href=\"{report}\">tell us</a> and the guides get better.",
     "v3_t": "Your data stays in the game",
     "v3_d": "FLC sends nothing out of the game. Party progress is shared only with your group, and only after you agree.",
     "report_t": "Something looks wrong?",
@@ -150,14 +150,13 @@
     "meta": "Every Forever Leveling Companion feature and how it was tested: in the WoW Forever game client, in review, or automated tests only.",
     "kicker": "Quest log",
     "h1": "What FLC does, and what is proven",
-    "intro": "Each feature carries the highest level of proof it reached, taken from the test reports. \"Tested in the client\" means automated runs in the real WoW Forever client, with the build Battle.net installs today. Nothing has been checked on the official realms yet.",
+    "intro": "Each feature carries the highest level of proof it reached, taken from the test reports. \"Tested in the client\" means automated runs in the real WoW Forever client, with the build Battle.net installs today.",
     "legend": "Legend",
     "legend_client": "Passed automated runs in the real WoW Forever client, with screenshots.",
-    "legend_review": "Works in the client, but its data, or part of it, is not confirmed against the live game yet.",
+    "legend_review": "Works in the client, but its data, or part of it, is not confirmed yet.",
     "legend_offline": "Covered by automated tests outside the game only.",
     "numbers_t": "In numbers, from the test reports",
     "n_dungeons": "dungeon guides, plus 12 raid guides",
-    "n_live": "routes checked on the official realms so far",
     "group_leveling": "Leveling and navigation",
     "group_party": "Party Mode",
     "group_dungeons": "Dungeons & Raids",
@@ -167,7 +166,7 @@
     "go": "Details",
     "n_build": "game client build where all {suites} launch test suites passed with 0.8.1.1",
     "n_errors": "Lua errors from FLC in those runs",
-    "facts": "From the launch report: all {suites} launch test suites passed with 0.8.1.1 on game client {build}, with {errors} Lua errors from FLC. {dungeons} dungeon guides and {raids} raid guides. Nothing has been checked on the official realms yet.",
+    "facts": "From the launch report: all {suites} launch test suites passed with 0.8.1.1 on game client {build}, with {errors} Lua errors from FLC. {dungeons} dungeon guides and {raids} raid guides.",
     "cap_leveling": "The Guides window: routes by zone, the one suggested for your level, and your progress.",
     "cap_party": "Party Mode: helping a party member while your own progress is saved.",
     "cap_dungeons": "The boss card in Wailing Caverns. Abilities marked (?) are still in review.",
@@ -210,7 +209,7 @@
     },
     "routes": {
       "t": "Quest routes",
-      "d": "Routes by race, class and faction, built from development data. Starting zones were walked step by step in the client; the rest is in review until confirmed on the live realm."
+      "d": "Routes by race, class and faction. Starting zones were walked step by step in the client; the rest is in review until confirmed."
     },
     "sync": {
       "t": "Party progress",
@@ -238,7 +237,7 @@
     },
     "dguides": {
       "t": "Dungeon guides",
-      "d": "23 dungeons: the entrance, quest objectives inside, each boss in the game's order and the way out. Bosses were found in the client on a development realm (146 of 159 placed)."
+      "d": "23 dungeons: the entrance, quest objectives inside, each boss in the game's order and the way out. Bosses were found in the client (146 of 159 placed)."
     },
     "rguides": {
       "t": "Raid guides",
@@ -339,7 +338,7 @@
     "p_cap_panel": "The Party Mode panel: members, steps and sync.",
     "party_note": "After a group forms, a member's progress can take up to about 15 seconds to show.",
     "routes_t": "About the routes",
-    "routes_d": "Routes by race, class and faction come from development data. The starting zones were walked step by step in the client; nothing has been played on the live realm yet. Steps that are not confirmed say \"in review\": if the game shows something else, <a href=\"{report}\">tell us</a>.",
+    "routes_d": "The starting zones of the routes by race, class and faction were walked step by step in the client. Steps that are not confirmed say \"in review\": if the game shows something else, <a href=\"{report}\">tell us</a>.",
     "cmd_flc": "Show or hide the guide",
     "cmd_party": "Party Mode panel",
     "cmd_path": "Your whole 1–60 path",
@@ -378,8 +377,8 @@
     "limits_t": "Good to know",
     "limits": [
       "The arrow has no position inside instances (a game limit): the guide moves on with encounter events instead.",
-      "Boss positions were checked in the client on a development realm: 146 of 159 placed bosses.",
-      "Some data may change on the live realm: report what differs with /flc review."
+      "Boss positions were checked in the client: 146 of 159 placed bosses.",
+      "Some data may still change: report what differs with /flc review."
     ],
     "raids_more": "Plus {n} more raid guides whose boss data is still incomplete."
   },
@@ -399,7 +398,7 @@
     "s3_d": "When you face a boss, its card can list its loot for you. The rating is an estimate from item stats, never a need or greed call: the roll is yours.",
     "s4_t": "Wishlist",
     "s4_d": "Add items to your wishlist from any page of the atlas. When you prepare a dungeon, FLC reminds you which bosses drop them.",
-    "note": "The atlas shows loot tables without drop chances. Item data may change on the live realm."
+    "note": "The atlas shows loot tables without drop chances. Item data may still change."
   },
   "custom": {
     "title": "Customization: skins and Adapt to my interface",
@@ -483,7 +482,7 @@
     "known_t": "Known issues",
     "known": [
       "Leveling path (1-60), in review: it ends at level 58, some routes have detours or extra sea crossings, and some class quests are not on it (check /flc advisor).",
-      "Some quest data (levels, quest givers, places) is not confirmed on the official realms yet: it says \"in review\" or \"(?)\". Report what differs with /flc review.",
+      "Some quest data (levels, quest givers, places) is not confirmed yet: it says \"in review\" or \"(?)\". Report what differs with /flc review.",
       "Some boss abilities are still in review.",
       "Memory: about 18 MB at login with the catalog, up to about 20 MB after opening the Loot Atlas and generating a route.",
       "Square minimaps and LibDataBroker launchers (ElvUI datatexts, Titan Panel) are not tested in the client yet.",
@@ -493,15 +492,13 @@
     "known_more": "Something else? Maybe someone already reported it:",
     "links_changelog": "Changelog",
     "links_report": "Report a problem",
-    "ready_build": "Tested with game client {build}, not yet on the official realms.",
+    "ready_build": "Tested with game client {build}.",
     "ready_files": "One zip with two folders: the addon and its quest catalog.",
     "ready_changes": "What's new in {v}",
     "build_note_current": "The build Battle.net installs today: every launch test passed with 0.8.1.1; 0.8.1.2 and 0.8.1.3 were tested on it too",
     "build_note_prev": "Tested with 0.8.1 and 0.8.1.1",
     "build_note_dev": "Tested during development (0.8.1 candidate)",
     "build_note_superseded": "No client of these builds was available; replaced by 70755",
-    "build_realm": "Official WoW: Forever realms",
-    "build_note_realm": "Not checked yet",
     "build_untested": "Not tested",
     "i6_t": "Start the game",
     "i6_d": "Log in as usual.",
@@ -652,12 +649,12 @@
         "a": "On this site's Download page, which links to the official GitHub release ({v}). No other site has an official FLC download."
       },
       {
-        "q": "Does it work on the official realms?",
-        "a": "FLC {v} was tested with game client 1.60.1.70755, the one Battle.net installs today. Nothing has been checked on the official realms yet, so quest data that is not confirmed says \"in review\". If the game shows something else, report it with /flc review."
+        "q": "Which game version does it work with?",
+        "a": "FLC {v} was tested with game client 1.60.1.70755, the one Battle.net installs today. Quest data that is not confirmed yet says \"in review\". If the game shows something else, report it with /flc review."
       },
       {
         "q": "What does \"in review\" or (?) mean?",
-        "a": "That piece of data (a step, a position, a boss ability) is not confirmed against the live game yet. If the game shows something else, report it with /flc review. If it matches, that helps too."
+        "a": "That piece of data (a step, a position, a boss ability) is not confirmed yet. If the game shows something else, report it with /flc review. If it matches, that helps too."
       },
       {
         "q": "Does FLC need other addons?",

@@ -54,7 +54,7 @@
     "back_top": "Volver arriba",
     "new_tab": "(abre GitHub en otra pestaña)",
     "honesty_title": "Qué significa \"en revisión\"",
-    "honesty_body": "Las rutas y los datos de jefes de FLC se armaron y probaron durante el desarrollo, antes del lanzamiento del juego. Lo que todavía no está confirmado contra el juego en vivo lleva la etiqueta <em>en revisión</em>, o <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>: así mejoran las guías."
+    "honesty_body": "Lo que todavía no está confirmado en las rutas y los datos de jefes de FLC lleva la etiqueta <em>en revisión</em>, o <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>: así mejoran las guías."
   },
   "footer": {
     "tagline": "Forever Leveling Companion lo hacen jugadores, para jugadores, en su tiempo libre.",
@@ -93,7 +93,7 @@
     "v1_t": "Nunca juega por vos",
     "v1_d": "FLC te muestra el camino y qué hacer. Vos caminás, peleás y elegís: nunca mueve a tu personaje ni hace clic por vos.",
     "v2_t": "Etiquetas honestas",
-    "v2_d": "Lo que todavía no está confirmado contra el juego en vivo dice <em>en revisión</em>, o muestra <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a> y las guías mejoran.",
+    "v2_d": "Lo que todavía no está confirmado dice <em>en revisión</em>, o muestra <span class=\"q\">(?)</span> junto a una habilidad de jefe. Si el juego muestra otra cosa, <a href=\"{report}\">contanos</a> y las guías mejoran.",
     "v3_t": "Tus datos se quedan en el juego",
     "v3_d": "FLC no envía nada fuera del juego. El progreso del grupo se comparte solo con tu grupo y solo si aceptás.",
     "report_t": "¿Algo no cierra?",
@@ -150,14 +150,13 @@
     "meta": "Todas las funciones de Forever Leveling Companion y cómo se probaron: en el cliente de WoW Forever, en revisión o solo con pruebas automáticas.",
     "kicker": "Registro de misiones",
     "h1": "Qué hace FLC y qué está comprobado",
-    "intro": "Cada función muestra el nivel de prueba más alto que alcanzó, según los informes de prueba. \"Probado en el cliente\" quiere decir pruebas automáticas en el cliente real de WoW Forever, con la versión que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales.",
+    "intro": "Cada función muestra el nivel de prueba más alto que alcanzó, según los informes de prueba. \"Probado en el cliente\" quiere decir pruebas automáticas en el cliente real de WoW Forever, con la versión que instala Battle.net hoy.",
     "legend": "Referencias",
     "legend_client": "Pasó pruebas automáticas en el cliente real de WoW Forever, con capturas.",
-    "legend_review": "Funciona en el cliente, pero sus datos, o una parte, todavía no están confirmados contra el juego en vivo.",
+    "legend_review": "Funciona en el cliente, pero sus datos, o una parte, todavía no están confirmados.",
     "legend_offline": "Cubierto solo por pruebas automáticas fuera del juego.",
     "numbers_t": "En números, según los informes de prueba",
     "n_dungeons": "guías de mazmorra, más 12 de banda",
-    "n_live": "rutas comprobadas en los reinos oficiales, por ahora",
     "group_leveling": "Leveleo y navegación",
     "group_party": "Modo Grupo",
     "group_dungeons": "Mazmorras y bandas",
@@ -167,7 +166,7 @@
     "go": "Detalles",
     "n_build": "versión del cliente en la que pasaron las {suites} baterías de prueba del lanzamiento con 0.8.1.1",
     "n_errors": "errores de Lua de FLC en esas pruebas",
-    "facts": "Según el informe de lanzamiento: pasaron las {suites} baterías de prueba con 0.8.1.1 en el cliente {build}, con {errors} errores de Lua de FLC. {dungeons} guías de mazmorra y {raids} de banda. Todavía no se comprobó nada en los reinos oficiales.",
+    "facts": "Según el informe de lanzamiento: pasaron las {suites} baterías de prueba con 0.8.1.1 en el cliente {build}, con {errors} errores de Lua de FLC. {dungeons} guías de mazmorra y {raids} de banda.",
     "cap_leveling": "La ventana de guías: rutas por zona, la sugerida para tu nivel y tu progreso (interfaz en inglés).",
     "cap_party": "Modo Grupo: ayudando a alguien del grupo mientras tu progreso queda guardado (interfaz en inglés).",
     "cap_dungeons": "La ficha del jefe en las Cuevas de los Lamentos. Las habilidades con (?) siguen en revisión.",
@@ -210,7 +209,7 @@
     },
     "routes": {
       "t": "Rutas de misiones",
-      "d": "Rutas por raza, clase y facción, armadas con datos de desarrollo. Las zonas iniciales se recorrieron paso a paso en el cliente; el resto está en revisión hasta confirmarlo en el reino en vivo."
+      "d": "Rutas por raza, clase y facción. Las zonas iniciales se recorrieron paso a paso en el cliente; el resto está en revisión hasta confirmarlo."
     },
     "sync": {
       "t": "Progreso del grupo",
@@ -238,7 +237,7 @@
     },
     "dguides": {
       "t": "Guías de mazmorra",
-      "d": "23 mazmorras: la entrada, los objetivos de misión adentro, cada jefe en el orden del juego y la salida. Los jefes se encontraron en el cliente en un reino de desarrollo (146 de 159 ubicados)."
+      "d": "23 mazmorras: la entrada, los objetivos de misión adentro, cada jefe en el orden del juego y la salida. Los jefes se encontraron en el cliente (146 de 159 ubicados)."
     },
     "rguides": {
       "t": "Guías de banda",
@@ -339,7 +338,7 @@
     "p_cap_panel": "El panel del Modo Grupo: integrantes, pasos y sincronización.",
     "party_note": "Cuando se arma el grupo, el progreso de un integrante puede tardar hasta unos 15 segundos en aparecer.",
     "routes_t": "Sobre las rutas",
-    "routes_d": "Las rutas por raza, clase y facción salen de datos de desarrollo. Las zonas iniciales se recorrieron paso a paso en el cliente; todavía no se jugó nada en el reino en vivo. Los pasos que no están confirmados dicen \"en revisión\": si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>.",
+    "routes_d": "Las zonas iniciales de las rutas por raza, clase y facción se recorrieron paso a paso en el cliente. Los pasos que no están confirmados dicen \"en revisión\": si el juego muestra otra cosa, <a href=\"{report}\">contanos</a>.",
     "cmd_flc": "Mostrar u ocultar la guía",
     "cmd_party": "Panel del Modo Grupo",
     "cmd_path": "Tu camino completo del 1 al 60",
@@ -378,8 +377,8 @@
     "limits_t": "Para tener en cuenta",
     "limits": [
       "La flecha no tiene posición dentro de las instancias (un límite del juego): la guía avanza con los eventos de encuentro.",
-      "Las posiciones de los jefes se comprobaron en el cliente en un reino de desarrollo: 146 de 159 jefes ubicados.",
-      "Algunos datos pueden cambiar en el reino en vivo: reportá lo que no coincida con /flc review."
+      "Las posiciones de los jefes se comprobaron en el cliente: 146 de 159 jefes ubicados.",
+      "Algunos datos todavía pueden cambiar: reportá lo que no coincida con /flc review."
     ],
     "raids_more": "Más {n} guías de banda cuyos datos de jefes todavía están incompletos."
   },
@@ -399,7 +398,7 @@
     "s3_d": "Cuando enfrentás a un jefe, su ficha puede listar el botín que te sirve. La evaluación es una estimación según las estadísticas del objeto, nunca una decisión de necesidad o codicia: la tirada es tuya.",
     "s4_t": "Lista de deseos",
     "s4_d": "Sumá objetos a tu lista desde cualquier página del atlas. Cuando preparás una mazmorra, FLC te recuerda qué jefes los sueltan.",
-    "note": "El atlas muestra las tablas de botín sin probabilidades de caída. Los datos de objetos pueden cambiar en el reino en vivo."
+    "note": "El atlas muestra las tablas de botín sin probabilidades de caída. Los datos de objetos todavía pueden cambiar."
   },
   "custom": {
     "title": "Personalización: aspectos y Adaptar a mi interfaz",
@@ -483,7 +482,7 @@
     "known_t": "Problemas conocidos",
     "known": [
       "Camino de niveles (1-60), en revisión: termina en el nivel 58, algunas rutas tienen vueltas de más o cruces de mar, y algunas misiones de clase no están en el camino (revisá /flc advisor).",
-      "Algunos datos de misiones (niveles, quién da cada misión, lugares) todavía no están confirmados en los reinos oficiales: dicen \"en revisión\" o \"(?)\". Reportá lo que no coincida con /flc review.",
+      "Algunos datos de misiones (niveles, quién da cada misión, lugares) todavía no están confirmados: dicen \"en revisión\" o \"(?)\". Reportá lo que no coincida con /flc review.",
       "Algunas habilidades de jefes siguen en revisión.",
       "Memoria: unos 18 MB al entrar, con el catálogo, y hasta unos 20 MB después de abrir el Atlas de botín y generar una ruta.",
       "Los minimapas cuadrados y los lanzadores de LibDataBroker (los datatexts de ElvUI, Titan Panel) todavía no se probaron en el cliente.",
@@ -493,15 +492,13 @@
     "known_more": "¿Algo más? Puede que alguien ya lo haya reportado:",
     "links_changelog": "Novedades",
     "links_report": "Reportar un problema",
-    "ready_build": "Probada con el cliente {build}, todavía no en los reinos oficiales.",
+    "ready_build": "Probada con el cliente {build}.",
     "ready_files": "Un zip con dos carpetas: el addon y su catálogo de misiones.",
     "ready_changes": "Novedades de {v}",
     "build_note_current": "La versión que instala Battle.net hoy: pasaron todas las pruebas del lanzamiento con 0.8.1.1; 0.8.1.2 y 0.8.1.3 también se probaron en ella",
     "build_note_prev": "Probada con 0.8.1 y 0.8.1.1",
     "build_note_dev": "Probada durante el desarrollo (candidata de 0.8.1)",
     "build_note_superseded": "No tuvimos un cliente de esas versiones; las reemplazó la 70755",
-    "build_realm": "Reinos oficiales de WoW: Forever",
-    "build_note_realm": "Todavía sin comprobar",
     "build_untested": "Sin probar",
     "i6_t": "Abrí el juego",
     "i6_d": "Entrá como siempre.",
@@ -652,12 +649,12 @@
         "a": "En la página Descargar de este sitio, que enlaza al lanzamiento oficial en GitHub ({v}). Ningún otro sitio tiene una descarga oficial de FLC."
       },
       {
-        "q": "¿Funciona en los reinos oficiales?",
-        "a": "FLC {v} se probó con el cliente 1.60.1.70755, el que instala Battle.net hoy. Todavía no se comprobó nada en los reinos oficiales, así que los datos de misiones que no están confirmados dicen \"en revisión\". Si el juego muestra otra cosa, reportalo con /flc review."
+        "q": "¿Con qué versión del juego funciona?",
+        "a": "FLC {v} se probó con el cliente 1.60.1.70755, el que instala Battle.net hoy. Los datos de misiones que todavía no están confirmados dicen \"en revisión\". Si el juego muestra otra cosa, reportalo con /flc review."
       },
       {
         "q": "¿Qué significa \"en revisión\" o (?)?",
-        "a": "Que ese dato (un paso, una posición, una habilidad de jefe) todavía no está confirmado contra el juego en vivo. Si el juego muestra otra cosa, reportalo con /flc review. Si coincide, también sirve saberlo."
+        "a": "Que ese dato (un paso, una posición, una habilidad de jefe) todavía no está confirmado. Si el juego muestra otra cosa, reportalo con /flc review. Si coincide, también sirve saberlo."
       },
       {
         "q": "¿FLC necesita otros addons?",

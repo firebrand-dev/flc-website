@@ -117,7 +117,7 @@
       <ul class="builds">
         {% for b in site.builds.list %}
         <li class="builds__row">
-          <span class="builds__client">{% if b.client == 'realm' %}{{ t('download.build_realm') }}{% else %}<code>{{ b.client }}</code>{% endif %}</span>
+          <span class="builds__client"><code>{{ b.client }}</code></span>
           <span class="builds__state">{% if b.status == 'tested' %}{{ m.badge('client', true) }}{% else %}<span class="badge badge--pending">{{ t('download.build_untested') }}</span>{% endif %}</span>
           <span class="builds__note">{{ t('download.build_note_' ~ b.note) }}</span>
         </li>
