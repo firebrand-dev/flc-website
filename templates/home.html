@@ -15,12 +15,6 @@
         <span>{{ t('home.h1_a') }}</span> <span>{{ t('home.h1_b') }}</span> <span>{{ t('home.h1_c') }}</span>
       </h1>
       <p class="questpage__text">{{ t('home.sub') }}</p>
-      <h2 class="questpage__h">{{ t('home.objectives') }}</h2>
-      <ol class="objectives" data-objectives>
-        <li class="objective" data-obj="download"><span>{{ t('home.obj1', v=dl.version) }}</span><span class="objective__count" data-need="1">0/1</span></li>
-        <li class="objective" data-obj="folders"><span>{{ t('home.obj2') }}</span><span class="objective__count" data-need="2">0/2</span></li>
-        <li class="objective" data-obj="flc"><span>{{ t('home.obj3') }} <code>/flc</code></span><span class="objective__count" data-need="1">0/1</span></li>
-      </ol>
       <p class="questpage__reward"><span class="questpage__label">{{ t('home.reward') }}</span> {{ t('home.reward_text') }}</p>
       <div class="questpage__actions">
         {% if dl.enabled %}

@@ -2,6 +2,30 @@
   "_comment": "Player-facing changelog, newest first. Curated from the addon's docs/release/RELEASE_NOTES_*.md. kind: release (published on GitHub), rc (release candidate, never published), dev (development build). 'next': what is in development, shown as such, never as part of the download.",
   "entries": [
     {
+      "version": "0.8.1.4",
+      "label": "0.8.1.4",
+      "date": "2026-11-16",
+      "kind": "release",
+      "en": [
+        "A Loot Atlas maintenance release: its items now work like the game's item links, and the list is sorted by the level you need to equip them. The leveling guide is unchanged from 0.8.1.3.",
+        "Items you can inspect: mouse over an item to see the game's own tooltip, with its real stats. A click opens its card, Ctrl+click opens the dressing room and Shift+click links it in chat.",
+        "Each row shows the required level, the name with its icon and quality colour, the quality, the item level and where it comes from: boss, quest or world drop, with the dungeon or raid and its levels.",
+        "Sorted by required level, low to high or high to low. It is the level to equip the item, not its item level: \"No level\" for an item that needs none, \"Lv ?\" until the game loads it.",
+        "Class and slot filters. Where each item comes from also shows on its tooltip and its card, and /flc atlas item <id> opens the Atlas on that item.",
+        "Loot lists stay in review: no drop chances.",
+        "To update: close the game, delete the ForeverLevelingCompanion and FLC_Guides_Catalog folders from Interface\\AddOns and unzip the new zip there. Your settings and progress are kept."
+      ],
+      "es": [
+        "Una versión de mantenimiento del Atlas de botín: sus objetos ahora funcionan como los enlaces de objetos del juego, y la lista se ordena por el nivel que necesitás para equiparlos. La guía de leveleo no cambia respecto de 0.8.1.3.",
+        "Objetos que podés consultar: con el mouse encima ves el tooltip del propio juego, con sus estadísticas reales. Un clic abre su ficha, Ctrl+clic abre el probador y Shift+clic lo enlaza en el chat.",
+        "Cada fila muestra el nivel requerido, el nombre con su ícono y el color de su calidad, la calidad, el nivel de objeto y de dónde sale: jefe, misión o botín de la zona, con la mazmorra o banda y sus niveles.",
+        "Ordenado por nivel requerido, de menor a mayor o de mayor a menor. Es el nivel para equipar el objeto, no su nivel de objeto: \"Sin nivel\" si no pide ninguno, \"Nv. ?\" hasta que el juego lo carga.",
+        "Filtros de clase y de casilla. De dónde sale cada objeto se ve también en su tooltip y en su ficha, y /flc atlas item <id> abre el Atlas en ese objeto.",
+        "Las listas de botín siguen en revisión: sin probabilidades de caída.",
+        "Para actualizar: cerrá el juego, borrá las carpetas ForeverLevelingCompanion y FLC_Guides_Catalog de Interface\\AddOns y descomprimí ahí el zip nuevo. Tu configuración y tu progreso se conservan."
+      ]
+    },
+    {
       "version": "0.8.1.3",
       "label": "0.8.1.3",
       "date": "2026-11-10",

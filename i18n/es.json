@@ -122,10 +122,6 @@
     "stop6_link": "Descargar e instalar",
     "next_t": "En desarrollo: 0.8.2",
     "next_note": "No está en la descarga actual.",
-    "objectives": "Objetivos",
-    "obj1": "Descargá FLC {v}",
-    "obj2": "Copiá sus dos carpetas a AddOns",
-    "obj3": "Abrí el juego y escribí",
     "reward": "Recompensa:",
     "accept": "Aceptar: Descargar FLC",
     "install_link": "Cómo instalarlo",
@@ -294,6 +290,14 @@
     "minimap": {
       "t": "Botón del minimapa",
       "d": "Clic izquierdo muestra u oculta FLC; clic derecho abre Guías, Atlas de botín, Modo Grupo, Aspecto, Opciones y Reportar un error. Shift + arrastrar lo mueve. Los minimapas cuadrados todavía no se probaron en el cliente."
+    },
+    "atlasitems": {
+      "t": "Objetos que podés consultar",
+      "d": "El tooltip del propio juego con estadísticas reales, clic para la ficha del objeto, Ctrl+clic para el probador, Shift+clic para enlazarlo en el chat."
+    },
+    "atlassort": {
+      "t": "Ordenado por nivel requerido",
+      "d": "El nivel para equipar cada objeto, de menor a mayor o de mayor a menor, con su nivel de objeto y de dónde sale. Filtros de clase y de casilla."
     }
   },
   "leveling": {
@@ -384,12 +388,12 @@
   },
   "loot": {
     "title": "Atlas de botín: qué cae y qué te sirve",
-    "meta": "El Atlas de botín de FLC para WoW Forever: el botín de cada jefe de mazmorra y banda, evaluado para tu personaje, con búsqueda, filtros y lista de deseos.",
+    "meta": "El Atlas de botín de FLC para WoW Forever: el botín de cada jefe de mazmorra y banda, ordenado por nivel requerido, con los tooltips del propio juego, filtros de clase y de casilla, y lista de deseos.",
     "kicker": "Atlas de botín",
     "h1": "Qué cae y qué te sirve",
-    "intro": "Recorré cada jefe de mazmorra y banda, mirá su botín y dejá que FLC te diga qué piezas probablemente sean una mejora.",
+    "intro": "Recorré cada jefe de mazmorra y banda, mirá su botín ordenado por el nivel que necesitás para equiparlo y dejá que FLC te diga qué piezas probablemente sean una mejora.",
     "s1_t": "Cada jefe, cada objeto",
-    "s1_d": "Elegí una mazmorra o una banda y después un jefe: su botín, sus habilidades y un botón para empezar su guía. Buscá por nombre y filtrá por calidad o por lo que puede usar tu clase.",
+    "s1_d": "Elegí una mazmorra o una banda y después un jefe: su botín, sus habilidades y un botón para empezar su guía. Buscá por nombre y filtrá por calidad, por clase (utilizable por mí, toda clase o una clase) o por casilla.",
     "s1_cap": "Atlas de botín: mazmorras y bandas, con filtros y lista de deseos (interfaz en inglés).",
     "s2_t": "Para mí",
     "s2_d": "La vista \"Para mí\" recorre ranura por ranura, de la cabeza al abalorio, y muestra los objetos evaluados para tu personaje: probablemente mejor, o no.",
@@ -398,7 +402,12 @@
     "s3_d": "Cuando enfrentás a un jefe, su ficha puede listar el botín que te sirve. La evaluación es una estimación según las estadísticas del objeto, nunca una decisión de necesidad o codicia: la tirada es tuya.",
     "s4_t": "Lista de deseos",
     "s4_d": "Sumá objetos a tu lista desde cualquier página del atlas. Cuando preparás una mazmorra, FLC te recuerda qué jefes los sueltan.",
-    "note": "El atlas muestra las tablas de botín sin probabilidades de caída. Los datos de objetos todavía pueden cambiar."
+    "note": "El atlas muestra las tablas de botín sin probabilidades de caída. Los datos de objetos todavía pueden cambiar.",
+    "new_t": "Novedades de 0.8.1.4",
+    "s5_t": "Objetos que podés consultar",
+    "s5_d": "Con el mouse encima de un objeto ves el tooltip del propio juego, con sus estadísticas reales y de dónde sale. Un clic abre su ficha, Ctrl+clic abre el probador y Shift+clic lo enlaza en el chat. <code>/flc atlas item &lt;id&gt;</code> abre el Atlas en ese objeto.",
+    "s6_t": "Ordenado por nivel requerido",
+    "s6_d": "Cada fila: nivel requerido, nombre con su ícono y el color de su calidad, calidad, nivel de objeto y de dónde sale (jefe, misión o botín de la zona, con la mazmorra o banda y sus niveles). Ordená de menor a mayor o de mayor a menor. El nivel requerido es el nivel para equipar el objeto, no su nivel de objeto ni el de la mazmorra: \"Sin nivel\" si no pide ninguno, \"Nv. ?\" hasta que el juego lo carga."
   },
   "custom": {
     "title": "Personalización: aspectos y Adaptar a mi interfaz",
@@ -530,7 +539,7 @@
       },
       {
         "q": "¿Cómo abro el Atlas de botín?",
-        "a": "<code>/flc atlas</code>, o clic derecho en el botón del minimapa y elegí Atlas de botín."
+        "a": "<code>/flc atlas</code>, o clic derecho en el botón del minimapa y elegí Atlas de botín. <code>/flc atlas item &lt;id&gt;</code> lo abre en ese objeto."
       },
       {
         "q": "¿Cómo reporto un error?",

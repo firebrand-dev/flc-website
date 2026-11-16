@@ -113,6 +113,14 @@
           "status": "client"
         },
         {
+          "id": "atlasitems",
+          "status": "offline"
+        },
+        {
+          "id": "atlassort",
+          "status": "offline"
+        },
+        {
           "id": "lootadv",
           "status": "client"
         },

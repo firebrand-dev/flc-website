@@ -2,6 +2,24 @@
 {% block main %}{% import "macros.html" as m with context %}
 {{ m.pagehead('loot', 'chest') }}
 
+<section class="feature feature--news" aria-labelledby="loot-new">
+  <div class="wrap">
+    <h2 class="feature__news-h" id="loot-new">{{ t('loot.new_t') }}</h2>
+    <div class="feature__grid feature__grid--even">
+      <div class="feature__text reveal">
+        <h3>{{ t('loot.s5_t') }}</h3>
+        <p>{{ t('loot.s5_d') }}</p>
+        <p class="feature__badge">{{ m.badge('offline') }}</p>
+      </div>
+      <div class="feature__text reveal">
+        <h3>{{ t('loot.s6_t') }}</h3>
+        <p>{{ t('loot.s6_d') }}</p>
+        <p class="feature__badge">{{ m.badge('offline') }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="feature">
   <div class="wrap feature__grid feature__grid--wide">
     <div class="feature__text reveal">

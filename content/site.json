@@ -11,7 +11,7 @@
       "es"
     ],
     "default_language": "en",
-    "updated": "2026-11-10"
+    "updated": "2026-11-16"
   },
   "status": {
     "_comment": "stage: 'released' (a public version exists) or 'development'. build: the game client build the current download was tested with. suites / lua_errors: from the addon's docs/release/LAUNCH_REPORT_2026-11-04.md.",
@@ -21,16 +21,16 @@
     "lua_errors": "0"
   },
   "download": {
-    "_comment": "Public download. enabled: true only for a real GitHub Release asset the owner approved. tools/sync_release.py --from-github fills version/file/size/sha256/date and checks SHA256SUMS.txt. 0.8.1.3 synced 2026-11-10: SHA-256 09cbe0b4... equals the zip QA verified (and the release's SHA256SUMS.txt).",
+    "_comment": "Public download. enabled: true only for a real GitHub Release asset the owner approved. tools/sync_release.py --from-github fills version/file/size/sha256/date and checks SHA256SUMS.txt. 0.8.1.4 synced 2026-11-16: the zip downloaded back from the release hashes to 005131ec... = SHA256SUMS.txt = the package QF audited (addon docs/release/WEB_HANDOFF_0.8.1.4.md).",
     "enabled": true,
-    "version": "0.8.1.3",
-    "file": "FLC-0.8.1.3.zip",
-    "url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.3/FLC-0.8.1.3.zip",
-    "release_page": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/tag/v0.8.1.3",
-    "size_bytes": 1097257,
-    "sha256": "09cbe0b49f2a992f2138ec149b976630858db1f05503aafa118fd7831b838102",
-    "date": "2026-11-10",
-    "checksums_url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.3/SHA256SUMS.txt"
+    "version": "0.8.1.4",
+    "file": "FLC-0.8.1.4.zip",
+    "url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.4/FLC-0.8.1.4.zip",
+    "release_page": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/tag/v0.8.1.4",
+    "size_bytes": 1102454,
+    "sha256": "005131ec5daea9cfe05685f302e3eefcd2e2176b5a3d472a7fd8be38f2644c50",
+    "date": "2026-11-16",
+    "checksums_url": "https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/download/v0.8.1.4/SHA256SUMS.txt"
   },
   "builds": {
     "_comment": "Game client builds and what was checked on each, newest first. status: tested | untested. note: an i18n key under download.build_note_*.",

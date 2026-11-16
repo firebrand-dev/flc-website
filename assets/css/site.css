@@ -321,8 +321,6 @@ td .badge { white-space: normal; }
 .questpage__title { margin: 0 0 14px; font-size: clamp(2.1rem, 1.3rem + 2vw, 3.2rem); line-height: 1.02; color: var(--rubric-ink) !important; }
 .questpage__title span { display: block; }
 .questpage__text { font-size: 1.12rem; color: var(--ink) !important; margin-bottom: 22px; }
-.questpage__h { margin: 0 0 6px; font: 400 1.35rem var(--f-display); color: var(--ink); }
-.questpage__text + .questpage__h { margin-top: 4px; }
 .questpage__reward { margin: 14px 0 20px; font-weight: 700; color: var(--ink) !important; }
 .questpage__label { font: 400 1.15rem var(--f-display); color: var(--rubric-ink); }
 .questpage__actions { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
@@ -333,16 +331,6 @@ td .badge { white-space: normal; }
 .questhero__plate figcaption { margin: 10px 0 0 4px; font: italic 1rem var(--f-body); color: var(--text-2); }
 .plate { padding: 4px; background: var(--leather-950); border: 1px solid var(--gilt-lo); box-shadow: var(--lift); }
 
-/* objectives: FLC's own step format, with counts */
-.objectives { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
-.objective { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 5px 0 5px 22px; position: relative; color: var(--ink); font-size: 1.04rem; border-bottom: 1px dotted var(--ink-rule); }
-.objective::before { content: ""; position: absolute; left: 2px; top: .62em; width: 9px; height: 9px; transform: rotate(45deg); border: 1.5px solid var(--rubric-ink); }
-.objective code { font-size: .9em; }
-.objective__count { flex: none; font: 700 1rem var(--f-mono); color: var(--ink-2); }
-.objective.is-done { color: var(--ink-2); }
-.objective.is-done::before { background: var(--seal-green); border-color: var(--seal-green); }
-.objective.is-done .objective__count { color: var(--seal-green); }
-.objective.is-done > span:first-child { text-decoration: line-through; text-decoration-color: rgba(42, 32, 22, .45); }
 
 /* ---------- the codex: chapters ---------- */
 .codex { padding: clamp(24px, 4vw, 48px) 0; position: relative; }
@@ -427,6 +415,10 @@ td .badge { white-space: normal; }
 .feature--flip .feature__text { order: 2; }
 .feature__text p { color: var(--text-2); max-width: 60ch; }
 .feature__h2b { margin-top: 1.4em; font-size: clamp(1.45rem, 1.1rem + 1vw, 1.9rem); }
+/* the latest version's additions to a feature page, text only (no screenshot until one exists) */
+.feature__grid--even { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.feature__news-h { margin: 0 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--rule-soft); font-size: clamp(1.45rem, 1.1rem + 1vw, 1.9rem); }
+.feature--news h3 { margin: 0 0 .5em; }
 .hints { list-style: none; padding: 0; margin: 0 0 1.2em; display: grid; gap: 8px; }
 .hints li { display: flex; gap: .7em; align-items: flex-start; padding: 10px 14px; background: var(--leather-800); border: 1px solid var(--leather-600); color: var(--text); }
 .hints .i { color: var(--waypoint); margin-top: .25em; }
@@ -536,7 +528,7 @@ td { color: var(--text-2); }
 .install__progress [data-install-count] { color: var(--seal-green-text); font-family: var(--f-mono); }
 .move { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: clamp(16px, 3vw, 48px); padding: 26px 0; border-top: 1px solid var(--rule); }
 .move__title { font: 400 clamp(1.5rem, 1.2rem + 1vw, 2rem) var(--f-display); color: var(--gilt-hi); }
-.objectives--install { gap: 0; }
+.objectives { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .step { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 0 14px; padding: 14px 0; border-bottom: 1px solid var(--rule-soft); scroll-margin-top: 96px; }
 .step:last-child { border-bottom: 0; }
 .step__check { display: grid; place-items: center; width: 44px; height: 44px; cursor: pointer; }
@@ -667,11 +659,10 @@ td { color: var(--text-2); }
 
 /* ---------- motion: the ink check, nothing else on entry ---------- */
 .reveal { opacity: 1; }
-.objective.just-done::before { animation: seal .5s var(--ease); }
 .step__check input:checked { animation: seal .45s var(--ease); }
 @keyframes seal { from { transform: rotate(45deg) scale(.4); opacity: .2; } }
 @media (prefers-reduced-motion: reduce) {
-  .objective.just-done::before, .step__check input:checked { animation: none; }
+  .step__check input:checked { animation: none; }
   .link-arrow .i, .nav__link::after, .nav__chev { transition: none; }
 }
 
@@ -683,7 +674,7 @@ td { color: var(--text-2); }
   .camp__report { grid-column: 2; border-left: 0; padding-left: 0; padding-top: 18px; border-top: 1px solid var(--rule-soft); }
 }
 @media (max-width: 860px) {
-  .chapter__grid, .chapter__grid--flip, .partyleaf, .pair, .rules__grid, .feature__grid, .feature__grid--wide, .party__grid, .split, .split--three, .kinds, .atlas-list, .questlog, .move, .campfire__grid, .twoup { grid-template-columns: minmax(0, 1fr); }
+  .chapter__grid, .chapter__grid--flip, .partyleaf, .pair, .rules__grid, .feature__grid, .feature__grid--wide, .feature__grid--even, .party__grid, .split, .split--three, .kinds, .atlas-list, .questlog, .move, .campfire__grid, .twoup { grid-template-columns: minmax(0, 1fr); }
   .chapter__grid--flip .chapter__plates { order: 2; }
   .chapter__plates { justify-items: start; }
   .chapter__aside { margin-top: 18px; max-width: 100%; }
@@ -712,8 +703,6 @@ td { color: var(--text-2); }
   .questpage__title span { display: inline; }
   .questpage__actions { order: 1; margin-bottom: 8px; }
   .questpage__actions .btn { flex: 1 1 100%; }
-  .questpage__h { order: 2; margin-top: 14px; }
-  .objectives { order: 3; }
   .questpage__reward { order: 4; margin-bottom: 4px; }
   .questpage__meta { order: 5; }
   .handoff { order: 6; }

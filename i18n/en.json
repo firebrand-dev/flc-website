@@ -122,10 +122,6 @@
     "stop6_link": "Download and install",
     "next_t": "In development: 0.8.2",
     "next_note": "Not part of the current download.",
-    "objectives": "Objectives",
-    "obj1": "Download FLC {v}",
-    "obj2": "Copy its two folders into AddOns",
-    "obj3": "Start the game and type",
     "reward": "Reward:",
     "accept": "Accept: Download FLC",
     "install_link": "How to install",
@@ -294,6 +290,14 @@
     "minimap": {
       "t": "Minimap button",
       "d": "Left click shows or hides FLC; right click opens Guides, Loot Atlas, Party Mode, Appearance, Options and Report a bug. Shift + drag moves it. Square minimaps are not tested in the client yet."
+    },
+    "atlasitems": {
+      "t": "Items you can inspect",
+      "d": "The game's own tooltip with real stats, click for the item's card, Ctrl+click for the dressing room, Shift+click to link it in chat."
+    },
+    "atlassort": {
+      "t": "Sorted by required level",
+      "d": "The level to equip each item, low to high or high to low, with its item level and where it comes from. Class and slot filters."
     }
   },
   "leveling": {
@@ -384,12 +388,12 @@
   },
   "loot": {
     "title": "Loot Atlas: what drops, and what is good for you",
-    "meta": "FLC's Loot Atlas for WoW Forever: every dungeon and raid boss's loot, rated for your character, with search, filters and a wishlist.",
+    "meta": "FLC's Loot Atlas for WoW Forever: every dungeon and raid boss's loot, sorted by required level, with the game's own tooltips, class and slot filters, and a wishlist.",
     "kicker": "Loot Atlas",
     "h1": "What drops, and what is good for you",
-    "intro": "Browse every dungeon and raid boss, see their loot, and let FLC tell you which pieces would likely be an upgrade.",
+    "intro": "Browse every dungeon and raid boss, see their loot sorted by the level you need to equip it, and let FLC tell you which pieces would likely be an upgrade.",
     "s1_t": "Every boss, every item",
-    "s1_d": "Pick a dungeon or a raid, then a boss: its loot, its abilities, and a button to start its guide. Search by name and filter by quality or by what your class can use.",
+    "s1_d": "Pick a dungeon or a raid, then a boss: its loot, its abilities, and a button to start its guide. Search by name and filter by quality, by class (usable by me, every class or one class) or by slot.",
     "s1_cap": "Loot Atlas: dungeons and raids, with filters and the wishlist.",
     "s2_t": "For me",
     "s2_d": "The \"For me\" view goes slot by slot, from head to trinket, and shows items rated for your character: likely better, or not.",
@@ -398,7 +402,12 @@
     "s3_d": "When you face a boss, its card can list its loot for you. The rating is an estimate from item stats, never a need or greed call: the roll is yours.",
     "s4_t": "Wishlist",
     "s4_d": "Add items to your wishlist from any page of the atlas. When you prepare a dungeon, FLC reminds you which bosses drop them.",
-    "note": "The atlas shows loot tables without drop chances. Item data may still change."
+    "note": "The atlas shows loot tables without drop chances. Item data may still change.",
+    "new_t": "New in 0.8.1.4",
+    "s5_t": "Items you can inspect",
+    "s5_d": "Mouse over an item to see the game's own tooltip, with its real stats and where it comes from. A click opens its card, Ctrl+click opens the dressing room and Shift+click links it in chat. <code>/flc atlas item &lt;id&gt;</code> opens the Atlas on that item.",
+    "s6_t": "Sorted by required level",
+    "s6_d": "Each row: required level, name with its icon and quality colour, quality, item level, and where it comes from (boss, quest or world drop, with the dungeon or raid and its levels). Sort low to high or high to low. The required level is the level to equip the item, not its item level nor the dungeon's: \"No level\" for an item that needs none, \"Lv ?\" until the game loads it."
   },
   "custom": {
     "title": "Customization: skins and Adapt to my interface",
@@ -530,7 +539,7 @@
       },
       {
         "q": "How do I open the Loot Atlas?",
-        "a": "<code>/flc atlas</code>, or right-click the minimap button and choose Loot Atlas."
+        "a": "<code>/flc atlas</code>, or right-click the minimap button and choose Loot Atlas. <code>/flc atlas item &lt;id&gt;</code> opens it on that item."
       },
       {
         "q": "How do I report a bug?",
