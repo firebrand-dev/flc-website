@@ -321,8 +321,6 @@ td .badge { white-space: normal; }
 .questpage__title { margin: 0 0 14px; font-size: clamp(2.1rem, 1.3rem + 2vw, 3.2rem); line-height: 1.02; color: var(--rubric-ink) !important; }
 .questpage__title span { display: block; }
 .questpage__text { font-size: 1.12rem; color: var(--ink) !important; margin-bottom: 22px; }
-.questpage__reward { margin: 14px 0 20px; font-weight: 700; color: var(--ink) !important; }
-.questpage__label { font: 400 1.15rem var(--f-display); color: var(--rubric-ink); }
 .questpage__actions { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
 .questpage__meta { margin: 16px 0 0; font-size: .96rem; color: var(--ink-2) !important; }
 .handoff { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; margin: 8px 0 0; font-size: .98rem; }
@@ -703,7 +701,6 @@ td { color: var(--text-2); }
   .questpage__title span { display: inline; }
   .questpage__actions { order: 1; margin-bottom: 8px; }
   .questpage__actions .btn { flex: 1 1 100%; }
-  .questpage__reward { order: 4; margin-bottom: 4px; }
   .questpage__meta { order: 5; }
   .handoff { order: 6; }
   .codex::before, .chapter::before { display: none; }

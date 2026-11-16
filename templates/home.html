@@ -15,7 +15,6 @@
         <span>{{ t('home.h1_a') }}</span> <span>{{ t('home.h1_b') }}</span> <span>{{ t('home.h1_c') }}</span>
       </h1>
       <p class="questpage__text">{{ t('home.sub') }}</p>
-      <p class="questpage__reward"><span class="questpage__label">{{ t('home.reward') }}</span> {{ t('home.reward_text') }}</p>
       <div class="questpage__actions">
         {% if dl.enabled %}
         <a class="btn btn--primary" href="{{ dl.url }}" data-accept>{{ m.icon('download') }}<span>{{ t('home.accept') }}</span><small>{{ dl.version }}</small></a>
